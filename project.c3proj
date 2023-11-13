@@ -18,7 +18,8 @@
 	"objectTypes": {
 		"items": [
 			"3DShape",
-			"3DShape2"
+			"3DShape2",
+			"3DShape3"
 		],
 		"subfolders": []
 	},
