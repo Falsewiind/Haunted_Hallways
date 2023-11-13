@@ -17,7 +17,8 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
-			"3DShape"
+			"3DShape",
+			"3DShape2"
 		],
 		"subfolders": []
 	},
