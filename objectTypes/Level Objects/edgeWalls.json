@@ -1,16 +1,10 @@
 {
-	"name": "3DGround",
+	"name": "edgeWalls",
 	"plugin-id": "Shape3D",
-	"sid": 849857074019198,
+	"sid": 625670731258053,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 910850456909697
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3335068,
+						"imageSpriteId": 5059245,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -37,7 +31,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1884561,
+						"imageSpriteId": 1778630,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -50,7 +44,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3027347,
+						"imageSpriteId": 7828546,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -63,7 +57,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3082833,
+						"imageSpriteId": 9094661,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -76,7 +70,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6205049,
+						"imageSpriteId": 1355044,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -89,13 +83,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3265172,
+						"imageSpriteId": 323893,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 437807938619637,
+				"sid": 356558385491418,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

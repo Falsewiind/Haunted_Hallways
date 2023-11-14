@@ -1,10 +1,16 @@
 {
-	"name": "3DShapeMeasure",
+	"name": "3DWall2",
 	"plugin-id": "Shape3D",
-	"sid": 424829378354561,
+	"sid": 350169898826048,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 307675831498016
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 908724,
+						"imageSpriteId": 3383875,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -31,7 +37,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9808387,
+						"imageSpriteId": 3710658,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -44,7 +50,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9510306,
+						"imageSpriteId": 5907482,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -57,7 +63,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2610080,
+						"imageSpriteId": 5378948,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -70,7 +76,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9773985,
+						"imageSpriteId": 5810566,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -83,13 +89,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3647819,
+						"imageSpriteId": 9848550,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 815146259788287,
+				"sid": 152131959741455,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
