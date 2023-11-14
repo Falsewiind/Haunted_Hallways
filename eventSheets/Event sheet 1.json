@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "mouseSen",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "25",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -15,11 +15,21 @@
 			"eventType": "variable",
 			"name": "moveSpeed",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "500",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 880019221108082
+		},
+		{
+			"eventType": "variable",
+			"name": "isRunning",
+			"type": "number",
+			"initialValue": "550",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 880019221108082
+			"sid": 388634475243583
 		},
 		{
 			"eventType": "group",
@@ -115,10 +125,10 @@
 						{
 							"id": "rotate-camera",
 							"objectClass": "3DCamera",
-							"sid": 317581448119105,
+							"sid": 397803434091367,
 							"parameters": {
-								"rotate-x": "Mouse.MovementX / (11 - mouseSen)",
-								"rotate-y": "Mouse.MovementY / (11 - mouseSen)",
+								"rotate-x": "Mouse.MovementX / mouseSen",
+								"rotate-y": "Mouse.MovementY / mouseSen",
 								"min-polar-angle": "0",
 								"max-polar-angle": "180"
 							}
@@ -154,9 +164,9 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 851833650052234,
+							"sid": 402450271135497,
 							"parameters": {
-								"distance": "moveSpeed"
+								"distance": "moveSpeed * dt"
 							}
 						}
 					],
@@ -178,9 +188,9 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 561742832524918,
+							"sid": 656855304720874,
 							"parameters": {
-								"distance": "-moveSpeed"
+								"distance": "-moveSpeed * dt"
 							}
 						}
 					],
@@ -202,10 +212,10 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 599951827852221,
+							"sid": 769341549980788,
 							"parameters": {
 								"angle": "Player.Angle - 90",
-								"distance": "moveSpeed -2 "
+								"distance": "moveSpeed / 2 * dt"
 							}
 						}
 					],
@@ -227,10 +237,10 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 623669458876895,
+							"sid": 237242211553049,
 							"parameters": {
 								"angle": "Player.Angle + 90",
-								"distance": "moveSpeed - 2"
+								"distance": "moveSpeed / 2 * dt"
 							}
 						}
 					],
@@ -254,12 +264,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 197089794002772,
+							"id": "move-forward",
+							"objectClass": "Player",
+							"sid": 842452808996694,
 							"parameters": {
-								"variable": "moveSpeed",
-								"value": "10"
+								"distance": "isRunning * dt"
 							}
 						}
 					],
@@ -278,17 +287,7 @@
 							"isInverted": true
 						}
 					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 546253650588544,
-							"parameters": {
-								"variable": "moveSpeed",
-								"value": "5"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 244285051252561
 				}
 			],
