@@ -66,7 +66,6 @@
 			{
 				"items": [
 					"3DWall2",
-					"outterWalls",
 					"edgeWalls"
 				],
 				"subfolders": [
@@ -74,10 +73,11 @@
 						"items": [
 							"innerWalls2",
 							"innerWalls1",
-							"innerWalls3"
+							"innerWalls3",
+							"innerWalls4"
 						],
 						"subfolders": [],
-						"name": "Walls"
+						"name": "WallsInner"
 					},
 					{
 						"items": [
@@ -86,6 +86,17 @@
 						],
 						"subfolders": [],
 						"name": "Flooring"
+					},
+					{
+						"items": [
+							"outterWallswindow",
+							"outterWallsred",
+							"outterWalls2",
+							"outterWalls3",
+							"outterWalls4"
+						],
+						"subfolders": [],
+						"name": "WallsOuter"
 					}
 				],
 				"name": "Level Objects"
