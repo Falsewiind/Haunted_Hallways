@@ -8,6 +8,7 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 			"id": "Shape3D",
 			"name": "3D shape",
@@ -33,6 +34,8 @@
 		},
 		{
 			"type": "plugin",
+=======
+>>>>>>> origin/Anthony-A1
 			"id": "Shape3D",
 			"name": "3D shape",
 			"author": "Scirra",
@@ -40,6 +43,7 @@
 		},
 		{
 			"type": "plugin",
+<<<<<<< HEAD
 			"id": "Sprite",
 			"name": "Sprite",
 >>>>>>> Stashed changes
@@ -57,6 +61,10 @@
 			"type": "behavior",
 			"id": "custom",
 			"name": "Custom",
+=======
+			"id": "Text",
+			"name": "Text",
+>>>>>>> origin/Anthony-A1
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -71,6 +79,7 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 			"3DShape",
 			"3DShape2",
@@ -99,6 +108,14 @@
 				"name": "Level Assets"
 			}
 		]
+=======
+			"3DShapeMeasure",
+			"TotalLxWMeasurement",
+			"3DWall",
+			"3DGround"
+		],
+		"subfolders": []
+>>>>>>> origin/Anthony-A1
 	},
 	"autosaveData": null,
 	"containers": [],
