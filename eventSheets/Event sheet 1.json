@@ -1,5 +1,713 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "dz",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 630364647490301
+		},
+		{
+			"eventType": "variable",
+			"name": "moveSpeed",
+			"type": "number",
+			"initialValue": "500",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 219821799397697
+		},
+		{
+			"eventType": "variable",
+			"name": "runSpeed",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 181858422436362
+		},
+		{
+			"eventType": "variable",
+			"name": "jumpForce",
+			"type": "number",
+			"initialValue": "0.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 796951083858275
+		},
+		{
+			"eventType": "variable",
+			"name": "gravity",
+			"type": "number",
+			"initialValue": "3.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 635435264849041
+		},
+		{
+			"eventType": "variable",
+			"name": "isGrounded",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 560840604296115
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "General",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 720507257300963
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "playerCam",
+							"sid": 129339139648938,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "add-child",
+							"objectClass": "Player",
+							"sid": 394072372340359,
+							"parameters": {
+								"child": "playerCam",
+								"transform-x": true,
+								"transform-y": true,
+								"transform-w": false,
+								"transform-h": true,
+								"transform-a": true,
+								"transform-o": false,
+								"transform-z-elevation": true,
+								"transform-visibility": false,
+								"destroy-with-parent": false
+							}
+						}
+					],
+					"sid": 909975179490659
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 921263803960987
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 982346758156769,
+							"parameters": {
+								"variable": "dz",
+								"value": "gravity * dt"
+							}
+						},
+						{
+							"id": "set-z-elevation",
+							"objectClass": "Player",
+							"sid": 619053855652038,
+							"parameters": {
+								"z": "Self.ZElevation + dz"
+							}
+						}
+					],
+					"sid": 575522813331194
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 714055295407053,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 153722633545704,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 841110177487039,
+									"parameters": {
+										"variable": "isGrounded"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 569004031365058,
+									"parameters": {
+										"variable": "dz",
+										"value": "jumpForce"
+									}
+								}
+							],
+							"sid": 430579153651323
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 514869241699532,
+							"parameters": {
+								"key": 16
+							}
+						}
+					],
+					"actions": [],
+					"sid": 255351466873728
+				}
+			],
+			"sid": 365046483233798
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mouse look & Controls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 712437097900948
+						}
+					],
+					"actions": [
+						{
+							"id": "look-parallel-to-layout",
+							"objectClass": "3DCamera",
+							"sid": 966871337744774,
+							"parameters": {
+								"cam-x": "playerCam.X",
+								"cam-y": "playerCam.Y",
+								"cam-z": "playerCam.ZElevation + 8",
+								"look-angle": "playerCam.Angle"
+							}
+						}
+					],
+					"sid": 561925497353495
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 758559357247542
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "3DCamera",
+							"sid": 406983190993596,
+							"parameters": {
+								"x": "playerCam.X",
+								"y": "playerCam.Y",
+								"z": "playerCam.ZElevation + 8",
+								"which": "camera"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "Player",
+							"sid": 669087001256438,
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation"
+							}
+						}
+					],
+					"sid": 647934466209107
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 586054888621101,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "request-pointer-lock",
+							"objectClass": "Mouse",
+							"sid": 513438133527931
+						}
+					],
+					"sid": 780306879213322
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-movement",
+							"objectClass": "Mouse",
+							"sid": 953689143794449
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-camera",
+							"objectClass": "3DCamera",
+							"sid": 170516145667794,
+							"parameters": {
+								"rotate-x": "Mouse.MovementX / 10",
+								"rotate-y": "Mouse.MovementY / 10",
+								"min-polar-angle": "20",
+								"max-polar-angle": "160"
+							}
+						}
+					],
+					"sid": 192530503349882
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 166607572238132,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "Player",
+							"sid": 909451796837193,
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation",
+								"distance": "moveSpeed * dt"
+							}
+						},
+						{
+							"id": "push-out-solid-at-angle",
+							"objectClass": "Player",
+							"sid": 711818194645114,
+							"behaviorType": "Custom",
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation +180"
+							}
+						}
+					],
+					"sid": 565192940274215
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 146975496580074,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "Player",
+							"sid": 755912500678950,
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation",
+								"distance": "-moveSpeed * dt"
+							}
+						},
+						{
+							"id": "push-out-solid-at-angle",
+							"objectClass": "Player",
+							"sid": 448002638012855,
+							"behaviorType": "Custom",
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation"
+							}
+						}
+					],
+					"sid": 862160601934434
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 678669759360835,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "Player",
+							"sid": 336024732158561,
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation - 90",
+								"distance": "moveSpeed * dt"
+							}
+						},
+						{
+							"id": "push-out-solid-at-angle",
+							"objectClass": "Player",
+							"sid": 687700699176776,
+							"behaviorType": "Custom",
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation + 90"
+							}
+						}
+					],
+					"sid": 892676482468568
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 297091052209369,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "Player",
+							"sid": 832885604813257,
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation + 90",
+								"distance": "moveSpeed * dt"
+							}
+						},
+						{
+							"id": "push-out-solid-at-angle",
+							"objectClass": "Player",
+							"sid": 374622663536317,
+							"behaviorType": "Custom",
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation - 90"
+							}
+						}
+					],
+					"sid": 865573395145339
+				}
+			],
+			"sid": 750764261723142
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Z Collisions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "playerOldZ",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 593565459759316
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 101572050071151,
+							"parameters": {
+								"variable": "dz",
+								"comparison": 2,
+								"value": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 378247018517208,
+							"parameters": {
+								"object": "3DGround"
+							}
+						},
+						{
+							"id": "compare-z-elevation",
+							"objectClass": "3DGround",
+							"sid": 843165819426558,
+							"parameters": {
+								"which": "z-elevation",
+								"comparison": 5,
+								"z-elevation": "Player.ZElevation + Self.ZHeight"
+							}
+						},
+						{
+							"id": "compare-z-elevation",
+							"objectClass": "3DGround",
+							"sid": 815942791631132,
+							"parameters": {
+								"which": "z-elevation",
+								"comparison": 3,
+								"z-elevation": "Player.ZElevation - Self.ZHeight + 5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 801819262936254,
+							"parameters": {
+								"variable": "dz",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 223074912459126,
+							"parameters": {
+								"variable": "playerOldZ",
+								"value": "Player.ZElevation"
+							}
+						},
+						{
+							"id": "set-z-elevation",
+							"objectClass": "Player",
+							"sid": 325891146701595,
+							"parameters": {
+								"z": "3DGround.ZElevation + 3DGround.ZHeight"
+							}
+						}
+					],
+					"sid": 292227000487501,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 742401879380488,
+									"parameters": {
+										"variable": "isGrounded"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 512045581450389,
+									"parameters": {
+										"variable": "playerOldZ",
+										"comparison": 3,
+										"value": "Player.ZElevation - 0.5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all-tweens",
+									"objectClass": "playerCam",
+									"sid": 211887137978540,
+									"behaviorType": "Tween"
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "playerCam",
+									"sid": 263075789182763,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetZElevation",
+										"end-value": "Player.ZElevation",
+										"time": "0.1",
+										"ease": "easeoutsine",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 271430667024725
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 203280508210620,
+									"parameters": {
+										"variable": "isGrounded",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 951389716374550
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 414522041835512
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 143244541297086,
+							"parameters": {
+								"variable": "isGrounded",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 141067213534501
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-any-playing",
+							"objectClass": "playerCam",
+							"sid": 695363043091568,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-z-elevation",
+							"objectClass": "playerCam",
+							"sid": 607409048025942,
+							"parameters": {
+								"z": "Player.ZElevation"
+							}
+						}
+					],
+					"sid": 624893454375300
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 885458508369720
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "3DGround",
+							"sid": 674471540370026,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 730777073029126
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-z-elevation",
+							"objectClass": "3DGround",
+							"sid": 828767532463086,
+							"parameters": {
+								"which": "z-elevation",
+								"comparison": 4,
+								"z-elevation": "Player.ZElevation -Self.ZHeight + 1"
+							}
+						},
+						{
+							"id": "compare-z-elevation",
+							"objectClass": "3DGround",
+							"sid": 373475272812181,
+							"parameters": {
+								"which": "z-elevation",
+								"comparison": 2,
+								"z-elevation": "Player.ZElevation"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "3DGround",
+							"sid": 563217778974435,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 110373948829951
+				}
+			],
+			"sid": 687353737880775
+		}
+	],
 	"sid": 995596806820757
 }

@@ -7,12 +7,21 @@
 			"subLayers": [],
 			"instances": [
 				{
+<<<<<<< Updated upstream
 					"type": "3DShape",
 					"properties": {
 						"shape": "box",
 						"z-height": 15,
 						"initially-visible": true,
 						"face-back": false,
+=======
+					"type": "3DGround",
+					"properties": {
+						"shape": "box",
+						"z-height": 0,
+						"initially-visible": true,
+						"face-back": true,
+>>>>>>> Stashed changes
 						"face-front": true,
 						"face-left": true,
 						"face-right": true,
@@ -26,10 +35,18 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 2,
+					"uid": 11,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 864,
 						"y": 492,
 						"width": 120,
@@ -114,6 +131,12 @@
 						"y": 678,
 						"width": 120,
 						"height": 120,
+=======
+						"x": 184,
+						"y": 184,
+						"width": 360,
+						"height": 360,
+>>>>>>> Stashed changes
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -124,6 +147,78 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "playerCam",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -64,
+						"y": 32,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 88,
+						"y": 88,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
 					}
 				}
 			],
@@ -161,7 +256,7 @@
 	"effectTypes": [],
 	"width": 3840,
 	"height": 2160,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
