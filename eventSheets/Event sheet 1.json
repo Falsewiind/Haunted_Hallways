@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "mouseSen",
 			"type": "number",
-			"initialValue": "25",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -29,7 +29,7 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 388634475243583
+			"sid": 351357095606312
 		},
 		{
 			"eventType": "group",
@@ -125,10 +125,10 @@
 						{
 							"id": "rotate-camera",
 							"objectClass": "3DCamera",
-							"sid": 397803434091367,
+							"sid": 317581448119105,
 							"parameters": {
-								"rotate-x": "Mouse.MovementX / mouseSen",
-								"rotate-y": "Mouse.MovementY / mouseSen",
+								"rotate-x": "Mouse.MovementX / (11 - mouseSen)",
+								"rotate-y": "Mouse.MovementY / (11 - mouseSen)",
 								"min-polar-angle": "0",
 								"max-polar-angle": "180"
 							}
@@ -164,7 +164,7 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 402450271135497,
+							"sid": 309660583063636,
 							"parameters": {
 								"distance": "moveSpeed * dt"
 							}
@@ -188,7 +188,7 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 656855304720874,
+							"sid": 732914795834871,
 							"parameters": {
 								"distance": "-moveSpeed * dt"
 							}
@@ -212,10 +212,10 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 769341549980788,
+							"sid": 685041693781154,
 							"parameters": {
 								"angle": "Player.Angle - 90",
-								"distance": "moveSpeed / 2 * dt"
+								"distance": "moveSpeed / 2  * dt"
 							}
 						}
 					],
@@ -237,10 +237,10 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 237242211553049,
+							"sid": 641297899077080,
 							"parameters": {
 								"angle": "Player.Angle + 90",
-								"distance": "moveSpeed / 2 * dt"
+								"distance": "moveSpeed / 2  * dt"
 							}
 						}
 					],
@@ -266,7 +266,7 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 842452808996694,
+							"sid": 446162885254803,
 							"parameters": {
 								"distance": "isRunning * dt"
 							}
