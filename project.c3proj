@@ -60,7 +60,8 @@
 	"objectTypes": {
 		"items": [
 			"3DCamera",
-			"Keyboard"
+			"Keyboard",
+			"3DShape"
 		],
 		"subfolders": [
 			{
@@ -97,6 +98,14 @@
 						],
 						"subfolders": [],
 						"name": "WallsOuter"
+					},
+					{
+						"items": [
+							"Counter",
+							"tableCounter"
+						],
+						"subfolders": [],
+						"name": "Furnitcher"
 					}
 				],
 				"name": "Level Objects"
