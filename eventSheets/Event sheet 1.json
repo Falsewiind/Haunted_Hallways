@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "mouseSen",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "50",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -125,12 +125,12 @@
 						{
 							"id": "rotate-camera",
 							"objectClass": "3DCamera",
-							"sid": 317581448119105,
+							"sid": 356902991187456,
 							"parameters": {
-								"rotate-x": "Mouse.MovementX / (11 - mouseSen)",
-								"rotate-y": "Mouse.MovementY / (11 - mouseSen)",
-								"min-polar-angle": "0",
-								"max-polar-angle": "180"
+								"rotate-x": "Mouse.MovementX / mouseSen",
+								"rotate-y": "Mouse.MovementY / mouseSen",
+								"min-polar-angle": "20",
+								"max-polar-angle": "160"
 							}
 						},
 						{
