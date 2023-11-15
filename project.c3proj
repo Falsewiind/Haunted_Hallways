@@ -75,14 +75,7 @@
 							"innerWalls2",
 							"innerWalls1",
 							"innerWalls3",
-<<<<<<< Updated upstream
 							"innerWalls4"
-=======
-							"innerWalls4",
-							"innerWallwindow",
-							"innerWallsWindowDoor",
-							"overheadArch"
->>>>>>> Stashed changes
 						],
 						"subfolders": [],
 						"name": "WallsInner"
