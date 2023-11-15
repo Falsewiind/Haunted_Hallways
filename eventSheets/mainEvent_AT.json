@@ -50,6 +50,94 @@
 					"parameters": {
 						"frame-number": "0"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 692797549710641,
+					"parameters": {
+						"audio-file": "soundscrate-lurking",
+						"loop": "not-looping",
+						"volume": "-15",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Anthomis",
+					"sid": 243213737508113,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Anthomis",
+					"sid": 712003949618909,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Anthomis\"",
+						"property": "offsetOpacity",
+						"end-value": "85",
+						"time": "1",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "fadeIn",
+					"sid": 458587563670340,
+					"parameters": {
+						"x": "960",
+						"y": "541"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 355874655810182,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Anthomis",
+					"sid": 110353458054288,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Anthomis\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "2",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fadeIn",
+					"sid": 266673071762459,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeIn\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
 				}
 			],
 			"sid": 639324363043416
@@ -354,6 +442,18 @@
 					"parameters": {
 						"frame-number": "2"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 301777847362694,
+					"parameters": {
+						"audio-file": "soundscrate-switch-click-3",
+						"loop": "not-looping",
+						"volume": "-16",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 191282665132032
@@ -386,6 +486,18 @@
 					"parameters": {
 						"frame-number": "2"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 263872799931051,
+					"parameters": {
+						"audio-file": "soundscrate-switch-click-3",
+						"loop": "not-looping",
+						"volume": "-16",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 169027615928003
@@ -417,6 +529,18 @@
 					"sid": 590796892175818,
 					"parameters": {
 						"frame-number": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 193618029154525,
+					"parameters": {
+						"audio-file": "soundscrate-switch-click-3",
+						"loop": "not-looping",
+						"volume": "-16",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
