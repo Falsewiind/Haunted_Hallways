@@ -58,18 +58,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 525500465385565
-				}
-			],
-			"actions": [],
-			"sid": 880939963224257
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 998266514343895
@@ -153,8 +141,8 @@
 			"actions": [
 				{
 					"id": "set-animation-frame",
-					"objectClass": "infoMenuButton",
-					"sid": 725948102646616,
+					"objectClass": "teamMenuButton",
+					"sid": 752715829425351,
 					"parameters": {
 						"frame-number": "0"
 					}

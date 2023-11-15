@@ -220,12 +220,12 @@
 						}
 					},
 					"world": {
-						"x": 934,
+						"x": 931,
 						"y": 912,
-						"width": 455,
-						"height": 255,
+						"width": 384,
+						"height": 200,
 						"originX": 0.5,
-						"originY": 0.47058823529411764,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -259,10 +259,10 @@
 					"world": {
 						"x": 1518.4222575457457,
 						"y": 910,
-						"width": 455,
-						"height": 255,
+						"width": 384,
+						"height": 199,
 						"originX": 0.5,
-						"originY": 0.46862745098039216,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -296,10 +296,10 @@
 					"world": {
 						"x": 360.4504134982794,
 						"y": 910,
-						"width": 455,
-						"height": 255,
+						"width": 384,
+						"height": 200,
 						"originX": 0.5,
-						"originY": 0.47058823529411764,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -337,93 +337,6 @@
 						"height": 171.8333031909434,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "fadeInMenu",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 832,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 954,
-						"y": 1649,
-						"width": 1968,
-						"height": 1115,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Text",
-					"properties": {
-						"text": "Anthomis Studios",
-						"enable-bbcode": true,
-						"font": "fantasy",
-						"size": 42,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 833,
-					"instanceVariables": {},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"GlowHorizontal": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 0.3
-							}
-						}
-					},
-					"world": {
-						"x": 742,
-						"y": 1607,
-						"width": 410,
-						"height": 66,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
