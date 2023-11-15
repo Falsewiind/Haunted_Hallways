@@ -139,31 +139,37 @@
 						"items": [],
 						"subfolders": [
 							{
-								"items": [
-									"HALLWAYS",
-									"HAUNTED",
-									"infoMenuButton",
-									"PLAYbg",
-									"playMenuButton",
-									"teamMenuButton",
-									"temp_BG",
-									"pointer"
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"HALLWAYS",
+											"HAUNTED",
+											"infoMenuButton",
+											"PLAYbg",
+											"playMenuButton",
+											"teamMenuButton",
+											"temp_BG",
+											"pointer"
+										],
+										"subfolders": [],
+										"name": "MENU"
+									},
+									{
+										"items": [],
+										"subfolders": [],
+										"name": "INFO"
+									},
+									{
+										"items": [],
+										"subfolders": [],
+										"name": "TEAM"
+									}
 								],
-								"subfolders": [],
-								"name": "MENU"
-							},
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "INFO"
-							},
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "TEAM"
+								"name": "UIAssets_AT"
 							}
 						],
-						"name": "UIAssets_AT"
+						"name": "Adam"
 					}
 				],
 				"name": "Level Objects"
@@ -217,17 +223,23 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [
+			"items": [],
+			"subfolders": [
 				{
-					"name": "soundscrate-lurking.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 818618572034625,
-					"file-info": {
-						"purpose": "none"
-					}
+					"items": [
+						{
+							"name": "soundscrate-lurking.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 818618572034625,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "SFX+MUSIC_AT"
 				}
-			],
-			"subfolders": []
+			]
 		},
 		"video": {
 			"items": [],
