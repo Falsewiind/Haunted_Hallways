@@ -356,7 +356,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 819,
+					"uid": 821,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -406,7 +406,7 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 820,
+					"uid": 833,
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
