@@ -18,7 +18,7 @@
 			"initialValue": "500",
 			"comment": "",
 			"isStatic": false,
-			"isConstant": true,
+			"isConstant": false,
 			"sid": 880019221108082
 		},
 		{
@@ -274,6 +274,28 @@
 				{
 					"eventType": "comment",
 					"text": "Hand"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 793680884096872
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "playerHand",
+							"sid": 880603246475069,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "1"
+							}
+						}
+					],
+					"sid": 334065580910130
 				}
 			],
 			"sid": 451630600385537
@@ -288,9 +310,74 @@
 				{
 					"eventType": "comment",
 					"text": "Hud checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 841759561634176,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 365627589243632,
+							"parameters": {
+								"object": "testTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 813348862981416,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 321681817793254,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 829013132129528
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 755804637805879,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 418242880475072,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 712048608823592
 				}
 			],
-			"sid": 722308099631231
+			"sid": 670857733042149
 		}
 	],
 	"sid": 995596806820757

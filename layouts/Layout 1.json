@@ -48336,6 +48336,46 @@
 					}
 				},
 				{
+					"type": "testTrig",
+					"properties": {
+						"shape": "box",
+						"z-height": 15,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": true,
+						"face-left": true,
+						"face-right": true,
+						"face-top": true,
+						"face-bottom": true,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": -1,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 818,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1590,
+						"y": 590,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.028926324814767,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Counter",
 					"properties": {
 						"shape": "box",
@@ -48493,6 +48533,46 @@
 						],
 						"angle": 0,
 						"zElevation": 5
+					}
+				},
+				{
+					"type": "playerHand",
+					"properties": {
+						"shape": "box",
+						"z-height": 1,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": true,
+						"face-left": true,
+						"face-right": true,
+						"face-top": true,
+						"face-bottom": true,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": -1,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 819,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1350,
+						"y": 620,
+						"width": 10,
+						"height": 10,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 9
 					}
 				},
 				{
@@ -48877,8 +48957,8 @@
 						}
 					},
 					"world": {
-						"x": 110,
-						"y": 110,
+						"x": 1280,
+						"y": 620,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -48926,7 +49006,37 @@
 			"name": "Hud",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "testHud",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 820,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 980,
+						"y": 670,
+						"width": 1230,
+						"height": 1230,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 606136597721005,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

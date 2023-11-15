@@ -168,10 +168,19 @@
 					{
 						"items": [
 							"Player",
-							"Mouse"
+							"Mouse",
+							"playerHand"
 						],
 						"subfolders": [],
 						"name": "Player"
+					},
+					{
+						"items": [
+							"testTrig",
+							"testHud"
+						],
+						"subfolders": [],
+						"name": "testMech"
 					}
 				],
 				"name": "Thomas"
