@@ -77,7 +77,9 @@
 							"innerWalls1",
 							"innerWalls3",
 							"innerWalls4",
-							"innerWallwindow"
+							"innerWindows",
+							"innerDoor",
+							"innerElevator"
 						],
 						"subfolders": [],
 						"name": "WallsInner"
