@@ -215,7 +215,16 @@
 								"name": "MENU"
 							},
 							{
-								"items": [],
+								"items": [
+									"CONTROLS",
+									"back",
+									"a",
+									"d",
+									"E",
+									"s",
+									"w",
+									"mouse2"
+								],
 								"subfolders": [],
 								"name": "INFO"
 							},
