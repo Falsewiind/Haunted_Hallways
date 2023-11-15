@@ -5,7 +5,11 @@
 			"eventType": "variable",
 			"name": "mouseSen",
 			"type": "number",
+<<<<<<< Updated upstream
 			"initialValue": "5",
+=======
+			"initialValue": "25",
+>>>>>>> Stashed changes
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
