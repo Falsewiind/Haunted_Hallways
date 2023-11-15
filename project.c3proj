@@ -236,14 +236,18 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"mainLayout_AT"
+			"mainLayout_AT",
+			"infoLayout_AT",
+			"teamLayout_AT"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"mainEvent_AT"
+			"mainEvent_AT",
+			"infoEvent_AT",
+			"teamEvent_AT"
 		],
 		"subfolders": []
 	},
