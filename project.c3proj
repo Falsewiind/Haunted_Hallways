@@ -61,7 +61,8 @@
 		"items": [
 			"3DCamera",
 			"Keyboard",
-			"3DShape"
+			"3DShape",
+			"3DShape2"
 		],
 		"subfolders": [
 			{
@@ -75,7 +76,10 @@
 							"innerWalls2",
 							"innerWalls1",
 							"innerWalls3",
-							"innerWalls4"
+							"innerWalls4",
+							"innerWindows",
+							"innerDoor",
+							"innerElevator"
 						],
 						"subfolders": [],
 						"name": "WallsInner"
