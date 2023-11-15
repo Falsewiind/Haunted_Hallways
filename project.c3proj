@@ -108,7 +108,8 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
-			"Sprite"
+			"Sprite",
+			"Sprite2"
 		],
 		"subfolders": [
 			{
