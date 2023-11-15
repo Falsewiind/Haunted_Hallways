@@ -42,9 +42,23 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Car",
 			"name": "Car",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -86,7 +100,21 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
+<<<<<<< Updated upstream
 		"items": [],
+=======
+		"items": [
+			"3DCamera",
+			"Keyboard",
+			"3DShape",
+			"3DShape2",
+			"Sprite",
+			"Sprite2",
+			"Sprite3",
+			"Sprite4",
+			"Text"
+		],
+>>>>>>> Stashed changes
 		"subfolders": [
 			{
 				"items": [
@@ -134,36 +162,6 @@
 						],
 						"subfolders": [],
 						"name": "Furnitcher"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"HALLWAYS",
-									"HAUNTED",
-									"infoMenuButton",
-									"PLAYbg",
-									"playMenuButton",
-									"teamMenuButton",
-									"temp_BG",
-									"pointer"
-								],
-								"subfolders": [],
-								"name": "MENU"
-							},
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "INFO"
-							},
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "TEAM"
-							}
-						],
-						"name": "UIAssets_AT"
 					}
 				],
 				"name": "Level Objects"
@@ -173,6 +171,7 @@
 					"3DCamera",
 					"Keyboard"
 				],
+<<<<<<< Updated upstream
 				"subfolders": [
 					{
 						"items": [
@@ -184,6 +183,41 @@
 					}
 				],
 				"name": "Thomas"
+=======
+				"subfolders": [],
+				"name": "Player"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "INFO"
+					},
+					{
+						"items": [
+							"HALLWAYS",
+							"HAUNTED",
+							"infoMenuButton",
+							"PLAYbg",
+							"playMenuButton",
+							"teamMenuButton",
+							"temp_BG",
+							"pointer",
+							"fadeInMenu"
+						],
+						"subfolders": [],
+						"name": "MENU"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "TEAM"
+					}
+				],
+				"name": "ADAM"
+>>>>>>> Stashed changes
 			}
 		]
 	},
@@ -217,7 +251,24 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "soundscrate-switch-click-3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 992608094121216,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "soundscrate-lurking.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 943142871934945,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

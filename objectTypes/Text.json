@@ -1,0 +1,20 @@
+{
+	"name": "Text",
+	"plugin-id": "Text",
+	"sid": 171389489306150,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 178635038362193
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	]
+}
