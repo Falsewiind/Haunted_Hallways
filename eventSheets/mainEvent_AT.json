@@ -141,8 +141,8 @@
 			"actions": [
 				{
 					"id": "set-animation-frame",
-					"objectClass": "teamMenuButton",
-					"sid": 752715829425351,
+					"objectClass": "infoMenuButton",
+					"sid": 279326637087548,
 					"parameters": {
 						"frame-number": "0"
 					}

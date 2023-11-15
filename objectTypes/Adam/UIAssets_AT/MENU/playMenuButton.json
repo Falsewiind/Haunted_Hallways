@@ -1,7 +1,7 @@
 {
-	"name": "teamMenuButton",
+	"name": "playMenuButton",
 	"plugin-id": "Sprite",
-	"sid": 520972815867771,
+	"sid": 702689231739546,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -16,28 +16,24 @@
 			{
 				"frames": [
 					{
-						"width": 384,
-						"height": 199,
+						"width": 415,
+						"height": 255,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9998424,
+						"imageSpriteId": 100041,
 						"collisionPoly": {
 							"points": [
-								0.013020833333333334,
 								0,
-								0.96875,
-								0.020100502512562814,
-								1,
-								0.10050251256281408,
-								0.9869791666666666,
-								1,
-								0.057291666666666664,
-								0.9949748743718593,
 								0,
-								0.9246231155778895
+								1,
+								0,
+								1,
+								1,
+								0.0012048192771084338,
+								0.9921568627450981
 							]
 						},
 						"useCollisionPoly": true,
@@ -45,28 +41,24 @@
 						"tag": ""
 					},
 					{
-						"width": 384,
-						"height": 199,
+						"width": 415,
+						"height": 255,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4638060,
+						"imageSpriteId": 5668681,
 						"collisionPoly": {
 							"points": [
-								0.013020833333333334,
 								0,
-								0.96875,
-								0.020100502512562814,
-								1,
-								0.10050251256281408,
-								0.9869791666666666,
-								1,
-								0.057291666666666664,
-								0.9949748743718593,
 								0,
-								0.9246231155778895
+								1,
+								0,
+								1,
+								1,
+								0.0036144578313253017,
+								0.9980392156862745
 							]
 						},
 						"useCollisionPoly": true,
@@ -74,33 +66,21 @@
 						"tag": ""
 					},
 					{
-						"width": 384,
-						"height": 199,
-						"originX": 0.4869791666666667,
-						"originY": 0.4748743718592965,
+						"width": 415,
+						"height": 255,
+						"originX": 0.4746987951807229,
+						"originY": 0.47843137254901963,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6079123,
-						"collisionPoly": {
-							"points": [
-								0.013020833333333334,
-								0,
-								0.9739583333333334,
-								0.04020100502512563,
-								0.9609375,
-								0.949748743718593,
-								0,
-								0.9195979899497487
-							]
-						},
+						"imageSpriteId": 8639117,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 247083376336625,
-				"name": "teamButton",
+				"sid": 182161523811286,
+				"name": "playButton",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
