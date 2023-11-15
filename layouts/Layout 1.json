@@ -28392,9 +28392,9 @@
 						}
 					},
 					"world": {
-						"x": 1040,
+						"x": 1035,
 						"y": 1460,
-						"width": 120,
+						"width": 110,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -28441,7 +28441,7 @@
 					"world": {
 						"x": 1280,
 						"y": 1460,
-						"width": 120,
+						"width": 60,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -28486,9 +28486,9 @@
 						}
 					},
 					"world": {
-						"x": 1520,
+						"x": 1525,
 						"y": 1460,
-						"width": 120,
+						"width": 110,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -28674,9 +28674,9 @@
 						}
 					},
 					"world": {
-						"x": 1040,
+						"x": 1035,
 						"y": 1700,
-						"width": 120,
+						"width": 110,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -28723,7 +28723,7 @@
 					"world": {
 						"x": 1280,
 						"y": 1700,
-						"width": 120,
+						"width": 60,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -28768,9 +28768,9 @@
 						}
 					},
 					"world": {
-						"x": 1520,
+						"x": 1525,
 						"y": 1700,
-						"width": 120,
+						"width": 110,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -33422,7 +33422,7 @@
 					},
 					"world": {
 						"x": 1700,
-						"y": 1640,
+						"y": 1645,
 						"width": 110,
 						"height": 10,
 						"originX": 0.5,
@@ -33470,7 +33470,7 @@
 					"world": {
 						"x": 860,
 						"y": 1640,
-						"width": 110,
+						"width": 120,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -33509,14 +33509,14 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
 					},
 					"world": {
-						"x": 1700,
-						"y": 1525,
+						"x": 1640,
+						"y": 1480,
 						"width": 130,
 						"height": 10,
 						"originX": 0.5,
@@ -33527,7 +33527,7 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
+						"angle": 3.020289775719337,
 						"zElevation": 0
 					}
 				},
@@ -33556,7 +33556,7 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
@@ -33703,9 +33703,9 @@
 						}
 					},
 					"world": {
-						"x": 1400,
+						"x": 1390,
 						"y": 1460,
-						"width": 120,
+						"width": 160,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -33750,9 +33750,9 @@
 						}
 					},
 					"world": {
-						"x": 1160,
+						"x": 1170,
 						"y": 1460,
-						"width": 120,
+						"width": 160,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -33797,9 +33797,9 @@
 						}
 					},
 					"world": {
-						"x": 1400,
-						"y": 1700,
-						"width": 120,
+						"x": 1389.99999817485,
+						"y": 1699.9957278229754,
+						"width": 160,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -33809,7 +33809,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 6.282330871670701,
 						"zElevation": 0
 					}
 				},
@@ -33844,9 +33844,9 @@
 						}
 					},
 					"world": {
-						"x": 1160,
+						"x": 1170,
 						"y": 1700,
-						"width": 120,
+						"width": 160,
 						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -34519,9 +34519,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 860,
-						"y": 1525,
+						"y": 1520,
 						"width": 10,
-						"height": 130,
+						"height": 120,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
