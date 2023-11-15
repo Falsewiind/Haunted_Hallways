@@ -77,7 +77,8 @@
 			"Keyboard",
 			"3DShape",
 			"3DShape2",
-			"Sprite"
+			"Sprite",
+			"Sprite2"
 		],
 		"subfolders": [
 			{
