@@ -270,9 +270,27 @@
 					],
 					"actions": [],
 					"sid": 244285051252561
+				},
+				{
+					"eventType": "comment",
+					"text": "Hand"
 				}
 			],
 			"sid": 451630600385537
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "testMech",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Hud checker"
+				}
+			],
+			"sid": 722308099631231
 		}
 	],
 	"sid": 995596806820757
