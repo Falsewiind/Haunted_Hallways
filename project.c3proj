@@ -64,6 +64,20 @@
 		},
 		{
 			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "scanlines",
+			"name": "Scan lines",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "tint",
 			"name": "Tint",
 			"author": "Scirra",
@@ -128,6 +142,36 @@
 						],
 						"subfolders": [],
 						"name": "Furnitcher"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"HALLWAYS",
+									"HAUNTED",
+									"infoMenuButton",
+									"PLAYbg",
+									"PLAYbutt",
+									"playMenuButton",
+									"teamMenuButton",
+									"temp_BG"
+								],
+								"subfolders": [],
+								"name": "MENU"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "INFO"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "TEAM"
+							}
+						],
+						"name": "UIAssets_AT"
 					}
 				],
 				"name": "Level Objects"
@@ -150,13 +194,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"mainLayout_AT"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"mainEvent_AT"
 		],
 		"subfolders": []
 	},

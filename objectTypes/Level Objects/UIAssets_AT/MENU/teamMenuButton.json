@@ -1,0 +1,113 @@
+{
+	"name": "teamMenuButton",
+	"plugin-id": "Sprite",
+	"sid": 520972815867771,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 384,
+						"height": 199,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9998424,
+						"collisionPoly": {
+							"points": [
+								0.013020833333333334,
+								0,
+								0.96875,
+								0.020100502512562814,
+								1,
+								0.10050251256281408,
+								0.9869791666666666,
+								1,
+								0.057291666666666664,
+								0.9949748743718593,
+								0,
+								0.9246231155778895
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 384,
+						"height": 199,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4638060,
+						"collisionPoly": {
+							"points": [
+								0.013020833333333334,
+								0,
+								0.96875,
+								0.020100502512562814,
+								1,
+								0.10050251256281408,
+								0.9869791666666666,
+								1,
+								0.057291666666666664,
+								0.9949748743718593,
+								0,
+								0.9246231155778895
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 384,
+						"height": 199,
+						"originX": 0.4869791666666667,
+						"originY": 0.4748743718592965,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6079123,
+						"collisionPoly": {
+							"points": [
+								0.013020833333333334,
+								0,
+								0.9739583333333334,
+								0.04020100502512563,
+								0.9609375,
+								0.949748743718593,
+								0,
+								0.9195979899497487
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 247083376336625,
+				"name": "teamButton",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

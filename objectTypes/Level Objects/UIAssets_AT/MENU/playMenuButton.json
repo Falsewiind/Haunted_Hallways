@@ -1,0 +1,113 @@
+{
+	"name": "playMenuButton",
+	"plugin-id": "Sprite",
+	"sid": 702689231739546,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 384,
+						"height": 200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5178840,
+						"collisionPoly": {
+							"points": [
+								0.013020833333333334,
+								0,
+								0.96875,
+								0.025,
+								1,
+								0.105,
+								0.9869791666666666,
+								1,
+								0.057291666666666664,
+								0.995,
+								0,
+								0.92
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 384,
+						"height": 200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4134560,
+						"collisionPoly": {
+							"points": [
+								0.013020833333333334,
+								0,
+								0.96875,
+								0.025,
+								1,
+								0.105,
+								0.9869791666666666,
+								1,
+								0.057291666666666664,
+								0.995,
+								0,
+								0.92
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 395,
+						"height": 200,
+						"originX": 0.47341772151898737,
+						"originY": 0.4725,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1754672,
+						"collisionPoly": {
+							"points": [
+								0.012658227848101266,
+								0,
+								0.9468354430379747,
+								0.04,
+								0.9341772151898734,
+								0.945,
+								0,
+								0.92
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 182161523811286,
+				"name": "playButton",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
