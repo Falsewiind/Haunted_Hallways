@@ -217,7 +217,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "soundscrate-lurking.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 818618572034625,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
