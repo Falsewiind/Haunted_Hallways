@@ -86,21 +86,13 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"3DCamera",
-			"Keyboard",
-			"3DShape",
-			"3DShape2",
-			"Sprite",
-			"Sprite2",
-			"Sprite3",
-			"Sprite4"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
 					"3DWall2",
-					"edgeWalls"
+					"edgeWalls",
+					"3DShape2"
 				],
 				"subfolders": [
 					{
@@ -178,11 +170,20 @@
 			},
 			{
 				"items": [
-					"Player",
-					"Mouse"
+					"3DCamera",
+					"Keyboard"
 				],
-				"subfolders": [],
-				"name": "Player"
+				"subfolders": [
+					{
+						"items": [
+							"Player",
+							"Mouse"
+						],
+						"subfolders": [],
+						"name": "Player"
+					}
+				],
+				"name": "Thomas"
 			}
 		]
 	},

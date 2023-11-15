@@ -22,16 +22,6 @@
 			"sid": 880019221108082
 		},
 		{
-			"eventType": "variable",
-			"name": "isRunning",
-			"type": "number",
-			"initialValue": "550",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 351357095606312
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement & Controls",
@@ -262,16 +252,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "move-forward",
-							"objectClass": "Player",
-							"sid": 446162885254803,
-							"parameters": {
-								"distance": "isRunning * dt"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 775827592844210
 				},
 				{
