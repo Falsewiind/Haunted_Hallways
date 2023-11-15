@@ -135,7 +135,8 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				},
 				{
@@ -164,7 +165,8 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				},
 				{
@@ -193,7 +195,8 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				},
 				{
@@ -217,7 +220,7 @@
 						}
 					},
 					"world": {
-						"x": 938,
+						"x": 931,
 						"y": 912,
 						"width": 384,
 						"height": 200,
@@ -295,6 +298,43 @@
 						"y": 910,
 						"width": 384,
 						"height": 200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pointer",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 831,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						}
+					},
+					"world": {
+						"x": 927,
+						"y": 658,
+						"width": 100.75462485151417,
+						"height": 171.8333031909434,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

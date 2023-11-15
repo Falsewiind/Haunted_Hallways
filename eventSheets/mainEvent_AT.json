@@ -1,5 +1,427 @@
 {
 	"name": "mainEvent_AT",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 665722124680541
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "infoMenuButton",
+					"sid": 592589024485690,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "playMenuButton",
+					"sid": 163699996317502,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "teamMenuButton",
+					"sid": 965402150345074,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 788852938274375,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 811239783806820,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 639324363043416
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 998266514343895
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "pointer",
+					"sid": 450016780672303,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 338880920249354
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 655074602213362,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 107742295245311,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 836743468866509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 196074572491343,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 142050141877392,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 538496922252636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 367390184391978,
+					"parameters": {
+						"object": "infoMenuButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "teamMenuButton",
+					"sid": 752715829425351,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "infoMenuButton",
+					"sid": 474195003486470,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 695065710579846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 655260712951676,
+					"parameters": {
+						"object": "playMenuButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "playMenuButton",
+					"sid": 727483468583005,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "playMenuButton",
+					"sid": 919443009781709,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 375513305183150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 668818372822533,
+					"parameters": {
+						"object": "teamMenuButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "teamMenuButton",
+					"sid": 889709757162129,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "teamMenuButton",
+					"sid": 763999849213917,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 706203978813548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 681674301436662,
+					"parameters": {
+						"object": "infoMenuButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "infoMenuButton",
+					"sid": 872373427346467,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "infoMenuButton",
+					"sid": 659551777851355,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 839210668800232
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 177571538156027,
+					"parameters": {
+						"object": "playMenuButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "playMenuButton",
+					"sid": 761965618590269,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "playMenuButton",
+					"sid": 986304575851309,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 331432027870850
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 199698780476984,
+					"parameters": {
+						"object": "teamMenuButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "teamMenuButton",
+					"sid": 723698208931569,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "teamMenuButton",
+					"sid": 258220820290050,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 885699056841023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 848426252911618,
+					"parameters": {
+						"object": "infoMenuButton"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 366707972419564,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "infoMenuButton",
+					"sid": 978236070925642,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 191282665132032
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 977365257612578,
+					"parameters": {
+						"object": "playMenuButton"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 274959755496126,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "playMenuButton",
+					"sid": 790188376147514,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 169027615928003
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 260448812419704,
+					"parameters": {
+						"object": "teamMenuButton"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 584384504932283,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "teamMenuButton",
+					"sid": 590796892175818,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 469192272389074
+		}
+	],
 	"sid": 173318168584924
 }

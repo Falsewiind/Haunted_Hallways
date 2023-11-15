@@ -152,10 +152,10 @@
 									"HAUNTED",
 									"infoMenuButton",
 									"PLAYbg",
-									"PLAYbutt",
 									"playMenuButton",
 									"teamMenuButton",
-									"temp_BG"
+									"temp_BG",
+									"pointer"
 								],
 								"subfolders": [],
 								"name": "MENU"
