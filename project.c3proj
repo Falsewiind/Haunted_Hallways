@@ -62,7 +62,8 @@
 			"3DCamera",
 			"Keyboard",
 			"3DShape",
-			"3DShape2"
+			"3DShape2",
+			"Sprite"
 		],
 		"subfolders": [
 			{

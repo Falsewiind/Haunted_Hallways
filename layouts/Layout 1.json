@@ -34055,6 +34055,35 @@
 					}
 				},
 				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 818,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -120,
+						"y": -240,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Counter",
 					"properties": {
 						"shape": "box",
