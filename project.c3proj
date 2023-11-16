@@ -526,6 +526,13 @@
 								],
 								"subfolders": [],
 								"name": "Furnitcher"
+							},
+							{
+								"items": [
+									"Ceiling"
+								],
+								"subfolders": [],
+								"name": "Ceiling"
 							}
 						],
 						"name": "Level Objects"
