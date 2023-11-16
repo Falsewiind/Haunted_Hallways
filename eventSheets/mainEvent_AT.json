@@ -454,6 +454,39 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fadeIn",
+					"sid": 510531831771723,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeIn\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 636421195009417,
+					"parameters": {
+						"seconds": "0.6"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 737658408548347,
+					"parameters": {
+						"layout": "infoLayout_AT"
+					}
 				}
 			],
 			"sid": 191282665132032
@@ -490,13 +523,46 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 263872799931051,
+					"sid": 318680293458552,
 					"parameters": {
-						"audio-file": "soundscrate-switch-click-3",
+						"audio-file": "soundscrate-switch-click-3-withBoom",
 						"loop": "not-looping",
 						"volume": "-16",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fadeIn",
+					"sid": 744507665333886,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeIn\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 918939267540406,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 258843371127200,
+					"parameters": {
+						"layout": "Layout 1"
 					}
 				}
 			],
@@ -541,6 +607,39 @@
 						"volume": "-16",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fadeIn",
+					"sid": 729131429703376,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeIn\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 183987752604682,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 721646282464030,
+					"parameters": {
+						"layout": "teamLayout_AT"
 					}
 				}
 			],
