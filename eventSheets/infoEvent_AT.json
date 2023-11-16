@@ -1,5 +1,586 @@
 {
 	"name": "infoEvent_AT",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 335600950325211
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "a",
+					"sid": 182848099295441,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "s",
+					"sid": 767695850256083,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "d",
+					"sid": 882835672144547,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "w",
+					"sid": 324272317332671,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "E",
+					"sid": 693743871127771,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 575579959805846,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "fadeIn2",
+					"sid": 334265104842024,
+					"parameters": {
+						"x": "966",
+						"y": "540"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fadeIn2",
+					"sid": 409661649057834,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeIn2\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 248184610120405
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 397810240877636
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "pointer",
+					"sid": 888526715750966,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 571599430917509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 202356653759739,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 163186159091056,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 392216607168866
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 688985773179344,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 230611604612862,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 880911390329154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 560420704239166,
+					"parameters": {
+						"object": "back"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "back",
+					"sid": 335977761765928,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 929870837308121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 139575354404031,
+					"parameters": {
+						"object": "back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "back",
+					"sid": 560627831745548,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 537919716740989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 144996179217939,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 477774545959974,
+					"parameters": {
+						"object": "back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "back",
+					"sid": 951040327571179,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fadeIn2",
+					"sid": 520318762230759,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeIn2\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 623247649726424,
+					"parameters": {
+						"seconds": "0.6"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 771993878635887,
+					"parameters": {
+						"layout": "mainLayout_AT"
+					}
+				}
+			],
+			"sid": 364952509658760
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 180980525841951,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "a",
+					"sid": 476625454070978,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 171500216989021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 349850659900933,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "s",
+					"sid": 911905565037321,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 452651832429143
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 474636662309621,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "d",
+					"sid": 927912098670738,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 973266464814892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 467491293919366,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "w",
+					"sid": 968799453716270,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 658105795351201
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 315809412622537,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "E",
+					"sid": 341461201746339,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 816689349893161
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 163835943235979,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "a",
+					"sid": 399101078116184,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 364056379412371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 506772747172963,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "s",
+					"sid": 750373067934398,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 831695233985984
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 352990453324554,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "d",
+					"sid": 883970013885720,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 809284915055601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 908765506244316,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "w",
+					"sid": 319098157338128,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 583268171600751
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 959194912568660,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "E",
+					"sid": 586153844492522,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				}
+			],
+			"sid": 802563428842424
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 103372695145993,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "mouse2",
+					"sid": 803082463872597,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 406701209978231
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 290112287192658,
+					"parameters": {
+						"mouse-button": "left"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "mouse2",
+					"sid": 754055287048381,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 449854768334176
+		}
+	],
 	"sid": 400220891776537
 }

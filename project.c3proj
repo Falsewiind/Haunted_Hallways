@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -74,6 +81,13 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "bulge",
+			"name": "Bulge",
+			"author": "Brad Larson",
 			"bundled": false
 		},
 		{
@@ -92,6 +106,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "pixellate",
+			"name": "Pixellate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "scanlines",
 			"name": "Scan lines",
 			"author": "Scirra",
@@ -102,6 +123,13 @@
 			"id": "tint",
 			"name": "Tint",
 			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
 			"bundled": false
 		}
 	],
@@ -215,12 +243,33 @@
 								"name": "MENU"
 							},
 							{
-								"items": [],
+								"items": [
+									"CONTROLS",
+									"back",
+									"a",
+									"d",
+									"E",
+									"s",
+									"w",
+									"mouse2",
+									"CONTROLTEXT",
+									"fadeIn2"
+								],
 								"subfolders": [],
 								"name": "INFO"
 							},
 							{
-								"items": [],
+								"items": [
+									"teamtitle",
+									"names",
+									"fadeIn3",
+									"anthony",
+									"subtitle",
+									"adam",
+									"tay",
+									"thomas",
+									"isis"
+								],
 								"subfolders": [],
 								"name": "TEAM"
 							}
@@ -270,7 +319,8 @@
 			"Layout 1",
 			"mainLayout_AT",
 			"infoLayout_AT",
-			"teamLayout_AT"
+			"teamLayout_AT",
+			"winLayout_AT"
 		],
 		"subfolders": []
 	},
@@ -279,7 +329,8 @@
 			"Event sheet 1",
 			"mainEvent_AT",
 			"infoEvent_AT",
-			"teamEvent_AT"
+			"teamEvent_AT",
+			"winEvent_AT"
 		],
 		"subfolders": []
 	},
@@ -309,6 +360,22 @@
 							"name": "soundscrate-switch-click-3.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 853623558207178,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-switch-click-3-withBoom.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 493084653874538,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-industrial-drone.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 449748130699281,
 							"file-info": {
 								"purpose": "none"
 							}
