@@ -1,7 +1,7 @@
 {
-	"name": "playerHand",
+	"name": "spawnTrig",
 	"plugin-id": "Shape3D",
-	"sid": 199710734655927,
+	"sid": 455817180826969,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -13,12 +13,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8041620,
+						"imageSpriteId": 8779965,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -31,7 +31,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5279396,
+						"imageSpriteId": 4634083,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -44,7 +44,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9618536,
+						"imageSpriteId": 218730,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -57,7 +57,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1361352,
+						"imageSpriteId": 8530033,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -70,7 +70,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1756349,
+						"imageSpriteId": 38053,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -83,13 +83,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1367278,
+						"imageSpriteId": 2116811,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 157164075850088,
+				"sid": 894312109627359,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

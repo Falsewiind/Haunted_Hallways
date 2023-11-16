@@ -1,10 +1,21 @@
 {
-	"name": "playerHand",
+	"name": "monster",
 	"plugin-id": "Shape3D",
-	"sid": 199710734655927,
+	"sid": 142278765784979,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 851274205625132
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 820923121979679
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,12 +24,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8041620,
+						"imageSpriteId": 5565270,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -31,7 +42,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5279396,
+						"imageSpriteId": 2386464,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -44,7 +55,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9618536,
+						"imageSpriteId": 2354732,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -57,7 +68,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1361352,
+						"imageSpriteId": 9540617,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -70,7 +81,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1756349,
+						"imageSpriteId": 8933537,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -83,13 +94,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1367278,
+						"imageSpriteId": 2951502,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 157164075850088,
+				"sid": 165224357960831,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

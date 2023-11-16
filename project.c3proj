@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
@@ -121,19 +128,15 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Sprite"
+		],
 		"subfolders": [
 			{
 				"items": [
 					"3DCamera",
 					"Keyboard",
-					"Mouse",
-					"winTxt",
-					"proCurTxt",
-					"testCompleteTxt",
-					"gameoverTxt",
-					"gameTimerTxt",
-					"deathTrig"
+					"Mouse"
 				],
 				"subfolders": [
 					{
@@ -152,6 +155,34 @@
 						],
 						"subfolders": [],
 						"name": "testMech"
+					},
+					{
+						"items": [
+							"deathTrig"
+						],
+						"subfolders": [],
+						"name": "deathTrig"
+					},
+					{
+						"items": [
+							"gameoverTxt",
+							"gameTimerTxt",
+							"proCurTxt",
+							"testCompleteTxt",
+							"winTxt"
+						],
+						"subfolders": [],
+						"name": "txt"
+					},
+					{
+						"items": [
+							"monster",
+							"monsterSprite",
+							"spawnTrig",
+							"monsterSpawnPoint"
+						],
+						"subfolders": [],
+						"name": "monster"
 					}
 				],
 				"name": "Thomas"

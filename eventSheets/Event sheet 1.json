@@ -871,6 +871,69 @@
 				}
 			],
 			"sid": 308964808868774
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Monster AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 417132599248376
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "monster",
+							"sid": 632561136377762,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 126372973903547
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 907326108270817,
+							"parameters": {
+								"object": "spawnTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 916461822277556,
+							"parameters": {
+								"object-to-create": "monster",
+								"layer": "1",
+								"x": "monsterSpawnPoint.X",
+								"y": "monsterSpawnPoint.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 616391426333066
+				}
+			],
+			"sid": 360876688352287
 		}
 	],
 	"sid": 995596806820757
