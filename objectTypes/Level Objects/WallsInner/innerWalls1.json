@@ -11,16 +11,7 @@
 			"sid": 265726639820657
 		}
 	],
-	"effectTypes": [
-		{
-			"effectId": "exposure",
-			"name": "Exposure"
-		},
-		{
-			"effectId": "tint",
-			"name": "Tint"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
@@ -59,7 +50,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8328495,
+						"imageSpriteId": 1467194,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -72,7 +63,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 66143,
+						"imageSpriteId": 5549644,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -85,7 +76,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9232711,
+						"imageSpriteId": 2572811,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -98,7 +89,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 1,
-						"imageSpriteId": 7281202,
+						"imageSpriteId": 2322556,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

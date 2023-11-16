@@ -11,16 +11,7 @@
 			"sid": 501794538992174
 		}
 	],
-	"effectTypes": [
-		{
-			"effectId": "exposure",
-			"name": "Exposure"
-		},
-		{
-			"effectId": "tint",
-			"name": "Tint"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{

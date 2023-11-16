@@ -22,6 +22,76 @@
 			"sid": 880019221108082
 		},
 		{
+			"eventType": "variable",
+			"name": "testBarMax",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 582766157572011
+		},
+		{
+			"eventType": "variable",
+			"name": "testBarCur",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 248237523412118
+		},
+		{
+			"eventType": "variable",
+			"name": "gameTimer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 945910998393971
+		},
+		{
+			"eventType": "variable",
+			"name": "gameLength",
+			"type": "number",
+			"initialValue": "15",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 641309531664920
+		},
+		{
+			"eventType": "variable",
+			"name": "testComplete",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 756248052172861
+		},
+		{
+			"eventType": "variable",
+			"name": "gameComplete",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 796002394641917
+		},
+		{
+			"eventType": "variable",
+			"name": "playerDead",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 389346692994985
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement & Controls",
@@ -30,7 +100,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "Camera"
+					"text": "camera"
 				},
 				{
 					"eventType": "block",
@@ -136,7 +206,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Controls"
+					"text": "playerControls"
 				},
 				{
 					"eventType": "block",
@@ -238,7 +308,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Running"
+					"text": "running"
 				},
 				{
 					"eventType": "block",
@@ -273,7 +343,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Hand"
+					"text": "playerHand"
 				},
 				{
 					"eventType": "block",
@@ -309,7 +379,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "Hud checker"
+					"text": "enterUI"
 				},
 				{
 					"eventType": "block",
@@ -333,24 +403,104 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 602490322813750,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
-							"sid": 813348862981416,
+							"sid": 442421687543097,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 321681817793254,
+							"id": "set-visible",
+							"objectClass": "testBar",
+							"sid": 164675137773398,
 							"parameters": {
-								"variable": "moveSpeed",
-								"value": "0"
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "proCurTxt",
+							"sid": 618842166187392,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
 					"sid": 829013132129528
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "testHud",
+							"sid": 513001527729514
+						}
+					],
+					"actions": [],
+					"sid": 237141543601580,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 958883049058935,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 151456998073101,
+									"parameters": {
+										"variable": "testBarCur",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 529508231865681
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 684153686460468
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "proCurTxt",
+									"sid": 873150774597517,
+									"parameters": {
+										"text": "testBarCur"
+									}
+								}
+							],
+							"sid": 180918322509010
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "exitUI"
 				},
 				{
 					"eventType": "block",
@@ -366,9 +516,34 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 960430017270068,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "500"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 418242880475072,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testBar",
+							"sid": 122073629431904,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "proCurTxt",
+							"sid": 495776158754833,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -378,6 +553,310 @@
 				}
 			],
 			"sid": 670857733042149
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "statusChecker",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "gameTimer"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 333674335323458,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 892705733324440,
+							"parameters": {
+								"variable": "gameTimer",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 156271936222899
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 628445423957380
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "gameTimerTxt",
+							"sid": 758641729572210,
+							"parameters": {
+								"text": "gameTimer"
+							}
+						}
+					],
+					"sid": 914826693701579
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 620082857695922,
+							"parameters": {
+								"first-value": "gameTimer",
+								"comparison": 0,
+								"second-value": "gameLength"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 469688424535979,
+							"parameters": {
+								"variable": "gameComplete",
+								"value": "true"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "gameTimerTxt",
+							"sid": 253456780749062
+						}
+					],
+					"sid": 739470072165481
+				},
+				{
+					"eventType": "comment",
+					"text": "testChecker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 622015111742526,
+							"parameters": {
+								"variable": "testBarCur",
+								"comparison": 0,
+								"value": "testBarMax"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 743006748382147,
+							"parameters": {
+								"variable": "testComplete",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 220734857147809
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 712095622849888,
+							"parameters": {
+								"variable": "testComplete"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "proCurTxt",
+							"sid": 916017997592265
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testCompleteTxt",
+							"sid": 951979539747241,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 147879871437620,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "testCompleteTxt",
+							"sid": 486351500973542
+						}
+					],
+					"sid": 826633485178257
+				},
+				{
+					"eventType": "comment",
+					"text": "loesrChecker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 514951465058950,
+							"parameters": {
+								"variable": "testComplete"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 339401278905301,
+							"parameters": {
+								"variable": "gameComplete"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 712993935281696,
+							"parameters": {
+								"variable": "gameComplete"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 493126733713663,
+							"parameters": {
+								"layout": "loserLayout_AT"
+							}
+						}
+					],
+					"sid": 583160921852655
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 397345126167124,
+							"parameters": {
+								"variable": "playerDead"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "gameoverTxt",
+							"sid": 871593859657931,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 235582712342760
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 947008976492312,
+							"parameters": {
+								"object": "deathTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 988812061413580,
+							"parameters": {
+								"variable": "playerDead",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 562054017749555
+				},
+				{
+					"eventType": "comment",
+					"text": "winChecker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 597823199006383,
+							"parameters": {
+								"variable": "testComplete"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 122633460858574,
+							"parameters": {
+								"variable": "gameComplete"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 408235308969222,
+							"parameters": {
+								"variable": "playerDead"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 636194266171758,
+							"parameters": {
+								"layout": "winLayout_AT"
+							}
+						}
+					],
+					"sid": 856281603592763
+				}
+			],
+			"sid": 367671898954036
 		}
 	],
 	"sid": 995596806820757
