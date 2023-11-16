@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -87,6 +94,13 @@
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pixellate",
+			"name": "Pixellate",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -215,7 +229,18 @@
 								"name": "MENU"
 							},
 							{
-								"items": [],
+								"items": [
+									"CONTROLS",
+									"back",
+									"a",
+									"d",
+									"E",
+									"s",
+									"w",
+									"mouse2",
+									"CONTROLTEXT",
+									"fadeIn2"
+								],
 								"subfolders": [],
 								"name": "INFO"
 							},
@@ -293,7 +318,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "soundscrate-switch-click-3-withBoom.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 493084653874538,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": [
 				{
 					"items": [
