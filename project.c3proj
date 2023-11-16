@@ -122,7 +122,8 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
-			"Text"
+			"Text",
+			"Sprite"
 		],
 		"subfolders": [
 			{
