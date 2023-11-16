@@ -1,0 +1,517 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "mouseSen",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 270209469667610
+		},
+		{
+			"eventType": "variable",
+			"name": "moveSpeed",
+			"type": "number",
+			"initialValue": "500",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 880019221108082
+		},
+		{
+			"eventType": "variable",
+			"name": "testBarMAX",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 925749121936915
+		},
+		{
+			"eventType": "variable",
+			"name": "testBarMIN",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 490373945037619
+		},
+		{
+			"eventType": "variable",
+			"name": "testBarCur",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 539830547438903
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Movement & Controls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Camera"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 393488505426536
+						}
+					],
+					"actions": [
+						{
+							"id": "look-parallel-to-layout",
+							"objectClass": "3DCamera",
+							"sid": 909166485416723,
+							"parameters": {
+								"cam-x": "Player.X",
+								"cam-y": "Player.Y",
+								"cam-z": "Player.ZElevation + 10",
+								"look-angle": "Player.Angle"
+							}
+						}
+					],
+					"sid": 115467198406376
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 604265076272579
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "3DCamera",
+							"sid": 697744915975722,
+							"parameters": {
+								"x": "Player.X",
+								"y": "Player.Y",
+								"z": "Player.ZElevation + 10",
+								"which": "camera"
+							}
+						}
+					],
+					"sid": 538696991541777
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 170557940173437,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "request-pointer-lock",
+							"objectClass": "Mouse",
+							"sid": 501636602584138
+						}
+					],
+					"sid": 982669298418818
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-movement",
+							"objectClass": "Mouse",
+							"sid": 112594457255695
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-camera",
+							"objectClass": "3DCamera",
+							"sid": 317581448119105,
+							"parameters": {
+								"rotate-x": "Mouse.MovementX / (11 - mouseSen)",
+								"rotate-y": "Mouse.MovementY / (11 - mouseSen)",
+								"min-polar-angle": "0",
+								"max-polar-angle": "180"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "Player",
+							"sid": 233653222027266,
+							"parameters": {
+								"angle": "3DCamera.CameraXRotation"
+							}
+						}
+					],
+					"sid": 861802486454624
+				},
+				{
+					"eventType": "comment",
+					"text": "Controls"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 467615074755495,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-forward",
+							"objectClass": "Player",
+							"sid": 309660583063636,
+							"parameters": {
+								"distance": "moveSpeed * dt"
+							}
+						}
+					],
+					"sid": 410131608571797
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 655708584264698,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-forward",
+							"objectClass": "Player",
+							"sid": 732914795834871,
+							"parameters": {
+								"distance": "-moveSpeed * dt"
+							}
+						}
+					],
+					"sid": 487235210162626
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 508581431257626,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "Player",
+							"sid": 685041693781154,
+							"parameters": {
+								"angle": "Player.Angle - 90",
+								"distance": "moveSpeed / 2  * dt"
+							}
+						}
+					],
+					"sid": 761549878169354
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 887131542688056,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "Player",
+							"sid": 641297899077080,
+							"parameters": {
+								"angle": "Player.Angle + 90",
+								"distance": "moveSpeed / 2  * dt"
+							}
+						}
+					],
+					"sid": 311135600513352
+				},
+				{
+					"eventType": "comment",
+					"text": "Running *inProgress"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 117680896026410,
+							"parameters": {
+								"key": 16
+							}
+						}
+					],
+					"actions": [],
+					"sid": 775827592844210
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 475002660871420,
+							"parameters": {
+								"key": 16
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 244285051252561
+				},
+				{
+					"eventType": "comment",
+					"text": "Hand"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 793680884096872
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "playerHand",
+							"sid": 880603246475069,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "1"
+							}
+						}
+					],
+					"sid": 334065580910130
+				}
+			],
+			"sid": 451630600385537
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "testMech",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Hud Checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 841759561634176,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 365627589243632,
+							"parameters": {
+								"object": "testTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 198063204591055,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 813348862981416,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "progressBar",
+							"sid": 428880968467607,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 829013132129528,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 593015134130086,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 667494572832508,
+									"parameters": {
+										"variable": "testBarCur",
+										"value": "10"
+									}
+								}
+							],
+							"sid": 703275360841704
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 967904543570466
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "winTxt2",
+							"sid": 309247913136465,
+							"parameters": {
+								"text": "\"%\""
+							}
+						}
+					],
+					"sid": 481982773836657
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 755804637805879,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 233580627479353,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "500"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 418242880475072,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "progressBar",
+							"sid": 449873202797917,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 712048608823592
+				},
+				{
+					"eventType": "comment",
+					"text": "Adding Progress"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 330057163690010,
+							"parameters": {
+								"first-value": "testBarCur",
+								"comparison": 0,
+								"second-value": "testBarMAX"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "winTxt",
+							"sid": 603342832505025,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 831578104507048
+				}
+			],
+			"sid": 670857733042149
+		}
+	],
+	"sid": 995596806820757
+}

@@ -1,0 +1,467 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 35800,
+	"name": "Gamejam",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Camera3D",
+			"name": "3D camera",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D shape",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Car",
+			"name": "Car",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "exposure",
+			"name": "Exposure",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "scanlines",
+			"name": "Scan lines",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "tint",
+			"name": "Tint",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "dk9ncleesic",
+	"objectTypes": {
+		"items": [
+			"Sprite",
+			"Sprite2",
+			"Sprite3",
+			"Sprite4"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"3DWall2",
+					"edgeWalls",
+					"3DShape2"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"innerWalls2",
+							"innerWalls1",
+							"innerWalls3",
+							"innerWalls4",
+							"innerWindows",
+							"innerDoor",
+							"innerElevator"
+						],
+						"subfolders": [],
+						"name": "WallsInner"
+					},
+					{
+						"items": [
+							"tiles",
+							"floorWood"
+						],
+						"subfolders": [],
+						"name": "Flooring"
+					},
+					{
+						"items": [
+							"outterWallswindow",
+							"outterWallsred",
+							"outterWalls2",
+							"outterWalls3",
+							"outterWalls4"
+						],
+						"subfolders": [],
+						"name": "WallsOuter"
+					},
+					{
+						"items": [
+							"Counter",
+							"tableCounter"
+						],
+						"subfolders": [],
+						"name": "Furnitcher"
+					}
+				],
+				"name": "Level Objects"
+			},
+			{
+				"items": [
+					"3DCamera",
+					"Keyboard",
+					"Mouse",
+					"winTxt",
+					"winTxt2"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"Player",
+							"playerHand"
+						],
+						"subfolders": [],
+						"name": "Player"
+					},
+					{
+						"items": [
+							"testTrig",
+							"testHud",
+							"progressBar"
+						],
+						"subfolders": [],
+						"name": "testMech"
+					}
+				],
+				"name": "Thomas"
+			},
+			{
+				"items": [
+					"Audio"
+				],
+				"subfolders": [
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"HALLWAYS",
+									"HAUNTED",
+									"infoMenuButton",
+									"PLAYbg",
+									"playMenuButton",
+									"teamMenuButton",
+									"temp_BG",
+									"pointer",
+									"fadeIn",
+									"Anthomis"
+								],
+								"subfolders": [],
+								"name": "MENU"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "INFO"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "TEAM"
+							}
+						],
+						"name": "UIAssets_AT"
+					}
+				],
+				"name": "Adam"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"innerWalls1_1",
+							"innerWalls1_2",
+							"innerWalls1_3",
+							"innerWalls1_4",
+							"innerWalls1_5",
+							"innerWalls1_6",
+							"innerWalls1_7",
+							"innerWalls1_8"
+						],
+						"subfolders": [],
+						"name": "InnerWalls"
+					},
+					{
+						"items": [
+							"3DShape"
+						],
+						"subfolders": [],
+						"name": "Lighting"
+					}
+				],
+				"name": "Anthony"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Layout 1",
+			"mainLayout_AT",
+			"infoLayout_AT",
+			"teamLayout_AT"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Event sheet 1",
+			"mainEvent_AT",
+			"infoEvent_AT",
+			"teamEvent_AT"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "soundscrate-lurking.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 818618572034625,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-switch-click-3.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 853623558207178,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Adam"
+				}
+			]
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 823428640598763,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 934761363241200,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 349560032323799,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 950223443958703,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 948700637977047,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 131485750181471,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 125017758258916,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "scale-inner",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 1920,
+	"viewportHeight": 1080,
+	"firstLayout": null
+}
