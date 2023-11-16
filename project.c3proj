@@ -181,13 +181,15 @@
 			{
 				"items": [
 					"3DCamera",
-					"Keyboard"
+					"Keyboard",
+					"Mouse",
+					"winTxt",
+					"proPresentTxt"
 				],
 				"subfolders": [
 					{
 						"items": [
 							"Player",
-							"Mouse",
 							"playerHand"
 						],
 						"subfolders": [],
@@ -196,7 +198,8 @@
 					{
 						"items": [
 							"testTrig",
-							"testHud"
+							"testHud",
+							"proBar"
 						],
 						"subfolders": [],
 						"name": "testMech"
