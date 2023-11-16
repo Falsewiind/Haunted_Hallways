@@ -45299,41 +45299,18 @@
 					},
 					"uid": 820,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 930,
 						"y": 520,
 						"width": 615,
 						"height": 344.4,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "lockAni",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 887,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 920,
-						"y": 520,
-						"width": 676.0727889423645,
-						"height": 410.7947041383129,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

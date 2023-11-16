@@ -144,8 +144,7 @@
 	"objectTypes": {
 		"items": [
 			"Sprite",
-			"enemyDespawn",
-			"lockAni"
+			"enemyDespawn"
 		],
 		"subfolders": [
 			{
@@ -238,7 +237,8 @@
 									"CONTROLTEXT",
 									"fadeIn2",
 									"bar",
-									"backbar"
+									"backbar",
+									"lockAni"
 								],
 								"subfolders": [],
 								"name": "INFO"

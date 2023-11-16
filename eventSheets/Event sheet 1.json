@@ -403,6 +403,22 @@
 					],
 					"actions": [
 						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 735305494323334,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "testHud",
+							"sid": 757476335912854,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 602490322813750,
@@ -413,26 +429,35 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "testHud",
-							"sid": 442421687543097,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "testBar",
-							"sid": 164675137773398,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
 							"objectClass": "proCurTxt",
 							"sid": 618842166187392,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 683973872216030,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "testHud",
+							"sid": 640852249067906,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"testHud\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "1",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
 							}
 						}
 					],
