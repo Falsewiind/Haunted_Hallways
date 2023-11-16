@@ -489,6 +489,7 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
+			"death",
 			"mainLayout_AT",
 			"infoLayout_AT",
 			"teamLayout_AT",
@@ -504,7 +505,8 @@
 			"infoEvent_AT",
 			"teamEvent_AT",
 			"winEvent_AT",
-			"loserEvent_AT"
+			"loserEvent_AT",
+			"deathEvent_TL"
 		],
 		"subfolders": []
 	},
@@ -656,8 +658,8 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "low",
+		"fullscreenMode": "scale-inner",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -701,5 +703,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": null
+	"firstLayout": "Layout 1"
 }

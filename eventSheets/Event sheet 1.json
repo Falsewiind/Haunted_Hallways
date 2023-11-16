@@ -3,26 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "mouseSen",
-			"type": "number",
-			"initialValue": "5",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 270209469667610
-		},
-		{
-			"eventType": "variable",
-			"name": "moveSpeed",
-			"type": "number",
-			"initialValue": "500",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 880019221108082
-		},
-		{
-			"eventType": "variable",
 			"name": "testBarMax",
 			"type": "number",
 			"initialValue": "60",
@@ -82,22 +62,22 @@
 			"sid": 796002394641917
 		},
 		{
-			"eventType": "variable",
-			"name": "playerDead",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 389346692994985
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement & Controls",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "variable",
+					"name": "mouseSen",
+					"type": "number",
+					"initialValue": "18",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 321608885741150
+				},
 				{
 					"eventType": "comment",
 					"text": "camera"
@@ -185,12 +165,12 @@
 						{
 							"id": "rotate-camera",
 							"objectClass": "3DCamera",
-							"sid": 347875389779856,
+							"sid": 673222226184614,
 							"parameters": {
-								"rotate-x": "Mouse.MovementX / (11 - mouseSen)",
-								"rotate-y": "Mouse.MovementY / (11 - mouseSen)",
-								"min-polar-angle": "0",
-								"max-polar-angle": "180"
+								"rotate-x": "Mouse.MovementX / mouseSen",
+								"rotate-y": "Mouse.MovementY / mouseSen",
+								"min-polar-angle": "20",
+								"max-polar-angle": "160"
 							}
 						},
 						{
@@ -203,6 +183,16 @@
 						}
 					],
 					"sid": 218457186126648
+				},
+				{
+					"eventType": "variable",
+					"name": "moveSpeed",
+					"type": "number",
+					"initialValue": "500",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 273369148686752
 				},
 				{
 					"eventType": "comment",
@@ -224,9 +214,9 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 309660583063636,
+							"sid": 120281935334309,
 							"parameters": {
-								"distance": "moveSpeed * dt"
+								"distance": "550 * dt"
 							}
 						}
 					],
@@ -248,9 +238,9 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 732914795834871,
+							"sid": 338607451429170,
 							"parameters": {
-								"distance": "-moveSpeed * dt"
+								"distance": "-450 * dt"
 							}
 						}
 					],
@@ -272,10 +262,10 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 685041693781154,
+							"sid": 100280234304285,
 							"parameters": {
 								"angle": "Player.Angle - 90",
-								"distance": "moveSpeed / 2  * dt"
+								"distance": "250 * dt"
 							}
 						}
 					],
@@ -297,10 +287,10 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 641297899077080,
+							"sid": 214380074592030,
 							"parameters": {
 								"angle": "Player.Angle + 90",
-								"distance": "moveSpeed / 2  * dt"
+								"distance": "250 * dt"
 							}
 						}
 					],
@@ -316,13 +306,30 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
+							"sid": 942611911305414,
+							"parameters": {
+								"key": 87
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
 							"sid": 117680896026410,
 							"parameters": {
 								"key": 16
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "move-forward",
+							"objectClass": "Player",
+							"sid": 716909269288302,
+							"parameters": {
+								"distance": "350 * dt"
+							}
+						}
+					],
 					"sid": 775827592844210
 				},
 				{
@@ -748,14 +755,6 @@
 							"parameters": {
 								"variable": "gameComplete"
 							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 712993935281696,
-							"parameters": {
-								"variable": "gameComplete"
-							}
 						}
 					],
 					"actions": [
@@ -769,30 +768,6 @@
 						}
 					],
 					"sid": 583160921852655
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 397345126167124,
-							"parameters": {
-								"variable": "playerDead"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 150507138660467,
-							"parameters": {
-								"layout": "loserLayout_AT"
-							}
-						}
-					],
-					"sid": 235582712342760
 				},
 				{
 					"eventType": "comment",
@@ -816,15 +791,6 @@
 							"parameters": {
 								"variable": "gameComplete"
 							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 408235308969222,
-							"parameters": {
-								"variable": "playerDead"
-							},
-							"isInverted": true
 						}
 					],
 					"actions": [
@@ -851,7 +817,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "death triggers"
+					"text": "death"
 				},
 				{
 					"eventType": "block",
@@ -867,12 +833,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-boolean-eventvar",
+							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 748645421640686,
+							"sid": 636575505024529,
 							"parameters": {
-								"variable": "playerDead",
-								"value": "true"
+								"layout": "death"
 							}
 						}
 					],
