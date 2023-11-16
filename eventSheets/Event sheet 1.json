@@ -204,7 +204,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 467615074755495,
+							"sid": 139319768401111,
 							"parameters": {
 								"key": 87
 							}
@@ -214,13 +214,13 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 120281935334309,
+							"sid": 517820721225948,
 							"parameters": {
 								"distance": "550 * dt"
 							}
 						}
 					],
-					"sid": 410131608571797
+					"sid": 647983791615690
 				},
 				{
 					"eventType": "block",
@@ -228,31 +228,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 655708584264698,
-							"parameters": {
-								"key": 83
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "move-forward",
-							"objectClass": "Player",
-							"sid": 338607451429170,
-							"parameters": {
-								"distance": "-450 * dt"
-							}
-						}
-					],
-					"sid": 487235210162626
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 508581431257626,
+							"sid": 682502039683014,
 							"parameters": {
 								"key": 65
 							}
@@ -262,14 +238,14 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 100280234304285,
+							"sid": 188352165124567,
 							"parameters": {
 								"angle": "Player.Angle - 90",
 								"distance": "250 * dt"
 							}
 						}
 					],
-					"sid": 761549878169354
+					"sid": 505423677572491
 				},
 				{
 					"eventType": "block",
@@ -277,7 +253,31 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 887131542688056,
+							"sid": 518106722872490,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-forward",
+							"objectClass": "Player",
+							"sid": 777632288500900,
+							"parameters": {
+								"distance": "-450 * dt"
+							}
+						}
+					],
+					"sid": 141263006059888
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 922649160360253,
 							"parameters": {
 								"key": 68
 							}
@@ -287,14 +287,14 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 214380074592030,
+							"sid": 705275275712638,
 							"parameters": {
 								"angle": "Player.Angle + 90",
 								"distance": "250 * dt"
 							}
 						}
 					],
-					"sid": 311135600513352
+					"sid": 664784528769819
 				},
 				{
 					"eventType": "comment",
@@ -303,14 +303,6 @@
 				{
 					"eventType": "block",
 					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 942611911305414,
-							"parameters": {
-								"key": 87
-							}
-						},
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",

@@ -154,7 +154,8 @@
 					{
 						"items": [
 							"Player",
-							"playerHand"
+							"playerHand",
+							"handSprites"
 						],
 						"subfolders": [],
 						"name": "Player"
