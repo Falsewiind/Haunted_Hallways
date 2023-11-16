@@ -1,10 +1,16 @@
 {
-	"name": "3DShape2",
+	"name": "innerWalls1_5",
 	"plugin-id": "Shape3D",
-	"sid": 843942938672264,
+	"sid": 691145017131936,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 591955226054169
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8755425,
+						"imageSpriteId": 8842754,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -26,12 +32,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7022554,
+						"imageSpriteId": 8573958,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -39,12 +45,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7883413,
+						"imageSpriteId": 9743913,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -52,12 +58,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2987905,
+						"imageSpriteId": 4446117,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -65,12 +71,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2957412,
+						"imageSpriteId": 6100504,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -78,18 +84,18 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 5625917,
+						"exportQuality": 1,
+						"imageSpriteId": 2933144,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 963296822234399,
+				"sid": 205644176648679,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

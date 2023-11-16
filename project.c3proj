@@ -124,12 +124,8 @@
 		"items": [
 			"Sprite",
 			"Sprite2",
-<<<<<<< Updated upstream
 			"Sprite3",
 			"Sprite4"
-=======
-			"Text"
->>>>>>> Stashed changes
 		],
 		"subfolders": [
 			{
@@ -276,56 +272,18 @@
 				"items": [],
 				"subfolders": [
 					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"innerWalls1_1",
-									"innerWalls1_2",
-									"innerWalls1_3",
-									"innerWalls1_4",
-									"innerWalls1_5",
-									"innerWalls1_6",
-									"innerWalls1_7",
-									"innerWalls1_8",
-									"innerDoor_8",
-									"innerElevator_8",
-									"innerWindows_8"
-								],
-								"subfolders": [],
-								"name": "Wall1"
-							},
-							{
-								"items": [
-									"innerWalls2_1",
-									"innerWalls2_2",
-									"innerWalls2_3",
-									"innerWalls2_4",
-									"innerWalls2_5",
-									"innerWalls2_6",
-									"innerWalls2_7",
-									"innerWalls2_8",
-									"tempDoor"
-								],
-								"subfolders": [],
-								"name": "Wall2"
-							},
-							{
-								"items": [
-									"outterWallswindow_1",
-									"outterWallswindow_2",
-									"outterWallswindow_3",
-									"outterWallswindow_4",
-									"outterWallswindow_5",
-									"outterWallswindow_6",
-									"outterWallswindow_7",
-									"outterWallswindow_8"
-								],
-								"subfolders": [],
-								"name": "OuterWall"
-							}
+						"items": [
+							"innerWalls1_1",
+							"innerWalls1_2",
+							"innerWalls1_3",
+							"innerWalls1_4",
+							"innerWalls1_5",
+							"innerWalls1_6",
+							"innerWalls1_7",
+							"innerWalls1_8"
 						],
-						"name": "Walls"
+						"subfolders": [],
+						"name": "InnerWalls"
 					},
 					{
 						"items": [
@@ -333,29 +291,6 @@
 						],
 						"subfolders": [],
 						"name": "Lighting"
-					},
-					{
-						"items": [
-							"floorWood2",
-							"tiles2_1",
-							"floorWood2_8",
-							"floorWood2_1",
-							"floorWood2_2",
-							"floorWood2_3",
-							"floorWood2_4",
-							"floorWood2_5",
-							"floorWood2_6",
-							"floorWood2_7",
-							"tiles2_2",
-							"tiles2_3",
-							"tiles2_4",
-							"tiles2_5",
-							"tiles2_6",
-							"tiles2_7",
-							"tiles2_8"
-						],
-						"subfolders": [],
-						"name": "Floor"
 					}
 				],
 				"name": "Anthony"
