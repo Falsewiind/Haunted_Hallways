@@ -206,7 +206,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "playerControls"
+					"text": "player controls"
 				},
 				{
 					"eventType": "block",
@@ -343,7 +343,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "playerHand"
+					"text": "player hand"
 				},
 				{
 					"eventType": "block",
@@ -373,7 +373,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "testMech",
+			"title": "Test Mechanic",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -557,13 +557,13 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "statusChecker",
+			"title": "Game Status",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "gameTimer"
+					"text": "game timer"
 				},
 				{
 					"eventType": "block",
@@ -645,7 +645,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "testChecker"
+					"text": "test checker"
 				},
 				{
 					"eventType": "block",
@@ -718,7 +718,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "loesrChecker"
+					"text": "lost checker"
 				},
 				{
 					"eventType": "block",
@@ -786,33 +786,8 @@
 					"sid": 235582712342760
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player",
-							"sid": 947008976492312,
-							"parameters": {
-								"object": "deathTrig"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 988812061413580,
-							"parameters": {
-								"variable": "playerDead",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 562054017749555
-				},
-				{
 					"eventType": "comment",
-					"text": "winChecker"
+					"text": "win checker"
 				},
 				{
 					"eventType": "block",
@@ -857,6 +832,45 @@
 				}
 			],
 			"sid": 367671898954036
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Status",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "death triggers"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 855299176162032,
+							"parameters": {
+								"object": "deathTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 748645421640686,
+							"parameters": {
+								"variable": "playerDead",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 181061469565897
+				}
+			],
+			"sid": 308964808868774
 		}
 	],
 	"sid": 995596806820757

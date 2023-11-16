@@ -125,56 +125,6 @@
 		"subfolders": [
 			{
 				"items": [
-					"3DWall2",
-					"edgeWalls",
-					"3DShape2"
-				],
-				"subfolders": [
-					{
-						"items": [
-							"innerWalls2",
-							"innerWalls1",
-							"innerWalls3",
-							"innerWalls4",
-							"innerWindows",
-							"innerDoor",
-							"innerElevator"
-						],
-						"subfolders": [],
-						"name": "WallsInner"
-					},
-					{
-						"items": [
-							"tiles",
-							"floorWood"
-						],
-						"subfolders": [],
-						"name": "Flooring"
-					},
-					{
-						"items": [
-							"outterWallswindow",
-							"outterWallsred",
-							"outterWalls2",
-							"outterWalls3",
-							"outterWalls4"
-						],
-						"subfolders": [],
-						"name": "WallsOuter"
-					},
-					{
-						"items": [
-							"Counter",
-							"tableCounter"
-						],
-						"subfolders": [],
-						"name": "Furnitcher"
-					}
-				],
-				"name": "Level Objects"
-			},
-			{
-				"items": [
 					"3DCamera",
 					"Keyboard",
 					"Mouse",
@@ -428,6 +378,62 @@
 					}
 				],
 				"name": "Isis"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"3DWall2",
+							"edgeWalls",
+							"3DShape2"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"innerWalls2",
+									"innerWalls1",
+									"innerWalls3",
+									"innerWalls4",
+									"innerWindows",
+									"innerDoor",
+									"innerElevator"
+								],
+								"subfolders": [],
+								"name": "WallsInner"
+							},
+							{
+								"items": [
+									"tiles",
+									"floorWood"
+								],
+								"subfolders": [],
+								"name": "Flooring"
+							},
+							{
+								"items": [
+									"outterWallswindow",
+									"outterWallsred",
+									"outterWalls2",
+									"outterWalls3",
+									"outterWalls4"
+								],
+								"subfolders": [],
+								"name": "WallsOuter"
+							},
+							{
+								"items": [
+									"Counter",
+									"tableCounter"
+								],
+								"subfolders": [],
+								"name": "Furnitcher"
+							}
+						],
+						"name": "Level Objects"
+					}
+				],
+				"name": "Taylor"
 			}
 		]
 	},
