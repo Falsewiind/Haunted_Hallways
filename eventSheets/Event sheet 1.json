@@ -23,9 +23,9 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "proBarMax",
+			"name": "testBarMax",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "60",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -33,13 +33,23 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "proBarCur",
+			"name": "testBarCur",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 248237523412118
+		},
+		{
+			"eventType": "variable",
+			"name": "gameTimer",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 945910998393971
 		},
 		{
 			"eventType": "group",
@@ -329,7 +339,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "Hud checker"
+					"text": "Hud checker / enter"
 				},
 				{
 					"eventType": "block",
@@ -371,7 +381,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "proBar",
+							"objectClass": "testBar",
 							"sid": 164675137773398,
 							"parameters": {
 								"visibility": "visible"
@@ -418,7 +428,7 @@
 									"objectClass": "System",
 									"sid": 151456998073101,
 									"parameters": {
-										"variable": "proBarCur",
+										"variable": "testBarCur",
 										"value": "1"
 									}
 								}
@@ -442,11 +452,15 @@
 							"objectClass": "proPresentTxt",
 							"sid": 890922718439939,
 							"parameters": {
-								"text": "proBarCur"
+								"text": "testBarCur"
 							}
 						}
 					],
 					"sid": 968645400212130
+				},
+				{
+					"eventType": "comment",
+					"text": "Hud Exit"
 				},
 				{
 					"eventType": "block",
@@ -480,7 +494,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "proBar",
+							"objectClass": "testBar",
 							"sid": 122073629431904,
 							"parameters": {
 								"visibility": "invisible"
@@ -490,6 +504,10 @@
 					"sid": 712048608823592
 				},
 				{
+					"eventType": "comment",
+					"text": "test checker"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -497,9 +515,9 @@
 							"objectClass": "System",
 							"sid": 995520202478876,
 							"parameters": {
-								"variable": "proBarCur",
+								"variable": "testBarCur",
 								"comparison": 0,
-								"value": "proBarMax"
+								"value": "testBarMax"
 							}
 						}
 					],
