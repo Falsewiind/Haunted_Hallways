@@ -1,0 +1,105 @@
+{
+	"name": "infoMenuButton",
+	"plugin-id": "Sprite",
+	"sid": 705068742038111,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 415,
+						"height": 255,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7723688,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9901960784313726,
+								0.01204819277108434,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 415,
+						"height": 255,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2513354,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.0036144578313253017,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 415,
+						"height": 255,
+						"originX": 0.4879518072289157,
+						"originY": 0.47843137254901963,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6458708,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								0.9921568627450981
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 259634410393786,
+				"name": "infoButton",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

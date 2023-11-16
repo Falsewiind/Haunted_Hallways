@@ -60,7 +60,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "camera"
+					"text": "Camera"
 				},
 				{
 					"eventType": "block",
@@ -166,7 +166,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "controls"
+					"text": "Controls"
 				},
 				{
 					"eventType": "block",
@@ -268,7 +268,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "running"
+					"text": "Running"
 				},
 				{
 					"eventType": "block",
@@ -303,7 +303,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "playerHand"
+					"text": "Hand"
 				},
 				{
 					"eventType": "block",
@@ -339,7 +339,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "hudEnter"
+					"text": "Hud checker / enter"
 				},
 				{
 					"eventType": "block",
@@ -460,7 +460,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "hudExit"
+					"text": "Hud Exit"
 				},
 				{
 					"eventType": "block",
@@ -505,7 +505,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "testChecker"
+					"text": "test checker"
 				},
 				{
 					"eventType": "block",
