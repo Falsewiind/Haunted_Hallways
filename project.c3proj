@@ -121,7 +121,12 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Sprite",
+			"Sprite2",
+			"Sprite3",
+			"Sprite4"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -176,13 +181,13 @@
 			{
 				"items": [
 					"3DCamera",
-					"Keyboard",
-					"Mouse"
+					"Keyboard"
 				],
 				"subfolders": [
 					{
 						"items": [
 							"Player",
+							"Mouse",
 							"playerHand"
 						],
 						"subfolders": [],
@@ -191,10 +196,7 @@
 					{
 						"items": [
 							"testTrig",
-							"testHud",
-							"testProTxt",
-							"proBar",
-							"winTxt"
+							"testHud"
 						],
 						"subfolders": [],
 						"name": "testMech"

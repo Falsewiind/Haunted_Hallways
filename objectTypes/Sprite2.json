@@ -1,7 +1,7 @@
 {
-	"name": "proBar",
+	"name": "Sprite2",
 	"plugin-id": "Sprite",
-	"sid": 472796648450593,
+	"sid": 191377996284248,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,13 +18,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7624484,
+						"imageSpriteId": 8281454,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 669152046072147,
+				"sid": 362008940052021,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
