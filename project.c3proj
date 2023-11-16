@@ -142,10 +142,7 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"Sprite",
-			"enemyDespawn"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -165,8 +162,7 @@
 					{
 						"items": [
 							"testTrig",
-							"testHud",
-							"testBar"
+							"testHud"
 						],
 						"subfolders": [],
 						"name": "testMech"

@@ -178,14 +178,14 @@
 						{
 							"id": "on-movement",
 							"objectClass": "Mouse",
-							"sid": 112594457255695
+							"sid": 126278575401529
 						}
 					],
 					"actions": [
 						{
 							"id": "rotate-camera",
 							"objectClass": "3DCamera",
-							"sid": 317581448119105,
+							"sid": 347875389779856,
 							"parameters": {
 								"rotate-x": "Mouse.MovementX / (11 - mouseSen)",
 								"rotate-y": "Mouse.MovementY / (11 - mouseSen)",
@@ -196,13 +196,13 @@
 						{
 							"id": "set-angle",
 							"objectClass": "Player",
-							"sid": 233653222027266,
+							"sid": 185574352515181,
 							"parameters": {
 								"angle": "3DCamera.CameraXRotation"
 							}
 						}
 					],
-					"sid": 861802486454624
+					"sid": 218457186126648
 				},
 				{
 					"eventType": "comment",
@@ -403,6 +403,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 955957490142669,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "deactivated"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 735305494323334,
@@ -416,31 +425,6 @@
 							"sid": 757476335912854,
 							"parameters": {
 								"opacity": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 602490322813750,
-							"parameters": {
-								"variable": "moveSpeed",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "proCurTxt",
-							"sid": 618842166187392,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 683973872216030,
-							"parameters": {
-								"seconds": "2"
 							}
 						},
 						{
@@ -458,6 +442,14 @@
 								"loop": "no",
 								"ping-pong": "no",
 								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "proCurTxt",
+							"sid": 968709286805094,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
@@ -541,26 +533,18 @@
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
+							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 960430017270068,
+							"sid": 956617821814509,
 							"parameters": {
-								"variable": "moveSpeed",
-								"value": "500"
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "activated"
 							}
 						},
 						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 418242880475072,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "testBar",
-							"sid": 122073629431904,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -798,7 +782,16 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 150507138660467,
+							"parameters": {
+								"layout": "loserLayout_AT"
+							}
+						}
+					],
 					"sid": 235582712342760
 				},
 				{
