@@ -142,7 +142,9 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Text2"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -285,7 +287,11 @@
 							"innerDoor_8",
 							"innerWindows_8",
 							"innerElevator_8",
-							"DoorPlaceholder"
+							"classDoor",
+							"classDoor_3",
+							"classDoor_7",
+							"classDoor_8",
+							"washroomDoor_3"
 						],
 						"subfolders": [],
 						"name": "InnerWalls"

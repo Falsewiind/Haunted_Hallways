@@ -1,14 +1,14 @@
 {
-	"name": "DoorPlaceholder",
+	"name": "classDoor_7",
 	"plugin-id": "Shape3D",
-	"sid": 983549334520228,
+	"sid": 212406748530770,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 276687177202283
+			"sid": 504163749123043
 		}
 	],
 	"effectTypes": [],
@@ -24,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5092891,
+						"imageSpriteId": 1732341,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -37,7 +37,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5789231,
+						"imageSpriteId": 9393969,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -50,7 +50,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7334843,
+						"imageSpriteId": 3994095,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -63,7 +63,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5855293,
+						"imageSpriteId": 1645616,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -71,24 +71,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 1,
+						"originX": 0,
 						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7324819,
-						"collisionPoly": {
-							"points": [
-								1,
-								1,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0
-							]
-						},
+						"imageSpriteId": 8343127,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -101,13 +89,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 1,
-						"imageSpriteId": 3124018,
+						"imageSpriteId": 2515633,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 917155758701507,
+				"sid": 498920301064327,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
