@@ -142,9 +142,7 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"Text2"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -157,10 +155,11 @@
 						"items": [
 							"Player",
 							"playerHand",
-							"handSprites"
+							"handSprites",
+							"holdingBanan"
 						],
 						"subfolders": [],
-						"name": "Player"
+						"name": "player"
 					},
 					{
 						"items": [
@@ -180,8 +179,11 @@
 					{
 						"items": [
 							"gameTimerTxt",
-							"proCurTxt",
-							"testCompleteTxt"
+							"testProTxt",
+							"testCompleteTxt",
+							"wifiProTxt",
+							"resetedRouterTxt",
+							"eatTxt"
 						],
 						"subfolders": [],
 						"name": "txt"
@@ -195,6 +197,24 @@
 						],
 						"subfolders": [],
 						"name": "monster"
+					},
+					{
+						"items": [
+							"wifiMech",
+							"routerUI",
+							"resetWifi"
+						],
+						"subfolders": [],
+						"name": "wifiMech"
+					},
+					{
+						"items": [
+							"bananaSplit",
+							"bananaSplitSprite",
+							"bananaSplitSprite2"
+						],
+						"subfolders": [],
+						"name": "bananaMech"
 					}
 				],
 				"name": "Thomas"

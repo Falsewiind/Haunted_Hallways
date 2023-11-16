@@ -33227,50 +33227,6 @@
 					}
 				},
 				{
-					"type": "Text2",
-					"properties": {
-						"text": "0.40 40\n0.85 45\n1.35  50\n1.90  55\n2.50  60\n3.15  65\n3.85  70\n4.60  75",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 33.10000000000001,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 702,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -690,
-						"y": 710,
-						"width": 200,
-						"height": 410,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "classDoor_3",
 					"properties": {
 						"shape": "box",
@@ -33643,6 +33599,115 @@
 							1
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "wifiMech",
+					"properties": {
+						"shape": "box",
+						"z-height": 15,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": true,
+						"face-left": true,
+						"face-right": true,
+						"face-top": true,
+						"face-bottom": true,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": -1,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 703,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1090,
+						"y": 2020,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bananaSplit",
+					"properties": {
+						"shape": "box",
+						"z-height": 4,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": false,
+						"face-left": true,
+						"face-right": false,
+						"face-top": false,
+						"face-bottom": false,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": 177464788851244,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 707,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1010,
+						"y": 720,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 2.530727415391778,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bananaSplitSprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 708,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -520,
+						"y": 230,
+						"width": 420,
+						"height": 272,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -41567,7 +41632,65 @@
 					}
 				},
 				{
-					"type": "proCurTxt",
+					"type": "routerUI",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 704,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 1060,
+						"height": 1060,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "holdingBanan",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 709,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 950,
+						"y": 990,
+						"width": 1035.1463414634147,
+						"height": 297.32142857142856,
+						"originX": 0.5,
+						"originY": 0.6054054054054054,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "testProTxt",
 					"properties": {
 						"text": "1",
 						"enable-bbcode": true,
@@ -41608,6 +41731,167 @@
 						],
 						"angle": 0,
 						"zElevation": 2
+					}
+				},
+				{
+					"type": "wifiProTxt",
+					"properties": {
+						"text": "1",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 702,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 780,
+						"y": 630,
+						"width": 370,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "eatTxt",
+					"properties": {
+						"text": "1",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 710,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 320,
+						"y": 760,
+						"width": 370,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 2
+					}
+				},
+				{
+					"type": "resetedRouterTxt",
+					"properties": {
+						"text": "Reseted Wifi",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 705,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 800,
+						"y": 990,
+						"width": 350,
+						"height": 50,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 3
+					}
+				},
+				{
+					"type": "resetWifi",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 706,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 980,
+						"y": 860,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 3
 					}
 				}
 			],
