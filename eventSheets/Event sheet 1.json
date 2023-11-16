@@ -142,6 +142,14 @@
 								"cam-z": "Player.ZElevation + 10",
 								"look-angle": "Player.Angle"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "deathsparkle",
+							"sid": 145292067676602,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 115467198406376
@@ -433,6 +441,42 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "deathsparkle",
+							"sid": 411709497514311,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 693400717570330,
+							"parameters": {
+								"audio-file": "deathSWORD",
+								"loop": "not-looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "deathsparkle",
+							"sid": 827564107669105,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 586821184604802,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",

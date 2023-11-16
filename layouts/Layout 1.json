@@ -33622,7 +33622,7 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 703,
+					"uid": 1338,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -33662,7 +33662,7 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 707,
+					"uid": 1334,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -33691,7 +33691,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 708,
+					"uid": 1339,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -41243,7 +41243,7 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 706,
+					"uid": 1340,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -41283,7 +41283,7 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 705,
+					"uid": 1333,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -41403,7 +41403,7 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 709,
+					"uid": 1337,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -41443,7 +41443,7 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 710,
+					"uid": 1336,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -42203,7 +42203,7 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 704,
+					"uid": 1335,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -63564,6 +63564,43 @@
 					}
 				},
 				{
+					"type": "deathsparkle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1350,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1.5
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 801.5399516168382,
+						"height": 339.92008419352834,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "testProTxt",
 					"properties": {
 						"text": "1",
@@ -63603,7 +63640,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 0.008583978010053839,
 						"zElevation": 2
 					}
 				},

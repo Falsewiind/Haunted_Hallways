@@ -257,7 +257,15 @@
 									"fadeIn2",
 									"bar",
 									"backbar",
-									"lockAni"
+									"lockAni",
+									"backdeath",
+									"backdeath2",
+									"deafMENU",
+									"death",
+									"deathani",
+									"deathfade",
+									"deathsparkle",
+									"RESTART"
 								],
 								"subfolders": [],
 								"name": "INFO"
@@ -634,6 +642,22 @@
 							"name": "soundscrate-switch-click-3-withBoom.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 493084653874538,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "deathBOOM.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 900572642013347,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "deathSWORD.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 398080138117149,
 							"file-info": {
 								"purpose": "none"
 							}

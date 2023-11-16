@@ -628,7 +628,13 @@
 					},
 					"uid": 846,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"effects": {
 						"GlowHorizontal": {
 							"isEnabled": true,
