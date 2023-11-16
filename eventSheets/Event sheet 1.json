@@ -22,6 +22,36 @@
 			"sid": 880019221108082
 		},
 		{
+			"eventType": "variable",
+			"name": "testBarMAX",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 925749121936915
+		},
+		{
+			"eventType": "variable",
+			"name": "testBarMIN",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 490373945037619
+		},
+		{
+			"eventType": "variable",
+			"name": "testBarCur",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 539830547438903
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement & Controls",
@@ -238,7 +268,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Running"
+					"text": "Running *inProgress"
 				},
 				{
 					"eventType": "block",
@@ -309,7 +339,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "Hud checker"
+					"text": "Hud Checker"
 				},
 				{
 					"eventType": "block",
@@ -333,6 +363,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 198063204591055,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 813348862981416,
@@ -341,16 +380,63 @@
 							}
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 321681817793254,
+							"id": "set-visible",
+							"objectClass": "progressBar",
+							"sid": 428880968467607,
 							"parameters": {
-								"variable": "moveSpeed",
-								"value": "0"
+								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 829013132129528
+					"sid": 829013132129528,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 593015134130086,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 667494572832508,
+									"parameters": {
+										"variable": "testBarCur",
+										"value": "10"
+									}
+								}
+							],
+							"sid": 703275360841704
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 967904543570466
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "winTxt2",
+							"sid": 309247913136465,
+							"parameters": {
+								"text": "\"%\""
+							}
+						}
+					],
+					"sid": 481982773836657
 				},
 				{
 					"eventType": "block",
@@ -366,15 +452,62 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 233580627479353,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "500"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 418242880475072,
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "progressBar",
+							"sid": 449873202797917,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 712048608823592
+				},
+				{
+					"eventType": "comment",
+					"text": "Adding Progress"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 330057163690010,
+							"parameters": {
+								"first-value": "testBarCur",
+								"comparison": 0,
+								"second-value": "testBarMAX"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "winTxt",
+							"sid": 603342832505025,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 831578104507048
 				}
 			],
 			"sid": 670857733042149
