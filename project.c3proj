@@ -64,13 +64,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -99,13 +92,6 @@
 		},
 		{
 			"type": "effect",
-			"id": "pixellate",
-			"name": "Pixellate",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "effect",
 			"id": "scanlines",
 			"name": "Scan lines",
 			"author": "Scirra",
@@ -122,8 +108,17 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
+<<<<<<< Updated upstream
 			"Text",
 			"Sprite"
+=======
+			"Sprite",
+			"Sprite2",
+			"3DShape",
+			"3DShape3",
+			"3DShape4",
+			"3DShape5"
+>>>>>>> Stashed changes
 		],
 		"subfolders": [
 			{
@@ -179,19 +174,13 @@
 			{
 				"items": [
 					"3DCamera",
-					"Keyboard",
-					"Mouse",
-					"winTxt",
-					"proCurTxt",
-					"testCompleteTxt",
-					"gameoverTxt",
-					"gameTimerTxt",
-					"deathTrig"
+					"Keyboard"
 				],
 				"subfolders": [
 					{
 						"items": [
 							"Player",
+							"Mouse",
 							"playerHand"
 						],
 						"subfolders": [],
@@ -200,8 +189,7 @@
 					{
 						"items": [
 							"testTrig",
-							"testHud",
-							"testBar"
+							"testHud"
 						],
 						"subfolders": [],
 						"name": "testMech"
@@ -234,33 +222,12 @@
 								"name": "MENU"
 							},
 							{
-								"items": [
-									"CONTROLS",
-									"back",
-									"a",
-									"d",
-									"E",
-									"s",
-									"w",
-									"mouse2",
-									"CONTROLTEXT",
-									"fadeIn2"
-								],
+								"items": [],
 								"subfolders": [],
 								"name": "INFO"
 							},
 							{
-								"items": [
-									"teamtitle",
-									"names",
-									"fadeIn3",
-									"anthony",
-									"subtitle",
-									"adam",
-									"tay",
-									"thomas",
-									"isis"
-								],
+								"items": [],
 								"subfolders": [],
 								"name": "TEAM"
 							}
@@ -271,31 +238,135 @@
 				"name": "Adam"
 			},
 			{
-				"items": [],
+				"items": [
+					"whiteBoard",
+					"projextor",
+					"whiteBoard2"
+				],
 				"subfolders": [
 					{
 						"items": [
-							"innerWalls1_1",
-							"innerWalls1_2",
-							"innerWalls1_3",
-							"innerWalls1_4",
-							"innerWalls1_5",
-							"innerWalls1_6",
-							"innerWalls1_7",
-							"innerWalls1_8"
+							"deskTop9"
 						],
-						"subfolders": [],
-						"name": "InnerWalls"
+						"subfolders": [
+							{
+								"items": [
+									"deskTop11",
+									"deskLeg_M_02",
+									"deskLeg_R_02",
+									"deskLeg_L_02"
+								],
+								"subfolders": [],
+								"name": "deskTipped_02"
+							},
+							{
+								"items": [
+									"deskLeg_M_01",
+									"deskLeg_L_01",
+									"deskLeg_R_01",
+									"deskTop7"
+								],
+								"subfolders": [],
+								"name": "Desk tipped 1"
+							},
+							{
+								"items": [
+									"computerScreen_tipped_01",
+									"computerScreen_tipped_02",
+									"computerScreen_floor_01",
+									"computerScreen_tipped_03"
+								],
+								"subfolders": [],
+								"name": "computerScreens"
+							},
+							{
+								"items": [
+									"computerScreen_01",
+									"deskLeg_L15",
+									"deskLeg_L16",
+									"deskLeg_L17",
+									"computerScreen_2"
+								],
+								"subfolders": [],
+								"name": "deskUpright_01"
+							}
+						],
+						"name": "Room 6"
 					},
 					{
-						"items": [
-							"3DShape"
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"deskLeg_L6",
+									"deskLeg_M7",
+									"deskLeg_L8",
+									"deskTop4"
+								],
+								"subfolders": [],
+								"name": "Desk_10_01"
+							},
+							{
+								"items": [
+									"deskLeg_L13",
+									"deskLeg_L14",
+									"deskTop6",
+									"deskLeg_L12"
+								],
+								"subfolders": [],
+								"name": "desk_10_02"
+							},
+							{
+								"items": [
+									"deskLeg_L10",
+									"deskLeg_L9",
+									"deskTop5",
+									"deskLeg_L11"
+								],
+								"subfolders": [],
+								"name": "Desk_10_03"
+							}
 						],
-						"subfolders": [],
-						"name": "Lighting"
+						"name": "Room 10"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"deskLeg_M2",
+									"deskLeg_R2",
+									"deskTop2",
+									"deskLeg_L4",
+									"deskLeg_L5",
+									"deskLeg_L2"
+								],
+								"subfolders": [],
+								"name": "Desk short"
+							},
+							{
+								"items": [
+									"deskLeg_R",
+									"deskLeg_L",
+									"deskLeg_M",
+									"deskTop"
+								],
+								"subfolders": [],
+								"name": "Desk_13_01"
+							},
+							{
+								"items": [
+									"deskTop3",
+									"deskLeg_L3"
+								],
+								"subfolders": [],
+								"name": "Desk_13_02"
+							}
+						],
+						"name": "Room 13"
 					}
 				],
-				"name": "Anthony"
+				"name": "Isis"
 			}
 		]
 	},
@@ -310,9 +381,7 @@
 			"Layout 1",
 			"mainLayout_AT",
 			"infoLayout_AT",
-			"teamLayout_AT",
-			"winLayout_AT",
-			"loserLayout_AT"
+			"teamLayout_AT"
 		],
 		"subfolders": []
 	},
@@ -321,9 +390,7 @@
 			"Event sheet 1",
 			"mainEvent_AT",
 			"infoEvent_AT",
-			"teamEvent_AT",
-			"winEvent_AT",
-			"loserEvent_AT"
+			"teamEvent_AT"
 		],
 		"subfolders": []
 	},
@@ -337,16 +404,7 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [
-				{
-					"name": "soundscrate-switch-click-3-withBoom.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 493084653874538,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": [
 				{
 					"items": [
@@ -362,14 +420,6 @@
 							"name": "soundscrate-switch-click-3.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 853623558207178,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "soundscrate-switch-click-3-withBoom2.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 493084653874538,
 							"file-info": {
 								"purpose": "none"
 							}
