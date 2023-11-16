@@ -121,11 +121,7 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"Text",
-			"Sprite",
-			"Sprite2"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -297,6 +293,141 @@
 					}
 				],
 				"name": "Anthony"
+			},
+			{
+				"items": [
+					"whiteBoard",
+					"projextor",
+					"whiteBoard2",
+					"3DShape3",
+					"3DShape4",
+					"3DShape5",
+					"Text"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"deskTop9"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"deskTop11",
+									"deskLeg_M_02",
+									"deskLeg_R_02",
+									"deskLeg_L_02"
+								],
+								"subfolders": [],
+								"name": "deskTipped_02"
+							},
+							{
+								"items": [
+									"deskLeg_M_01",
+									"deskLeg_L_01",
+									"deskLeg_R_01",
+									"deskTop7"
+								],
+								"subfolders": [],
+								"name": "Desk tipped 1"
+							},
+							{
+								"items": [
+									"computerScreen_tipped_01",
+									"computerScreen_tipped_02",
+									"computerScreen_floor_01",
+									"computerScreen_tipped_03"
+								],
+								"subfolders": [],
+								"name": "computerScreens"
+							},
+							{
+								"items": [
+									"computerScreen_01",
+									"deskLeg_L15",
+									"deskLeg_L16",
+									"deskLeg_L17",
+									"computerScreen_2"
+								],
+								"subfolders": [],
+								"name": "deskUpright_01"
+							}
+						],
+						"name": "Room 6"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"deskLeg_L6",
+									"deskLeg_M7",
+									"deskLeg_L8",
+									"deskTop4"
+								],
+								"subfolders": [],
+								"name": "Desk_10_01"
+							},
+							{
+								"items": [
+									"deskLeg_L13",
+									"deskLeg_L14",
+									"deskTop6",
+									"deskLeg_L12"
+								],
+								"subfolders": [],
+								"name": "desk_10_02"
+							},
+							{
+								"items": [
+									"deskLeg_L10",
+									"deskLeg_L9",
+									"deskTop5",
+									"deskLeg_L11"
+								],
+								"subfolders": [],
+								"name": "Desk_10_03"
+							}
+						],
+						"name": "Room 10"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"deskLeg_M2",
+									"deskLeg_R2",
+									"deskTop2",
+									"deskLeg_L4",
+									"deskLeg_L5",
+									"deskLeg_L2"
+								],
+								"subfolders": [],
+								"name": "Desk short"
+							},
+							{
+								"items": [
+									"deskLeg_R",
+									"deskLeg_L",
+									"deskLeg_M",
+									"deskTop"
+								],
+								"subfolders": [],
+								"name": "Desk_13_01"
+							},
+							{
+								"items": [
+									"deskTop3",
+									"deskLeg_L3"
+								],
+								"subfolders": [],
+								"name": "Desk_13_02"
+							}
+						],
+						"name": "Room 13"
+					}
+				],
+				"name": "Isis"
 			}
 		]
 	},
@@ -338,16 +469,7 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [
-				{
-					"name": "soundscrate-switch-click-3-withBoom.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 493084653874538,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": [
 				{
 					"items": [
@@ -369,6 +491,14 @@
 						},
 						{
 							"name": "soundscrate-switch-click-3-withBoom2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 493084653874538,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-switch-click-3-withBoom.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 493084653874538,
 							"file-info": {
