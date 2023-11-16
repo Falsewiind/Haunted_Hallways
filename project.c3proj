@@ -121,7 +121,9 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Text"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -307,7 +309,9 @@
 			"Layout 1",
 			"mainLayout_AT",
 			"infoLayout_AT",
-			"teamLayout_AT"
+			"teamLayout_AT",
+			"winLayout_AT",
+			"loserLayout_AT"
 		],
 		"subfolders": []
 	},
@@ -316,7 +320,9 @@
 			"Event sheet 1",
 			"mainEvent_AT",
 			"infoEvent_AT",
-			"teamEvent_AT"
+			"teamEvent_AT",
+			"winEvent_AT",
+			"loserEvent_AT"
 		],
 		"subfolders": []
 	},

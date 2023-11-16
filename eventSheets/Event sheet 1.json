@@ -751,57 +751,15 @@
 					],
 					"actions": [
 						{
-							"id": "set-visible",
-							"objectClass": "gameoverTxt",
-							"sid": 730468101726241,
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 493126733713663,
 							"parameters": {
-								"visibility": "visible"
+								"layout": "loserLayout_AT"
 							}
 						}
 					],
 					"sid": 583160921852655
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 224552248284324,
-							"parameters": {
-								"variable": "testComplete"
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 760698075509188,
-							"parameters": {
-								"variable": "gameComplete"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 216641005943279,
-							"parameters": {
-								"variable": "gameComplete"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "gameoverTxt",
-							"sid": 519752248980016,
-							"disabled": true,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 195706465218435
 				},
 				{
 					"eventType": "block",
@@ -887,11 +845,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-visible",
-							"objectClass": "winTxt",
-							"sid": 580385061844324,
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 636194266171758,
 							"parameters": {
-								"visibility": "visible"
+								"layout": "winLayout_AT"
 							}
 						}
 					],
