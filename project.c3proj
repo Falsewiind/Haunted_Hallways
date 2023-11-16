@@ -273,7 +273,19 @@
 							"innerWalls1_5",
 							"innerWalls1_6",
 							"innerWalls1_7",
-							"innerWalls1_8"
+							"innerWalls1_8",
+							"innerWalls2_1",
+							"innerWalls2_2",
+							"innerWalls2_3",
+							"innerWalls2_4",
+							"innerWalls2_5",
+							"innerWalls2_6",
+							"innerWalls2_7",
+							"innerWalls2_8",
+							"innerDoor_8",
+							"innerWindows_8",
+							"innerElevator_8",
+							"DoorPlaceholder"
 						],
 						"subfolders": [],
 						"name": "InnerWalls"
@@ -284,6 +296,42 @@
 						],
 						"subfolders": [],
 						"name": "Lighting"
+					},
+					{
+						"items": [
+							"outterWallswindow_1",
+							"outterWallswindow_2",
+							"outterWallswindow_3",
+							"outterWallswindow_4",
+							"outterWallswindow_5",
+							"outterWallswindow_6",
+							"outterWallswindow_7",
+							"outterWallswindow_8"
+						],
+						"subfolders": [],
+						"name": "OuterWalls"
+					},
+					{
+						"items": [
+							"floorWood_1",
+							"tiles_1",
+							"floorWood_2",
+							"floorWood_3",
+							"floorWood_4",
+							"floorWood_5",
+							"floorWood_6",
+							"floorWood_7",
+							"floorWood_8",
+							"tiles_2",
+							"tiles_3",
+							"tiles_4",
+							"tiles_5",
+							"tiles_6",
+							"tiles_7",
+							"tiles_8"
+						],
+						"subfolders": [],
+						"name": "Floor"
 					}
 				],
 				"name": "Anthony"
