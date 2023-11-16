@@ -174,15 +174,13 @@
 			{
 				"items": [
 					"3DCamera",
-					"Keyboard",
-					"Mouse",
-					"winTxt",
-					"winTxt2"
+					"Keyboard"
 				],
 				"subfolders": [
 					{
 						"items": [
 							"Player",
+							"Mouse",
 							"playerHand"
 						],
 						"subfolders": [],
@@ -191,8 +189,7 @@
 					{
 						"items": [
 							"testTrig",
-							"testHud",
-							"progressBar"
+							"testHud"
 						],
 						"subfolders": [],
 						"name": "testMech"
@@ -434,7 +431,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "scale-inner",
+		"fullscreenMode": "letterbox-integer-scale",
 		"fullscreenQuality": "low",
 		"viewportFit": "auto",
 		"backgroundColor": [
