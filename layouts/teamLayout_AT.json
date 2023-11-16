@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 877,
+					"uid": 853,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -44,7 +44,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 878,
+					"uid": 856,
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -96,7 +96,7 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 879,
+					"uid": 857,
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {

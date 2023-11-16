@@ -121,7 +121,12 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Sprite",
+			"Sprite2",
+			"Sprite3",
+			"Sprite4"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -356,7 +361,7 @@
 							}
 						},
 						{
-							"name": "soundscrate-switch-click-3-withBoom2.webm",
+							"name": "soundscrate-switch-click-3-withBoom.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 493084653874538,
 							"file-info": {
@@ -465,7 +470,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "scale-inner",
+		"fullscreenMode": "letterbox-integer-scale",
 		"fullscreenQuality": "low",
 		"viewportFit": "auto",
 		"backgroundColor": [
