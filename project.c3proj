@@ -179,7 +179,11 @@
 					"Keyboard",
 					"Mouse",
 					"winTxt",
-					"proPresentTxt"
+					"proCurTxt",
+					"testCompleteTxt",
+					"gameoverTxt",
+					"gameTimerTxt",
+					"deathTrig"
 				],
 				"subfolders": [
 					{
