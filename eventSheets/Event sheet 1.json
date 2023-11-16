@@ -22,6 +22,36 @@
 			"sid": 880019221108082
 		},
 		{
+			"eventType": "variable",
+			"name": "testBarMax",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 582766157572011
+		},
+		{
+			"eventType": "variable",
+			"name": "testBarCur",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 248237523412118
+		},
+		{
+			"eventType": "variable",
+			"name": "gameTimer",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 945910998393971
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement & Controls",
@@ -30,7 +60,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "Camera"
+					"text": "camera"
 				},
 				{
 					"eventType": "block",
@@ -136,7 +166,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Controls"
+					"text": "controls"
 				},
 				{
 					"eventType": "block",
@@ -238,7 +268,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Running"
+					"text": "running"
 				},
 				{
 					"eventType": "block",
@@ -273,7 +303,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Hand"
+					"text": "playerHand"
 				},
 				{
 					"eventType": "block",
@@ -309,7 +339,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "Hud checker"
+					"text": "hudEnter"
 				},
 				{
 					"eventType": "block",
@@ -333,24 +363,104 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 602490322813750,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
-							"sid": 813348862981416,
+							"sid": 442421687543097,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 321681817793254,
+							"id": "set-visible",
+							"objectClass": "testBar",
+							"sid": 164675137773398,
 							"parameters": {
-								"variable": "moveSpeed",
-								"value": "0"
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "proPresentTxt",
+							"sid": 618842166187392,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
 					"sid": 829013132129528
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "testHud",
+							"sid": 513001527729514
+						}
+					],
+					"actions": [],
+					"sid": 237141543601580,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 958883049058935,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 151456998073101,
+									"parameters": {
+										"variable": "testBarCur",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 529508231865681
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 821180781323152
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "proPresentTxt",
+							"sid": 890922718439939,
+							"parameters": {
+								"text": "testBarCur"
+							}
+						}
+					],
+					"sid": 968645400212130
+				},
+				{
+					"eventType": "comment",
+					"text": "hudExit"
 				},
 				{
 					"eventType": "block",
@@ -366,15 +476,67 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 960430017270068,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "500"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 418242880475072,
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testBar",
+							"sid": 122073629431904,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 712048608823592
+				},
+				{
+					"eventType": "comment",
+					"text": "testChecker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 995520202478876,
+							"parameters": {
+								"variable": "testBarCur",
+								"comparison": 0,
+								"value": "testBarMax"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "winTxt",
+							"sid": 788076388998651,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "proPresentTxt",
+							"sid": 538785567456647
+						}
+					],
+					"sid": 429528569364474
 				}
 			],
 			"sid": 670857733042149
