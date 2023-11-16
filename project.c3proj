@@ -143,8 +143,12 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
+<<<<<<< Updated upstream
 			"Sprite",
 			"enemyDespawn"
+=======
+			"Text"
+>>>>>>> Stashed changes
 		],
 		"subfolders": [
 			{
@@ -254,6 +258,15 @@
 								],
 								"subfolders": [],
 								"name": "TEAM"
+							},
+							{
+								"items": [
+									"backbar",
+									"bar",
+									"lockAni"
+								],
+								"subfolders": [],
+								"name": "HUD"
 							}
 						],
 						"name": "UIAssets_AT"

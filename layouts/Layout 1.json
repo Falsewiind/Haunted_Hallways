@@ -45026,22 +45026,51 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "testHud",
+					"type": "backbar",
 					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
+						"initially-visible": true,
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 820,
+					"uid": 886,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1021.7640329550869,
-						"y": 661.0133733772907,
-						"width": 1230,
-						"height": 1230,
+						"x": 960.70300259657,
+						"y": 399.9324945512852,
+						"width": 609.2236065234549,
+						"height": 25.349191096857574,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "backbar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 887,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960.1633125689121,
+						"y": 399.9324945512852,
+						"width": 609.2236065234549,
+						"height": 25.349191096857574,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -45067,8 +45096,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1615,
-						"y": 622.5,
+						"x": 1793,
+						"y": 511,
 						"width": 250,
 						"height": 753,
 						"originX": 0.5,
@@ -45084,6 +45113,53 @@
 					}
 				},
 				{
+<<<<<<< Updated upstream
+=======
+					"type": "winTxt",
+					"properties": {
+						"text": "winner",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 856,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 60,
+						"y": 399,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+>>>>>>> Stashed changes
 					"type": "proCurTxt",
 					"properties": {
 						"text": "",
@@ -45113,8 +45189,8 @@
 					"world": {
 						"x": 1530,
 						"y": 984,
-						"width": 200,
-						"height": 30,
+						"width": 184,
+						"height": 77,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -45155,8 +45231,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1138,
-						"y": 1030,
+						"x": 67,
+						"y": 447,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -45172,6 +45248,53 @@
 					}
 				},
 				{
+<<<<<<< Updated upstream
+=======
+					"type": "gameoverTxt",
+					"properties": {
+						"text": "LOSER HAHA, JUIMP!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 835,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 56,
+						"y": 356,
+						"width": 249.86581983674137,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+>>>>>>> Stashed changes
 					"type": "gameTimerTxt",
 					"properties": {
 						"text": "",
@@ -45216,6 +45339,7 @@
 					}
 				},
 				{
+<<<<<<< Updated upstream
 					"type": "enemyDespawn",
 					"properties": {
 						"text": "despawn",
@@ -45249,6 +45373,142 @@
 						"height": 170,
 						"originX": 0,
 						"originY": 0,
+=======
+					"type": "backbar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 884,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 959.0839325135968,
+						"y": 399.9324945512852,
+						"width": 607.0667621730997,
+						"height": 25.349191096857574,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "backbar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 885,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 959.0839325135968,
+						"y": 399.9324945512852,
+						"width": 607.0667621730997,
+						"height": 25.349191096857574,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 882,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960.886485150281,
+						"y": 399.78775964314235,
+						"width": 596.104043767004,
+						"height": 27.28668027044067,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "testHud",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 820,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 615,
+						"height": 344.4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockAni",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 883,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 966,
+						"y": 82,
+						"width": 676.0727889423645,
+						"height": 410.7947041383129,
+						"originX": 0.5,
+						"originY": 0.5,
+>>>>>>> Stashed changes
 						"color": [
 							1,
 							1,
