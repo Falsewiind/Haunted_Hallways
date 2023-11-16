@@ -64,8 +64,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -129,7 +143,8 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
-			"Sprite"
+			"Sprite",
+			"enemyDespawn"
 		],
 		"subfolders": [
 			{
@@ -165,11 +180,9 @@
 					},
 					{
 						"items": [
-							"gameoverTxt",
 							"gameTimerTxt",
 							"proCurTxt",
-							"testCompleteTxt",
-							"winTxt"
+							"testCompleteTxt"
 						],
 						"subfolders": [],
 						"name": "txt"

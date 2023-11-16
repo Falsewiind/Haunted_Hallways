@@ -11,9 +11,19 @@
 			"sid": 851274205625132
 		},
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 820923121979679
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 542487743150624
+		},
+		{
+			"behaviorId": "Car",
+			"name": "Car",
+			"sid": 424650732947864
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 625005892990257
 		}
 	],
 	"effectTypes": [],

@@ -25,7 +25,7 @@
 			"eventType": "variable",
 			"name": "testBarMax",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "60",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -55,7 +55,7 @@
 			"eventType": "variable",
 			"name": "gameLength",
 			"type": "number",
-			"initialValue": "15",
+			"initialValue": "500",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -773,16 +773,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "gameoverTxt",
-							"sid": 871593859657931,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 235582712342760
 				},
 				{
@@ -883,33 +874,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 417132599248376
-						}
-					],
-					"actions": [
-						{
-							"id": "move-to-object",
-							"objectClass": "monster",
-							"sid": 632561136377762,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"object": "Player",
-								"image-point": "0",
-								"mode": "direct"
-							}
-						}
-					],
-					"sid": 126372973903547
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-							"sid": 907326108270817,
+							"sid": 224047152578361,
 							"parameters": {
 								"object": "spawnTrig"
 							}
@@ -919,10 +886,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 916461822277556,
+							"sid": 544547591859235,
 							"parameters": {
 								"object-to-create": "monster",
-								"layer": "1",
+								"layer": "0",
 								"x": "monsterSpawnPoint.X",
 								"y": "monsterSpawnPoint.Y",
 								"create-hierarchy": false,
@@ -930,7 +897,31 @@
 							}
 						}
 					],
-					"sid": 616391426333066
+					"sid": 587557030924028
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 401203210921539
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "monster",
+							"sid": 753208805199472,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 727665551194597
 				}
 			],
 			"sid": 360876688352287
