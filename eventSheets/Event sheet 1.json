@@ -22,6 +22,36 @@
 			"sid": 880019221108082
 		},
 		{
+			"eventType": "variable",
+			"name": "proBarMax",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 578240771426801
+		},
+		{
+			"eventType": "variable",
+			"name": "proBarMin",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 859291787919148
+		},
+		{
+			"eventType": "variable",
+			"name": "proBarCur",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 873272653448490
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement & Controls",
@@ -333,6 +363,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 421469996191905,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 813348862981416,
@@ -341,16 +380,69 @@
 							}
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 321681817793254,
+							"id": "set-visible",
+							"objectClass": "proBar",
+							"sid": 299936992794087,
 							"parameters": {
-								"variable": "moveSpeed",
-								"value": "0"
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testProTxt",
+							"sid": 195565459393292,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
 					"sid": 829013132129528
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 672872346503249
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "testProTxt",
+							"sid": 643463869020780,
+							"parameters": {
+								"text": "\"proBarCur\""
+							}
+						}
+					],
+					"sid": 296200221709739
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 362202454975355,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 954179226699214,
+							"parameters": {
+								"variable": "proBarCur",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 735673713285089
 				},
 				{
 					"eventType": "block",
@@ -366,15 +458,58 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 532780685130735,
+							"parameters": {
+								"variable": "moveSpeed",
+								"value": "500"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "testHud",
 							"sid": 418242880475072,
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "proBar",
+							"sid": 100452931794112,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 712048608823592
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 899471160114637,
+							"parameters": {
+								"first-value": "proBarCur",
+								"comparison": 0,
+								"second-value": "proBarMax"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "winTxt",
+							"sid": 560755707598960,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 153238509935870
 				}
 			],
 			"sid": 670857733042149
