@@ -125,7 +125,8 @@
 			"Sprite",
 			"Sprite2",
 			"Sprite3",
-			"Sprite4"
+			"Sprite4",
+			"Sprite5"
 		],
 		"subfolders": [
 			{
@@ -361,7 +362,7 @@
 							}
 						},
 						{
-							"name": "soundscrate-switch-click-3-withBoom.webm",
+							"name": "soundscrate-switch-click-3-withBoom2.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 493084653874538,
 							"file-info": {
