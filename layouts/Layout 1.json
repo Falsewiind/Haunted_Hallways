@@ -45026,22 +45026,22 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "testHud",
+					"type": "backbar",
 					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
+						"initially-visible": true,
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 820,
+					"uid": 856,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1021.7640329550869,
-						"y": 661.0133733772907,
-						"width": 1230,
-						"height": 1230,
+						"x": 930,
+						"y": 380,
+						"width": 610,
+						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -45067,8 +45067,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1615,
-						"y": 622.5,
+						"x": 1570,
+						"y": 530,
 						"width": 250,
 						"height": 753,
 						"originX": 0.5,
@@ -45249,6 +45249,93 @@
 						"height": 170,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 886,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 932.5,
+						"y": 380,
+						"width": 600,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "testHud",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 820,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 930,
+						"y": 520,
+						"width": 615,
+						"height": 344.4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockAni",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 887,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 920,
+						"y": 520,
+						"width": 676.0727889423645,
+						"height": 410.7947041383129,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

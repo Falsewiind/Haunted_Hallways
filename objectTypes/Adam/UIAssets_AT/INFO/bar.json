@@ -1,7 +1,7 @@
 {
-	"name": "testHud",
+	"name": "bar",
 	"plugin-id": "Sprite",
-	"sid": 376541326402744,
+	"sid": 176726004365295,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,33 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 125,
-						"height": 70,
+						"width": 555,
+						"height": 21,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 418061,
-						"collisionPoly": {
-							"points": [
-								0.011033099297893681,
-								0,
-								1,
-								0.019332161687170474,
-								0.9869608826479438,
-								1,
-								0,
-								0.9771528998242531
-							]
-						},
+						"imageSpriteId": 6084198,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 510322677697886,
-				"name": "Animation 1",
+				"sid": 776077507774930,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
