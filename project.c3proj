@@ -156,7 +156,12 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Text2",
+			"bg2",
+			"bg",
+			"bg3"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -257,7 +262,6 @@
 									"PLAYbg",
 									"playMenuButton",
 									"teamMenuButton",
-									"temp_BG",
 									"pointer",
 									"fadeIn",
 									"Anthomis"

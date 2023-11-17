@@ -1156,6 +1156,24 @@
 						},
 						{
 							"id": "set-visible",
+							"objectClass": "DOWNLOADING",
+							"sid": 924518624276192,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "resetRouter",
+							"sid": 378209319136640,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "set-visible",
 							"objectClass": "handSprites",
 							"sid": 317043355947998,
 							"parameters": {
@@ -1189,6 +1207,24 @@
 							"sid": 559206477137012,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "resetRouter",
+							"sid": 848256314984604,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "DOWNLOADING",
+							"sid": 291790775179605,
+							"disabled": true,
+							"parameters": {
+								"from": "current-frame"
 							}
 						}
 					],
@@ -1269,11 +1305,35 @@
 							}
 						},
 						{
+							"id": "stop-animation",
+							"objectClass": "DOWNLOADING",
+							"sid": 991293702754399,
+							"disabled": true
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "routerUI",
 							"sid": 932158975317165,
 							"parameters": {
 								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DOWNLOADING",
+							"sid": 916838359433674,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "resetRouter",
+							"sid": 709132495779595,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"GlowHorizontal\""
 							}
 						},
 						{
@@ -1318,6 +1378,19 @@
 							"id": "destroy",
 							"objectClass": "routerTrig",
 							"sid": 570268293650635
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "DOWNLOADING",
+							"sid": 933632250454212,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "DOWNLOADING",
+							"sid": 761168914010211
 						},
 						{
 							"id": "destroy",

@@ -2,12 +2,45 @@
 	"name": "infoLayout_AT",
 	"layers": [
 		{
+			"name": "Layer 1",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 629570251046188,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "temp_BG",
+					"type": "bg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -15,14 +48,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 841,
+					"uid": 133,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 967.5786416280731,
-						"y": 548.3003167732181,
-						"width": 1935.2857751354104,
-						"height": 1096.7714650812463,
+						"x": 960,
+						"y": 540,
+						"width": 1920,
+						"height": 1080,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -345,8 +378,8 @@
 						}
 					},
 					"world": {
-						"x": 993.5786416280731,
-						"y": 704.3003167732181,
+						"x": 991,
+						"y": 688,
 						"width": 212.08494169128542,
 						"height": 334.4963845466582,
 						"originX": 0.5,
@@ -513,8 +546,8 @@
 						}
 					},
 					"world": {
-						"x": 764.5786416280731,
-						"y": 440.30031677321807,
+						"x": 761,
+						"y": 405,
 						"width": 445,
 						"height": 109,
 						"originX": 0,
@@ -571,8 +604,8 @@
 						}
 					},
 					"world": {
-						"x": 1344.5786416280732,
-						"y": 319.30031677321807,
+						"x": 1343,
+						"y": 303,
 						"width": 445,
 						"height": 109,
 						"originX": 0,
@@ -873,6 +906,79 @@
 						"y": 1653.3003167732181,
 						"width": 1968,
 						"height": 1099,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text2",
+					"properties": {
+						"text": "GAMEJAM - NOV 2023\nPOWERED BY CONSTRUCT 3",
+						"enable-bbcode": true,
+						"font": "monospace",
+						"size": 36,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 131,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 653,
+						"y": 962,
+						"width": 664,
+						"height": 321,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bg2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 132,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2251,
+						"y": 800,
+						"width": 600,
+						"height": 338,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

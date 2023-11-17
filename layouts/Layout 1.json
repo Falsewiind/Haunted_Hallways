@@ -57275,7 +57275,7 @@
 						"GlowHorizontal": {
 							"isEnabled": true,
 							"parameters": {
-								"intensity": 1
+								"intensity": 2
 							}
 						}
 					},
@@ -57301,15 +57301,15 @@
 					"properties": {
 						"text": "1",
 						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 50,
+						"font": "monospace",
+						"size": 285,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0.611764705882353,
+							0.9921568627450981,
+							0.22745098039215686,
 							1
 						],
 						"horizontal-alignment": "center",
@@ -57323,18 +57323,32 @@
 					"uid": 7,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pixellate": {
+							"isEnabled": true,
+							"parameters": {
+								"size": 6
+							}
+						}
+					},
 					"world": {
-						"x": 781.5,
-						"y": 496,
-						"width": 360,
-						"height": 80,
+						"x": 662,
+						"y": 340,
+						"width": 600,
+						"height": 540,
 						"originX": 0,
 						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 0.008583978010053839,
 						"zElevation": 2
@@ -57361,7 +57375,7 @@
 						}
 					},
 					"world": {
-						"x": 959.1413313185099,
+						"x": 959.641,
 						"y": 539.1148490705726,
 						"width": 417.40691560541944,
 						"height": 901.2194768753373,
