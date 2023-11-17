@@ -180,14 +180,12 @@
 					},
 					{
 						"items": [
-							"gameTimer",
-							"testProgress",
+							"gameTimerTxt",
+							"testProTxt",
 							"testCompleteTxt",
-							"routerProgress",
+							"wifiProTxt",
 							"resetedRouterTxt",
-							"eatTxt",
-							"introTimer",
-							"RNG"
+							"eatTxt"
 						],
 						"subfolders": [],
 						"name": "txt"
@@ -219,13 +217,6 @@
 						],
 						"subfolders": [],
 						"name": "bananaMech"
-					},
-					{
-						"items": [
-							"washroomTrig"
-						],
-						"subfolders": [],
-						"name": "washroomMech"
 					}
 				],
 				"name": "Thomas"
