@@ -779,6 +779,22 @@
 							}
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "bar",
+							"sid": 644265341298724,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "terminaloverlay",
+							"sid": 529032941682075,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-opacity",
 							"objectClass": "testHud",
 							"sid": 164955202660140,
@@ -788,14 +804,31 @@
 						},
 						{
 							"id": "tween-one-property",
+							"objectClass": "bar",
+							"sid": 803820086702187,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"bar\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "0.1",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-one-property",
 							"objectClass": "testHud",
-							"sid": 403845885463072,
+							"sid": 387045133121972,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"testHud\"",
 								"property": "offsetOpacity",
 								"end-value": "100",
-								"time": "1",
+								"time": "0.1",
 								"ease": "easeinoutsine",
 								"destroy-on-complete": "no",
 								"loop": "no",
@@ -846,6 +879,22 @@
 							"sid": 891106602179319,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bar",
+							"sid": 394866801690335,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "terminaloverlay",
+							"sid": 983278784173856,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						},
 						{
@@ -991,6 +1040,59 @@
 						}
 					],
 					"sid": 109429281054230
+				},
+				{
+					"eventType": "comment",
+					"text": "setting terminal animation and BG music"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 272637602836608
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "terminaloverlay",
+							"sid": 294255440657483,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "terminaloverlay",
+							"sid": 196896713181314,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bar",
+							"sid": 462502894202375,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 573796878813574,
+							"parameters": {
+								"audio-file": "soundscrate-dark-places",
+								"loop": "not-looping",
+								"volume": "-35",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 326987248615996
 				}
 			],
 			"sid": 602147805011192

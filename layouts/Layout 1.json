@@ -43190,6 +43190,46 @@
 						"angle": 6.028926324814767,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "bananaSplit",
+					"properties": {
+						"shape": "box",
+						"z-height": 15,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": true,
+						"face-left": true,
+						"face-right": true,
+						"face-top": true,
+						"face-bottom": true,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": -1,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 130,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1710,
+						"y": 270,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 908531790585005,
@@ -56903,7 +56943,13 @@
 					},
 					"uid": 886,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 955,
 						"y": 220,
@@ -56970,11 +57016,11 @@
 					"behaviors": {},
 					"world": {
 						"x": 960,
-						"y": 981.3333333333333,
-						"width": 980,
-						"height": 240,
+						"y": 770,
+						"width": 1898.139534883721,
+						"height": 650,
 						"originX": 0.5,
-						"originY": 0.4930555555555556,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -57036,11 +57082,11 @@
 					"behaviors": {},
 					"world": {
 						"x": 950,
-						"y": 990,
-						"width": 1035.1463414634147,
-						"height": 297.32142857142856,
+						"y": 780,
+						"width": 2200,
+						"height": 630,
 						"originX": 0.5,
-						"originY": 0.6054054054054054,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -57174,6 +57220,43 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "terminaloverlay",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Pixellate": {
+							"isEnabled": true,
+							"parameters": {
+								"size": 8
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 595,
+						"width": 1271.0987394673377,
+						"height": 552.9779872037002,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 1
 					}
 				},
 				{

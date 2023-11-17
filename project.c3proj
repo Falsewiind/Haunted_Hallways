@@ -700,7 +700,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "soundscrate-dark-places.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 660664838426905,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": [
 				{
 					"items": [
