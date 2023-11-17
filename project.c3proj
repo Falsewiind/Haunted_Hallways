@@ -143,7 +143,14 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
-			"3DShape6"
+			"washroomStall_7",
+			"washroomStall_8",
+			"SinkCounter",
+			"Tap",
+			"Sink",
+			"sinkTrig",
+			"TapObj",
+			"Router"
 		],
 		"subfolders": [
 			{
@@ -305,7 +312,8 @@
 			},
 			{
 				"items": [
-					"ExposureLevels"
+					"ExposureLevels",
+					"3DShape6"
 				],
 				"subfolders": [
 					{
