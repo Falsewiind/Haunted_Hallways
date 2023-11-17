@@ -120,6 +120,7 @@
 		},
 		{
 			"type": "effect",
+<<<<<<< Updated upstream
 			"id": "noise",
 			"name": "Noise",
 			"author": "Scirra",
@@ -127,6 +128,8 @@
 		},
 		{
 			"type": "effect",
+=======
+>>>>>>> Stashed changes
 			"id": "pixellate",
 			"name": "Pixellate",
 			"author": "Scirra",
@@ -186,15 +189,23 @@
 					},
 					{
 						"items": [
+<<<<<<< Updated upstream
 							"gameTimer",
+=======
+							"gameTimerTxt",
+>>>>>>> Stashed changes
 							"testProTxt",
 							"testCompleteTxt",
 							"wifiProTxt",
 							"resetedRouterTxt",
+<<<<<<< Updated upstream
 							"eatTxt",
 							"RNG",
 							"routerProgress",
 							"testProgress"
+=======
+							"eatTxt"
+>>>>>>> Stashed changes
 						],
 						"subfolders": [],
 						"name": "txt"
@@ -213,8 +224,12 @@
 						"items": [
 							"wifiMech",
 							"routerUI",
+<<<<<<< Updated upstream
 							"resetWifi",
 							"DOWNLOADING"
+=======
+							"resetWifi"
+>>>>>>> Stashed changes
 						],
 						"subfolders": [],
 						"name": "wifiMech"
@@ -277,6 +292,7 @@
 									"deathani",
 									"deathfade",
 									"deathsparkle",
+<<<<<<< Updated upstream
 									"RESTART",
 									"Q",
 									"shift",
@@ -289,6 +305,11 @@
 										"name": "wifi"
 									}
 								],
+=======
+									"RESTART"
+								],
+								"subfolders": [],
+>>>>>>> Stashed changes
 								"name": "INFO"
 							},
 							{
@@ -314,6 +335,7 @@
 			},
 			{
 				"items": [
+<<<<<<< Updated upstream
 					"ExposureLevels",
 					"3DShape6",
 					"Router"
@@ -451,11 +473,139 @@
 					"3DShape4",
 					"3DShape5",
 					"Text"
+=======
+					"ExposureLevels"
+>>>>>>> Stashed changes
 				],
 				"subfolders": [
 					{
 						"items": [
-							"deskTop9"
+							"innerWalls1_1",
+							"innerWalls1_2",
+							"innerWalls1_3",
+							"innerWalls1_4",
+							"innerWalls1_5",
+							"innerWalls1_6",
+							"innerWalls1_7",
+							"innerWalls1_8",
+							"innerWalls2_1",
+							"innerWalls2_2",
+							"innerWalls2_3",
+							"innerWalls2_4",
+							"innerWalls2_5",
+							"innerWalls2_6",
+							"innerWalls2_7",
+							"innerWalls2_8",
+							"innerDoor_8",
+							"innerWindows_8",
+							"innerElevator_8",
+							"classDoor",
+							"classDoor_3",
+							"classDoor_7",
+							"classDoor_8",
+							"washroomDoor_3"
+						],
+						"subfolders": [],
+						"name": "InnerWalls"
+					},
+					{
+						"items": [
+							"3DShape"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Ceiling_1",
+									"Ceiling_2",
+									"Ceiling_3",
+									"Ceiling_4",
+									"Ceiling_5",
+									"Ceiling_6",
+									"Ceiling_7",
+									"Ceiling_8",
+									"LightOff_1",
+									"LightOff_2",
+									"LightOff_4",
+									"LightOff_7",
+									"LightOff_8",
+									"LightOn"
+								],
+								"subfolders": [],
+								"name": "Ceiling"
+							}
+						],
+						"name": "Lighting"
+					},
+					{
+						"items": [
+							"outterWallswindow_1",
+							"outterWallswindow_2",
+							"outterWallswindow_3",
+							"outterWallswindow_4",
+							"outterWallswindow_5",
+							"outterWallswindow_6",
+							"outterWallswindow_7",
+							"outterWallswindow_8"
+						],
+						"subfolders": [],
+						"name": "OuterWalls"
+					},
+					{
+						"items": [
+							"floorWood_1",
+							"tiles_1",
+							"floorWood_2",
+							"floorWood_3",
+							"floorWood_4",
+							"floorWood_5",
+							"floorWood_6",
+							"floorWood_7",
+							"floorWood_8",
+							"tiles_2",
+							"tiles_3",
+							"tiles_4",
+							"tiles_5",
+							"tiles_6",
+							"tiles_7",
+							"tiles_8"
+						],
+						"subfolders": [],
+						"name": "Floor"
+					},
+					{
+						"items": [
+							"ChairArm",
+							"ChairCusion",
+							"ShelfLegs",
+							"Shelves",
+							"TableLeg",
+							"TableTop"
+						],
+						"subfolders": [],
+						"name": "Furniture"
+					}
+				],
+				"name": "Anthony"
+			},
+			{
+				"items": [
+					"whiteBoard",
+					"projextor",
+					"whiteBoard2",
+					"3DShape3",
+					"3DShape4",
+					"3DShape5",
+					"Text",
+					"3DShape6",
+					"3DShape7",
+					"3DShape8"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"deskTop9",
+							"deskTop10",
+							"deskTop13"
 						],
 						"subfolders": [
 							{
@@ -494,7 +644,8 @@
 									"deskLeg_L15",
 									"deskLeg_L16",
 									"deskLeg_L17",
-									"computerScreen_2"
+									"computerScreen_2",
+									"computerScreen_3"
 								],
 								"subfolders": [],
 								"name": "deskUpright_01"
@@ -520,7 +671,9 @@
 									"deskLeg_L13",
 									"deskLeg_L14",
 									"deskTop6",
-									"deskLeg_L12"
+									"deskLeg_L12",
+									"deskTop8",
+									"deskLeg_L18"
 								],
 								"subfolders": [],
 								"name": "desk_10_02"
@@ -548,7 +701,8 @@
 									"deskTop2",
 									"deskLeg_L4",
 									"deskLeg_L5",
-									"deskLeg_L2"
+									"deskLeg_L2",
+									"deskLeg_M3"
 								],
 								"subfolders": [],
 								"name": "Desk short"
@@ -558,7 +712,8 @@
 									"deskLeg_R",
 									"deskLeg_L",
 									"deskLeg_M",
-									"deskTop"
+									"deskTop",
+									"deskTop12"
 								],
 								"subfolders": [],
 								"name": "Desk_13_01"
@@ -622,7 +777,12 @@
 							{
 								"items": [
 									"Counter",
+<<<<<<< Updated upstream
 									"tableCounter"
+=======
+									"tableCounter",
+									"Counter2"
+>>>>>>> Stashed changes
 								],
 								"subfolders": [],
 								"name": "Furnitcher"

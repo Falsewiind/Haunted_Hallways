@@ -17,79 +17,103 @@
 			{
 				"frames": [
 					{
-						"width": 120,
-						"height": 120,
+						"width": 360,
+						"height": 65,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< Updated upstream
 						"imageSpriteId": 9165365,
+=======
+						"imageSpriteId": 5579038,
+>>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					},
 					{
-						"width": 120,
-						"height": 120,
+						"width": 360,
+						"height": 65,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< Updated upstream
 						"imageSpriteId": 7167965,
+=======
+						"imageSpriteId": 4604073,
+>>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					},
 					{
-						"width": 120,
-						"height": 120,
+						"width": 360,
+						"height": 65,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< Updated upstream
 						"imageSpriteId": 4187498,
+=======
+						"imageSpriteId": 5447128,
+>>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					},
 					{
-						"width": 120,
-						"height": 120,
+						"width": 360,
+						"height": 65,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< Updated upstream
 						"imageSpriteId": 4566911,
+=======
+						"imageSpriteId": 5606632,
+>>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					},
 					{
-						"width": 120,
-						"height": 120,
+						"width": 360,
+						"height": 65,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< Updated upstream
 						"imageSpriteId": 2859553,
+=======
+						"imageSpriteId": 5042234,
+>>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					},
 					{
-						"width": 120,
-						"height": 120,
+						"width": 360,
+						"height": 65,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< Updated upstream
 						"imageSpriteId": 6538884,
+=======
+						"imageSpriteId": 4271622,
+>>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

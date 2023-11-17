@@ -15,12 +15,21 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 841,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 967.5786416280731,
 						"y": 548.3003167732181,
+=======
+					"uid": 848,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 539,
+>>>>>>> Stashed changes
 						"width": 1935.2857751354104,
 						"height": 1096.7714650812463,
 						"originX": 0.5,
@@ -44,12 +53,21 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 842,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 937.5786416280731,
 						"y": 170.3003167732181,
+=======
+					"uid": 841,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 930,
+						"y": 161,
+>>>>>>> Stashed changes
 						"width": 1096,
 						"height": 272,
 						"originX": 0.5,
@@ -73,7 +91,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 843,
+=======
+					"uid": 842,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -85,8 +107,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 1776.5786416280732,
 						"y": 107.3003167732181,
+=======
+						"x": 1769,
+						"y": 98,
+>>>>>>> Stashed changes
 						"width": 275,
 						"height": 144,
 						"originX": 0.5,
@@ -110,11 +137,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 844,
+=======
+					"uid": 849,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
 							"properties": {
+<<<<<<< Updated upstream
 								"movement": "horizontal",
 								"wave": "sine",
 								"period": 2,
@@ -122,6 +154,15 @@
 								"period-offset": 0,
 								"period-offset-random": 0,
 								"magnitude": 5,
+=======
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 15,
+>>>>>>> Stashed changes
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -129,6 +170,15 @@
 						}
 					},
 					"effects": {
+<<<<<<< Updated upstream
+=======
+						"ScanLines": {
+							"isEnabled": true,
+							"parameters": {
+								"line-height": 2
+							}
+						},
+>>>>>>> Stashed changes
 						"GlowHorizontal": {
 							"isEnabled": true,
 							"parameters": {
@@ -137,8 +187,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 394.5786416280732,
 						"y": 473.3003167732181,
+=======
+						"x": 387,
+						"y": 692,
+>>>>>>> Stashed changes
 						"width": 142.1962082453157,
 						"height": 135.01458156625935,
 						"originX": 0.5,
@@ -162,11 +217,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 845,
+=======
+					"uid": 850,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
 							"properties": {
+<<<<<<< Updated upstream
 								"movement": "horizontal",
 								"wave": "sine",
 								"period": 2,
@@ -174,6 +234,15 @@
 								"period-offset": 0,
 								"period-offset-random": 0,
 								"magnitude": 5,
+=======
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 9,
+>>>>>>> Stashed changes
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -181,6 +250,15 @@
 						}
 					},
 					"effects": {
+<<<<<<< Updated upstream
+=======
+						"ScanLines": {
+							"isEnabled": true,
+							"parameters": {
+								"line-height": 2
+							}
+						},
+>>>>>>> Stashed changes
 						"GlowHorizontal": {
 							"isEnabled": true,
 							"parameters": {
@@ -189,8 +267,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 246.57864162807326,
 						"y": 612.3003167732181,
+=======
+						"x": 239,
+						"y": 831,
+>>>>>>> Stashed changes
 						"width": 142.3520515537135,
 						"height": 133.72465448985207,
 						"originX": 0.5,
@@ -214,11 +297,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 846,
+=======
+					"uid": 851,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
 							"properties": {
+<<<<<<< Updated upstream
 								"movement": "horizontal",
 								"wave": "sine",
 								"period": 2,
@@ -226,6 +314,15 @@
 								"period-offset": 0,
 								"period-offset-random": 0,
 								"magnitude": 5,
+=======
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 9,
+>>>>>>> Stashed changes
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -233,6 +330,15 @@
 						}
 					},
 					"effects": {
+<<<<<<< Updated upstream
+=======
+						"ScanLines": {
+							"isEnabled": true,
+							"parameters": {
+								"line-height": 2
+							}
+						},
+>>>>>>> Stashed changes
 						"GlowHorizontal": {
 							"isEnabled": true,
 							"parameters": {
@@ -241,8 +347,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 541.5786416280731,
 						"y": 612.3003167732181,
+=======
+						"x": 534,
+						"y": 831,
+>>>>>>> Stashed changes
 						"width": 142.3520515537135,
 						"height": 133.72465448985207,
 						"originX": 0.5,
@@ -266,11 +377,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 847,
+=======
+					"uid": 852,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
 							"properties": {
+<<<<<<< Updated upstream
 								"movement": "horizontal",
 								"wave": "sine",
 								"period": 2,
@@ -278,6 +394,15 @@
 								"period-offset": 0,
 								"period-offset-random": 0,
 								"magnitude": 5,
+=======
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 12,
+>>>>>>> Stashed changes
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -285,6 +410,15 @@
 						}
 					},
 					"effects": {
+<<<<<<< Updated upstream
+=======
+						"ScanLines": {
+							"isEnabled": true,
+							"parameters": {
+								"line-height": 2
+							}
+						},
+>>>>>>> Stashed changes
 						"GlowHorizontal": {
 							"isEnabled": true,
 							"parameters": {
@@ -293,8 +427,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 394.5786416280733,
 						"y": 611.3003167732181,
+=======
+						"x": 387,
+						"y": 830,
+>>>>>>> Stashed changes
 						"width": 142.3520515537135,
 						"height": 133.72465448985207,
 						"originX": 0.5,
@@ -318,7 +457,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 848,
+=======
+					"uid": 854,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -329,7 +472,11 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
+<<<<<<< Updated upstream
 								"magnitude": 75,
+=======
+								"magnitude": 55,
+>>>>>>> Stashed changes
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -345,10 +492,17 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 993.5786416280731,
 						"y": 704.3003167732181,
 						"width": 212.08494169128542,
 						"height": 334.4963845466582,
+=======
+						"x": 986,
+						"y": 763,
+						"width": 171.67175745609663,
+						"height": 270.7574698133068,
+>>>>>>> Stashed changes
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -370,18 +524,30 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 849,
+=======
+					"uid": 855,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
 							"properties": {
+<<<<<<< Updated upstream
 								"movement": "horizontal",
+=======
+								"movement": "size",
+>>>>>>> Stashed changes
 								"wave": "sine",
 								"period": 2,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
+<<<<<<< Updated upstream
 								"magnitude": 5,
+=======
+								"magnitude": 25,
+>>>>>>> Stashed changes
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -389,6 +555,15 @@
 						}
 					},
 					"effects": {
+<<<<<<< Updated upstream
+=======
+						"ScanLines": {
+							"isEnabled": true,
+							"parameters": {
+								"line-height": 2
+							}
+						},
+>>>>>>> Stashed changes
 						"GlowHorizontal": {
 							"isEnabled": true,
 							"parameters": {
@@ -397,10 +572,17 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 1575.5786416280732,
 						"y": 518.300316773218,
 						"width": 211.3205289044196,
 						"height": 200.64777491934785,
+=======
+						"x": 1568,
+						"y": 763,
+						"width": 237.84809380174968,
+						"height": 225.8355638117623,
+>>>>>>> Stashed changes
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -437,7 +619,11 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
+<<<<<<< Updated upstream
 					"uid": 850,
+=======
+					"uid": 843,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -455,8 +641,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 169.57864162807323,
 						"y": 310.3003167732181,
+=======
+						"x": 162,
+						"y": 506,
+>>>>>>> Stashed changes
 						"width": 445,
 						"height": 109,
 						"originX": 0,
@@ -495,7 +686,11 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
+<<<<<<< Updated upstream
 					"uid": 851,
+=======
+					"uid": 844,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -513,8 +708,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 764.5786416280731,
 						"y": 440.30031677321807,
+=======
+						"x": 757,
+						"y": 505,
+>>>>>>> Stashed changes
 						"width": 445,
 						"height": 109,
 						"originX": 0,
@@ -553,7 +753,11 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
+<<<<<<< Updated upstream
 					"uid": 852,
+=======
+					"uid": 845,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -571,8 +775,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 1344.5786416280732,
 						"y": 319.30031677321807,
+=======
+						"x": 1336,
+						"y": 506,
+>>>>>>> Stashed changes
 						"width": 445,
 						"height": 109,
 						"originX": 0,
@@ -596,7 +805,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 854,
+=======
+					"uid": 846,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -614,8 +827,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 992.5786416280731,
 						"y": 430.30031677321807,
+=======
+						"x": 985,
+						"y": 421,
+>>>>>>> Stashed changes
 						"width": 100.75462485151417,
 						"height": 171.8333031909434,
 						"originX": 0.5,
@@ -631,6 +849,7 @@
 					}
 				},
 				{
+<<<<<<< Updated upstream
 					"type": "CONTROLTEXT",
 					"properties": {
 						"text": "SPRINT",
@@ -851,6 +1070,8 @@
 					}
 				},
 				{
+=======
+>>>>>>> Stashed changes
 					"type": "fadeIn2",
 					"properties": {
 						"initially-visible": true,
@@ -859,7 +1080,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< Updated upstream
 					"uid": 1204,
+=======
+					"uid": 847,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {
 						"Tween": {
@@ -869,8 +1094,13 @@
 						}
 					},
 					"world": {
+<<<<<<< Updated upstream
 						"x": 973.578641628073,
 						"y": 1653.3003167732181,
+=======
+						"x": 966,
+						"y": 1643.5,
+>>>>>>> Stashed changes
 						"width": 1968,
 						"height": 1099,
 						"originX": 0.5,
