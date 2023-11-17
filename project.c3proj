@@ -106,8 +106,8 @@
 		},
 		{
 			"type": "effect",
-			"id": "exposure",
-			"name": "Exposure",
+			"id": "fogexponential",
+			"name": "Fog (exponential)",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -115,6 +115,13 @@
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "noise",
+			"name": "Noise",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -134,9 +141,9 @@
 		},
 		{
 			"type": "effect",
-			"id": "tint",
-			"name": "Tint",
-			"author": "Scirra",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
 			"bundled": false
 		}
 	],
