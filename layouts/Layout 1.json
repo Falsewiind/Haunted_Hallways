@@ -33509,46 +33509,6 @@
 					}
 				},
 				{
-					"type": "bananaSplit",
-					"properties": {
-						"shape": "box",
-						"z-height": 5,
-						"initially-visible": true,
-						"face-back": false,
-						"face-front": true,
-						"face-left": true,
-						"face-right": true,
-						"face-top": true,
-						"face-bottom": true,
-						"z-tiling-factor": 8,
-						"object-back": -1,
-						"object-front": -1,
-						"object-left": -1,
-						"object-right": -1,
-						"object-top": -1,
-						"object-bottom": -1
-					},
-					"uid": 131,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2290,
-						"y": 1360,
-						"width": 70,
-						"height": 70,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "bananaSplitSprite",
 					"properties": {
 						"initially-visible": true,
@@ -43228,6 +43188,46 @@
 							1
 						],
 						"angle": 6.028926324814767,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bananaSplit",
+					"properties": {
+						"shape": "box",
+						"z-height": 15,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": true,
+						"face-left": true,
+						"face-right": true,
+						"face-top": true,
+						"face-bottom": true,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": -1,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 130,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1710,
+						"y": 270,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -56891,7 +56891,7 @@
 				{
 					"type": "gameTimer",
 					"properties": {
-						"text": "test",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 60,
@@ -57223,138 +57223,6 @@
 					}
 				},
 				{
-					"type": "routerStatus",
-					"properties": {
-						"text": "Router: 30",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 130,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 40,
-						"y": 130,
-						"width": 770,
-						"height": 100,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "washroomStatus",
-					"properties": {
-						"text": "Washroom: 30",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 132,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 40,
-						"y": 210,
-						"width": 690,
-						"height": 100,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "snackStatus",
-					"properties": {
-						"text": "Snack: 30",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 133,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 40,
-						"y": 290,
-						"width": 700,
-						"height": 100,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "terminaloverlay",
 					"properties": {
 						"initially-visible": true,
@@ -57407,7 +57275,7 @@
 						"GlowHorizontal": {
 							"isEnabled": true,
 							"parameters": {
-								"intensity": 1
+								"intensity": 2
 							}
 						}
 					},
@@ -57433,15 +57301,15 @@
 					"properties": {
 						"text": "1",
 						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 50,
+						"font": "monospace",
+						"size": 285,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0.611764705882353,
+							0.9921568627450981,
+							0.22745098039215686,
 							1
 						],
 						"horizontal-alignment": "center",
@@ -57455,18 +57323,32 @@
 					"uid": 7,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pixellate": {
+							"isEnabled": true,
+							"parameters": {
+								"size": 6
+							}
+						}
+					},
 					"world": {
-						"x": 781.5,
-						"y": 496,
-						"width": 360,
-						"height": 80,
+						"x": 662,
+						"y": 340,
+						"width": 600,
+						"height": 540,
 						"originX": 0,
 						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 0.008583978010053839,
 						"zElevation": 2
@@ -57493,7 +57375,7 @@
 						}
 					},
 					"world": {
-						"x": 959.1413313185099,
+						"x": 959.641,
 						"y": 539.1148490705726,
 						"width": 417.40691560541944,
 						"height": 901.2194768753373,
