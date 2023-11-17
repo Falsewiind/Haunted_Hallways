@@ -142,7 +142,9 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"3DShape6"
+		],
 		"subfolders": [
 			{
 				"items": [
