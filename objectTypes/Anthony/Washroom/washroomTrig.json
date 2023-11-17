@@ -1,7 +1,7 @@
 {
-	"name": "Router",
+	"name": "washroomTrig",
 	"plugin-id": "Shape3D",
-	"sid": 259500612575261,
+	"sid": 822963773648287,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4061527,
+						"imageSpriteId": 5199100,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -31,7 +31,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7736576,
+						"imageSpriteId": 1355416,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -44,7 +44,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8927405,
+						"imageSpriteId": 219133,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -57,7 +57,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6727495,
+						"imageSpriteId": 4350084,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -70,7 +70,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2635566,
+						"imageSpriteId": 6117711,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -83,13 +83,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3151644,
+						"imageSpriteId": 5885580,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 529123875039592,
+				"sid": 376758999559511,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
