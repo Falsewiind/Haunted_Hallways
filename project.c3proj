@@ -142,16 +142,7 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"washroomStall_7",
-			"washroomStall_8",
-			"SinkCounter",
-			"Tap",
-			"Sink",
-			"sinkTrig",
-			"TapObj",
-			"Router"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -313,7 +304,8 @@
 			{
 				"items": [
 					"ExposureLevels",
-					"3DShape6"
+					"3DShape6",
+					"Router"
 				],
 				"subfolders": [
 					{
@@ -421,6 +413,19 @@
 						],
 						"subfolders": [],
 						"name": "Furniture"
+					},
+					{
+						"items": [
+							"Sink",
+							"SinkCounter",
+							"sinkTrig",
+							"Tap",
+							"TapObj",
+							"washroomStall_7",
+							"washroomStall_8"
+						],
+						"subfolders": [],
+						"name": "Washroom"
 					}
 				],
 				"name": "Anthony"

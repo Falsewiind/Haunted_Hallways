@@ -1,10 +1,16 @@
 {
-	"name": "sinkTrig",
+	"name": "washroomStall_7",
 	"plugin-id": "Shape3D",
-	"sid": 715597955532068,
+	"sid": 935484165017056,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 995915023419115
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6432804,
+						"imageSpriteId": 4264937,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -26,12 +32,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8371953,
+						"imageSpriteId": 1157130,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -39,12 +45,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 474415,
+						"imageSpriteId": 9443821,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -52,12 +58,12 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5731510,
+						"imageSpriteId": 4163830,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -65,12 +71,24 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 1,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 14341,
+						"imageSpriteId": 1344619,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -78,18 +96,18 @@
 					{
 						"width": 120,
 						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 6955572,
+						"exportQuality": 1,
+						"imageSpriteId": 4852535,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 380172690524440,
+				"sid": 406365385272883,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

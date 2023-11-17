@@ -1,7 +1,7 @@
 {
 	"name": "Tap",
 	"plugin-id": "Sprite",
-	"sid": 103767899352075,
+	"sid": 212996773464985,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2026757,
+						"imageSpriteId": 8381085,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -45,7 +45,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4401657,
+						"imageSpriteId": 3450553,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -72,7 +72,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9923391,
+						"imageSpriteId": 5714851,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -99,7 +99,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9084334,
+						"imageSpriteId": 3207406,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -126,7 +126,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6542110,
+						"imageSpriteId": 495431,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -146,7 +146,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 593006198461479,
+				"sid": 239045282743467,
 				"name": "Active",
 				"isLooping": true,
 				"isPingPong": false,
@@ -164,7 +164,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1609768,
+						"imageSpriteId": 5495449,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -184,7 +184,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 648936626545471,
+				"sid": 763547399838610,
 				"name": "Idle",
 				"isLooping": false,
 				"isPingPong": false,

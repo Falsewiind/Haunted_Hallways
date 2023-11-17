@@ -1,7 +1,7 @@
 {
 	"name": "Sink",
 	"plugin-id": "Sprite",
-	"sid": 835486512369706,
+	"sid": 553764334509801,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 1,
-						"imageSpriteId": 9880928,
+						"imageSpriteId": 2225964,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 952121787100519,
+				"sid": 430360919223389,
 				"name": "Idle",
 				"isLooping": false,
 				"isPingPong": false,
@@ -56,7 +56,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6097635,
+						"imageSpriteId": 9736135,
 						"collisionPoly": {
 							"points": [
 								0.4166666666666667,
@@ -83,7 +83,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3369785,
+						"imageSpriteId": 5654057,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -96,7 +96,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6834336,
+						"imageSpriteId": 6147986,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -109,7 +109,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2369782,
+						"imageSpriteId": 8706040,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -122,13 +122,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2531761,
+						"imageSpriteId": 6552436,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 529308983604788,
+				"sid": 143224374598923,
 				"name": "Active",
 				"isLooping": true,
 				"isPingPong": true,
@@ -146,7 +146,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8857699,
+						"imageSpriteId": 4841259,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -159,7 +159,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3695430,
+						"imageSpriteId": 9352036,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -172,7 +172,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6561202,
+						"imageSpriteId": 4695725,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -185,7 +185,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1181338,
+						"imageSpriteId": 1376319,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -198,7 +198,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1580042,
+						"imageSpriteId": 8040400,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -211,7 +211,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7342139,
+						"imageSpriteId": 8943018,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -224,13 +224,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9626828,
+						"imageSpriteId": 6370622,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 539395599517607,
+				"sid": 863007903939232,
 				"name": "Overflow",
 				"isLooping": false,
 				"isPingPong": false,

@@ -6750,7 +6750,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1760,
+						"x": 1770,
 						"y": 1040,
 						"width": 120,
 						"height": 120,
@@ -6830,7 +6830,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1760,
+						"x": 1770,
 						"y": 1160,
 						"width": 120,
 						"height": 120,
@@ -17035,7 +17035,7 @@
 						}
 					},
 					"world": {
-						"x": 610,
+						"x": 617.5,
 						"y": 1160,
 						"width": 120,
 						"height": 5,
@@ -19472,7 +19472,7 @@
 						}
 					},
 					"world": {
-						"x": 610,
+						"x": 617.5,
 						"y": 1040,
 						"width": 120,
 						"height": 5,
@@ -21869,7 +21869,7 @@
 						}
 					},
 					"world": {
-						"x": 620,
+						"x": 622.5,
 						"y": 1040,
 						"width": 120,
 						"height": 5,
@@ -21916,7 +21916,7 @@
 						}
 					},
 					"world": {
-						"x": 620,
+						"x": 622.5,
 						"y": 1160,
 						"width": 120,
 						"height": 5,
@@ -22480,7 +22480,7 @@
 						}
 					},
 					"world": {
-						"x": 1700,
+						"x": 1702.5,
 						"y": 1040,
 						"width": 120,
 						"height": 5,
@@ -22695,7 +22695,7 @@
 					},
 					"world": {
 						"x": 1400,
-						"y": 860,
+						"y": 862.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -22742,7 +22742,7 @@
 					},
 					"world": {
 						"x": 1640,
-						"y": 980,
+						"y": 977.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -22788,7 +22788,7 @@
 						}
 					},
 					"world": {
-						"x": 1700,
+						"x": 1702.5,
 						"y": 1160,
 						"width": 120,
 						"height": 5,
@@ -22836,7 +22836,7 @@
 					},
 					"world": {
 						"x": 1520,
-						"y": 860,
+						"y": 862.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -22955,8 +22955,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1644.1813495125746,
-						"y": 1038.9546743189858,
+						"x": 1640,
+						"y": 1040,
 						"width": 120,
 						"height": 120,
 						"originX": 0.5,
@@ -23478,7 +23478,7 @@
 					},
 					"world": {
 						"x": 1280,
-						"y": 860,
+						"y": 862.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -23712,7 +23712,7 @@
 						}
 					},
 					"world": {
-						"x": 1690,
+						"x": 1697.5,
 						"y": 1040,
 						"width": 120,
 						"height": 5,
@@ -23760,7 +23760,7 @@
 					},
 					"world": {
 						"x": 1640,
-						"y": 980,
+						"y": 982.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -23806,7 +23806,7 @@
 						}
 					},
 					"world": {
-						"x": 1690,
+						"x": 1697.5,
 						"y": 1160,
 						"width": 120,
 						"height": 5,
@@ -23854,7 +23854,7 @@
 					},
 					"world": {
 						"x": 920,
-						"y": 500,
+						"y": 498,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -23901,7 +23901,7 @@
 					},
 					"world": {
 						"x": 1160,
-						"y": 500,
+						"y": 497.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -23948,7 +23948,7 @@
 					},
 					"world": {
 						"x": 1280,
-						"y": 500,
+						"y": 497.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -23995,7 +23995,7 @@
 					},
 					"world": {
 						"x": 1400,
-						"y": 500,
+						"y": 497.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -24042,7 +24042,7 @@
 					},
 					"world": {
 						"x": 1520,
-						"y": 500,
+						"y": 497.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -24089,7 +24089,7 @@
 					},
 					"world": {
 						"x": 1640,
-						"y": 500,
+						"y": 497.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -24182,7 +24182,7 @@
 						}
 					},
 					"world": {
-						"x": 850,
+						"x": 858,
 						"y": 680,
 						"width": 120,
 						"height": 5,
@@ -24229,7 +24229,7 @@
 						}
 					},
 					"world": {
-						"x": 850,
+						"x": 858,
 						"y": 800,
 						"width": 120,
 						"height": 5,
@@ -25076,7 +25076,7 @@
 						}
 					},
 					"world": {
-						"x": 860,
+						"x": 862,
 						"y": 680,
 						"width": 120,
 						"height": 5,
@@ -25123,7 +25123,7 @@
 						}
 					},
 					"world": {
-						"x": 860,
+						"x": 862,
 						"y": 800,
 						"width": 120,
 						"height": 5,
@@ -25312,7 +25312,7 @@
 					},
 					"world": {
 						"x": 1280,
-						"y": 860,
+						"y": 857.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25359,7 +25359,7 @@
 					},
 					"world": {
 						"x": 1400,
-						"y": 860,
+						"y": 857.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25406,7 +25406,7 @@
 					},
 					"world": {
 						"x": 1520,
-						"y": 860,
+						"y": 857.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25452,7 +25452,7 @@
 						}
 					},
 					"world": {
-						"x": 1690,
+						"x": 1697.5,
 						"y": 560,
 						"width": 120,
 						"height": 5,
@@ -25499,7 +25499,7 @@
 						}
 					},
 					"world": {
-						"x": 1690,
+						"x": 1697.5,
 						"y": 680,
 						"width": 120,
 						"height": 5,
@@ -25546,7 +25546,7 @@
 						}
 					},
 					"world": {
-						"x": 1690,
+						"x": 1697.5,
 						"y": 800,
 						"width": 120,
 						"height": 5,
@@ -25593,7 +25593,7 @@
 						}
 					},
 					"world": {
-						"x": 1700,
+						"x": 1702.5,
 						"y": 560,
 						"width": 120,
 						"height": 5,
@@ -25640,7 +25640,7 @@
 						}
 					},
 					"world": {
-						"x": 1700,
+						"x": 1702.5,
 						"y": 680,
 						"width": 120,
 						"height": 5,
@@ -25687,7 +25687,7 @@
 						}
 					},
 					"world": {
-						"x": 1700,
+						"x": 1702.5,
 						"y": 800,
 						"width": 120,
 						"height": 5,
@@ -25735,7 +25735,7 @@
 					},
 					"world": {
 						"x": 1160,
-						"y": 500,
+						"y": 502.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25782,7 +25782,7 @@
 					},
 					"world": {
 						"x": 1280,
-						"y": 500,
+						"y": 502.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25829,7 +25829,7 @@
 					},
 					"world": {
 						"x": 1400,
-						"y": 500,
+						"y": 502.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25876,7 +25876,7 @@
 					},
 					"world": {
 						"x": 1520,
-						"y": 500,
+						"y": 502.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25923,7 +25923,7 @@
 					},
 					"world": {
 						"x": 1640,
-						"y": 500,
+						"y": 502.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -25970,7 +25970,7 @@
 					},
 					"world": {
 						"x": 920,
-						"y": 500,
+						"y": 502.5,
 						"width": 120,
 						"height": 5,
 						"originX": 0.5,
@@ -33538,7 +33538,7 @@
 						"face-bottom": true,
 						"z-tiling-factor": 8,
 						"object-back": -1,
-						"object-front": 835486512369706,
+						"object-front": 553764334509801,
 						"object-left": -1,
 						"object-right": -1,
 						"object-top": -1,
@@ -33546,7 +33546,14 @@
 					},
 					"uid": 2314,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1650,
 						"y": 1020,
@@ -33636,7 +33643,7 @@
 						"face-bottom": true,
 						"z-tiling-factor": 8,
 						"object-back": -1,
-						"object-front": 835486512369706,
+						"object-front": 553764334509801,
 						"object-left": -1,
 						"object-right": -1,
 						"object-top": -1,
@@ -33644,7 +33651,14 @@
 					},
 					"uid": 2317,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1650,
 						"y": 1100,
@@ -33676,7 +33690,7 @@
 						"face-bottom": true,
 						"z-tiling-factor": 8,
 						"object-back": -1,
-						"object-front": 835486512369706,
+						"object-front": 553764334509801,
 						"object-left": -1,
 						"object-right": -1,
 						"object-top": -1,
@@ -33684,7 +33698,14 @@
 					},
 					"uid": 2318,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1650,
 						"y": 1180,
@@ -33726,8 +33747,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1476.1309183919764,
-						"y": 1091.5127609206183,
+						"x": 1640,
+						"y": 1100,
 						"width": 120,
 						"height": 240,
 						"originX": 0.5,
@@ -40241,13 +40262,13 @@
 						"object-left": -1,
 						"object-right": -1,
 						"object-top": -1,
-						"object-bottom": 103767899352075
+						"object-bottom": 212996773464985
 					},
 					"uid": 2464,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1670,
+						"x": 1673,
 						"y": 1020,
 						"width": 60,
 						"height": 10,
@@ -40281,13 +40302,13 @@
 						"object-left": -1,
 						"object-right": -1,
 						"object-top": -1,
-						"object-bottom": 103767899352075
+						"object-bottom": 212996773464985
 					},
 					"uid": 2465,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1670,
+						"x": 1673,
 						"y": 1100,
 						"width": 60,
 						"height": 10,
@@ -40321,54 +40342,14 @@
 						"object-left": -1,
 						"object-right": -1,
 						"object-top": -1,
-						"object-bottom": 103767899352075
+						"object-bottom": 212996773464985
 					},
 					"uid": 2466,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1670,
+						"x": 1673,
 						"y": 1180,
-						"width": 60,
-						"height": 10,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 6
-					}
-				},
-				{
-					"type": "TapObj",
-					"properties": {
-						"shape": "box",
-						"z-height": 6,
-						"initially-visible": true,
-						"face-back": false,
-						"face-front": true,
-						"face-left": true,
-						"face-right": true,
-						"face-top": true,
-						"face-bottom": true,
-						"z-tiling-factor": 8,
-						"object-back": -1,
-						"object-front": -1,
-						"object-left": -1,
-						"object-right": -1,
-						"object-top": -1,
-						"object-bottom": 103767899352075
-					},
-					"uid": 2531,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1567.3538768676244,
-						"y": 1152.6727693066111,
 						"width": 60,
 						"height": 10,
 						"originX": 0.5,
