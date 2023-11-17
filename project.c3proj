@@ -292,7 +292,9 @@
 				"name": "Adam"
 			},
 			{
-				"items": [],
+				"items": [
+					"ExposureLevels"
+				],
 				"subfolders": [
 					{
 						"items": [
@@ -328,7 +330,28 @@
 						"items": [
 							"3DShape"
 						],
-						"subfolders": [],
+						"subfolders": [
+							{
+								"items": [
+									"Ceiling_1",
+									"Ceiling_2",
+									"Ceiling_3",
+									"Ceiling_4",
+									"Ceiling_5",
+									"Ceiling_6",
+									"Ceiling_7",
+									"Ceiling_8",
+									"LightOff_1",
+									"LightOff_2",
+									"LightOff_4",
+									"LightOff_7",
+									"LightOff_8",
+									"LightOn"
+								],
+								"subfolders": [],
+								"name": "Ceiling"
+							}
+						],
 						"name": "Lighting"
 					},
 					{
@@ -366,6 +389,18 @@
 						],
 						"subfolders": [],
 						"name": "Floor"
+					},
+					{
+						"items": [
+							"ChairArm",
+							"ChairCusion",
+							"ShelfLegs",
+							"Shelves",
+							"TableLeg",
+							"TableTop"
+						],
+						"subfolders": [],
+						"name": "Furniture"
 					}
 				],
 				"name": "Anthony"
