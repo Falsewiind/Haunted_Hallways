@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "bg2",
+					"type": "temp_BG",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -15,14 +15,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 135,
+					"uid": 877,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 960,
 						"y": 540,
-						"width": 1920,
-						"height": 1080,
+						"width": 1932.2857751354106,
+						"height": 1088.7714650812463,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -500,7 +500,7 @@
 				{
 					"type": "subtitle",
 					"properties": {
-						"text": "Level Designer",
+						"text": "Level Guy",
 						"enable-bbcode": true,
 						"font": "monospace",
 						"size": 22,
@@ -535,8 +535,8 @@
 					"world": {
 						"x": 386,
 						"y": 498,
-						"width": 254.54545454545462,
-						"height": 50.49752469181039,
+						"width": 200,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -585,10 +585,10 @@
 						}
 					},
 					"world": {
-						"x": 687,
-						"y": 784,
+						"x": 682,
+						"y": 791,
 						"width": 200,
-						"height": 43.12771730569565,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -833,7 +833,7 @@
 						"x": 1032,
 						"y": 498,
 						"width": 200,
-						"height": 43.12771730569565,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -885,7 +885,7 @@
 						"x": 1658,
 						"y": 501,
 						"width": 200,
-						"height": 40.98780306383839,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -901,7 +901,7 @@
 				{
 					"type": "subtitle",
 					"properties": {
-						"text": "Texture Designer",
+						"text": "Creature Summoner",
 						"enable-bbcode": true,
 						"font": "monospace",
 						"size": 22,
@@ -937,7 +937,7 @@
 						"x": 1381,
 						"y": 783,
 						"width": 315,
-						"height": 40.620192023179804,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [

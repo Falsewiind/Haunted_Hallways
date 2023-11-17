@@ -156,12 +156,7 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"Text2",
-			"bg2",
-			"bg",
-			"bg3"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -203,7 +198,10 @@
 							"eatTxt",
 							"RNG",
 							"routerProgress",
-							"testProgress"
+							"testProgress",
+							"routerStatus",
+							"washroomStatus",
+							"snackStatus"
 						],
 						"subfolders": [],
 						"name": "txt"
@@ -262,6 +260,7 @@
 									"PLAYbg",
 									"playMenuButton",
 									"teamMenuButton",
+									"temp_BG",
 									"pointer",
 									"fadeIn",
 									"Anthomis"

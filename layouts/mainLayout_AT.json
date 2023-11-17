@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "bg3",
+					"type": "temp_BG",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -15,14 +15,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 134,
+					"uid": 822,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 960,
-						"y": 540,
-						"width": 1920,
-						"height": 1080,
+						"x": 959,
+						"y": 538.5,
+						"width": 1932.2857751354106,
+						"height": 1088.7714650812463,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
