@@ -106,8 +106,8 @@
 		},
 		{
 			"type": "effect",
-			"id": "fogexponential",
-			"name": "Fog (exponential)",
+			"id": "exposure",
+			"name": "Exposure",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -115,13 +115,6 @@
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "noise",
-			"name": "Noise",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -141,15 +134,17 @@
 		},
 		{
 			"type": "effect",
-			"id": "vignette",
-			"name": "Vignette",
-			"author": "Brad Larson",
+			"id": "tint",
+			"name": "Tint",
+			"author": "Scirra",
 			"bundled": false
 		}
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"3DShape6"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -209,7 +204,8 @@
 						"items": [
 							"wifiMech",
 							"routerUI",
-							"resetWifi"
+							"resetWifi",
+							"DOWNLOADING"
 						],
 						"subfolders": [],
 						"name": "wifiMech"
@@ -272,9 +268,18 @@
 									"deathani",
 									"deathfade",
 									"deathsparkle",
-									"RESTART"
+									"RESTART",
+									"Q",
+									"shift",
+									"terminaloverlay"
 								],
-								"subfolders": [],
+								"subfolders": [
+									{
+										"items": [],
+										"subfolders": [],
+										"name": "wifi"
+									}
+								],
 								"name": "INFO"
 							},
 							{
@@ -328,9 +333,7 @@
 							"classDoor_3",
 							"classDoor_7",
 							"classDoor_8",
-							"washroomDoor_3",
-							"washroomStall_7",
-							"washroomStall_8"
+							"washroomDoor_3"
 						],
 						"subfolders": [],
 						"name": "InnerWalls"
@@ -406,22 +409,10 @@
 							"ShelfLegs",
 							"Shelves",
 							"TableLeg",
-							"TableTop",
-							"Router"
+							"TableTop"
 						],
 						"subfolders": [],
 						"name": "Furniture"
-					},
-					{
-						"items": [
-							"Sink",
-							"Tap",
-							"SinkCounter",
-							"TapObj",
-							"sinkTrig"
-						],
-						"subfolders": [],
-						"name": "Washroom"
 					}
 				],
 				"name": "Anthony"

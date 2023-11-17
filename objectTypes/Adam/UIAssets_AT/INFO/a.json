@@ -13,10 +13,6 @@
 	],
 	"effectTypes": [
 		{
-			"effectId": "scanlines",
-			"name": "ScanLines"
-		},
-		{
 			"effectId": "glowhorizontal",
 			"name": "GlowHorizontal"
 		}
@@ -34,6 +30,45 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 145024,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 99,
+						"height": 93,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1065807,
+						"collisionPoly": {
+							"points": [
+								0.13131313131313133,
+								0.010752688172043012,
+								0.8585858585858586,
+								0.010752688172043012,
+								0.9191919191919192,
+								0.043010752688172046,
+								0.9595959595959596,
+								0.08602150537634409,
+								0.98989898989899,
+								0.16129032258064516,
+								0.9090909090909091,
+								0.967741935483871,
+								0.8383838383838383,
+								1,
+								0.15151515151515152,
+								1,
+								0,
+								0.8494623655913979,
+								0,
+								0.15053763440860216,
+								0.030303030303030304,
+								0.08602150537634409
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

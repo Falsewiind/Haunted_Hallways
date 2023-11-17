@@ -7,104 +7,14 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 335600950325211
+					"sid": 986619460370918
 				}
 			],
 			"actions": [
 				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 709588800821500,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 434042745021268,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 736375356227522,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 274278494142694,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 672647755632793,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 223299929119252,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 358041445093698,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 432040649484701,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 895359540460800,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 294279503638357,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
 					"id": "set-cursor-style",
 					"objectClass": "Mouse",
-					"sid": 575579959805846,
+					"sid": 694396677662798,
 					"parameters": {
 						"cursor-style": "none"
 					}
@@ -112,7 +22,7 @@
 				{
 					"id": "set-position",
 					"objectClass": "fadeIn2",
-					"sid": 334265104842024,
+					"sid": 248945920157871,
 					"parameters": {
 						"x": "966",
 						"y": "540"
@@ -121,7 +31,7 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "fadeIn2",
-					"sid": 409661649057834,
+					"sid": 922212389454694,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fadeIn2\"",
@@ -136,7 +46,60 @@
 					}
 				}
 			],
-			"sid": 248184610120405
+			"sid": 942725700380963
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 291722583891645
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "a",
+					"sid": 875857841659789
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "s",
+					"sid": 176192417643826
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "d",
+					"sid": 521440880028422
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "w",
+					"sid": 319711739528761
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "E",
+					"sid": 170576606696317
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Q",
+					"sid": 599171548314624
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "shift",
+					"sid": 627700831230266
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "mouse2",
+					"sid": 276631654204428
+				}
+			],
+			"sid": 247196244958353
 		},
 		{
 			"eventType": "block",
@@ -144,21 +107,21 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 397810240877636
+					"sid": 727839436563894
 				}
 			],
 			"actions": [
 				{
 					"id": "set-position",
 					"objectClass": "pointer",
-					"sid": 888526715750966,
+					"sid": 643505065559176,
 					"parameters": {
 						"x": "Mouse.X",
 						"y": "Mouse.Y"
 					}
 				}
 			],
-			"sid": 571599430917509
+			"sid": 767082353897224
 		},
 		{
 			"eventType": "block",
@@ -166,7 +129,7 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 202356653759739,
+					"sid": 594390919689202,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked"
@@ -177,13 +140,13 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "pointer",
-					"sid": 163186159091056,
+					"sid": 282704879050105,
 					"parameters": {
 						"frame-number": "1"
 					}
 				}
 			],
-			"sid": 392216607168866
+			"sid": 459838938236432
 		},
 		{
 			"eventType": "block",
@@ -191,7 +154,7 @@
 				{
 					"id": "on-button-released",
 					"objectClass": "Mouse",
-					"sid": 688985773179344,
+					"sid": 223804185875903,
 					"parameters": {
 						"mouse-button": "left"
 					}
@@ -201,13 +164,13 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "pointer",
-					"sid": 230611604612862,
+					"sid": 528310670895322,
 					"parameters": {
 						"frame-number": "0"
 					}
 				}
 			],
-			"sid": 880911390329154
+			"sid": 568774602303151
 		},
 		{
 			"eventType": "block",
@@ -215,7 +178,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 560420704239166,
+					"sid": 360205655171204,
 					"parameters": {
 						"object": "back"
 					},
@@ -226,14 +189,14 @@
 				{
 					"id": "set-effect-enabled",
 					"objectClass": "back",
-					"sid": 335977761765928,
+					"sid": 507868658140900,
 					"parameters": {
 						"mode": "disable",
 						"effect": "\"GlowHorizontal\""
 					}
 				}
 			],
-			"sid": 929870837308121
+			"sid": 706455218553559
 		},
 		{
 			"eventType": "block",
@@ -241,7 +204,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 139575354404031,
+					"sid": 389395877610809,
 					"parameters": {
 						"object": "back"
 					}
@@ -251,14 +214,14 @@
 				{
 					"id": "set-effect-enabled",
 					"objectClass": "back",
-					"sid": 560627831745548,
+					"sid": 549310095369243,
 					"parameters": {
 						"mode": "enable",
 						"effect": "\"GlowHorizontal\""
 					}
 				}
 			],
-			"sid": 537919716740989
+			"sid": 456076182688253
 		},
 		{
 			"eventType": "block",
@@ -266,7 +229,7 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 144996179217939,
+					"sid": 614747199512804,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked"
@@ -275,7 +238,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 477774545959974,
+					"sid": 219253859335570,
 					"parameters": {
 						"object": "back"
 					}
@@ -285,7 +248,7 @@
 				{
 					"id": "set-effect-enabled",
 					"objectClass": "back",
-					"sid": 951040327571179,
+					"sid": 283725522980052,
 					"parameters": {
 						"mode": "enable",
 						"effect": "\"GlowHorizontal\""
@@ -294,7 +257,7 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "fadeIn2",
-					"sid": 520318762230759,
+					"sid": 479261857299235,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fadeIn2\"",
@@ -311,7 +274,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 623247649726424,
+					"sid": 527123924875884,
 					"parameters": {
 						"seconds": "0.6"
 					}
@@ -319,13 +282,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 771993878635887,
+					"sid": 562000832086732,
 					"parameters": {
 						"layout": "mainLayout_AT"
 					}
 				}
 			],
-			"sid": 364952509658760
+			"sid": 215100155565550
 		},
 		{
 			"eventType": "block",
@@ -333,388 +296,474 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 180980525841951,
+					"sid": 119634864694585,
 					"parameters": {
 						"key": 65
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 118772805185327,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 638611038473316,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 171500216989021
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 349850659900933,
-					"parameters": {
-						"key": 83
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 190712620515136,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 284117827377745,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 452651832429143
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 474636662309621,
-					"parameters": {
-						"key": 68
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 830403532008250,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 951954698606304,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 973266464814892
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 467491293919366,
-					"parameters": {
-						"key": 87
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 690992184093968,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 359601692215485,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 658105795351201
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 315809412622537,
-					"parameters": {
-						"key": 69
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 440135612084054,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 848000164875201,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 816689349893161
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Keyboard",
-					"sid": 163835943235979,
-					"parameters": {
-						"key": 65
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 213362170955225,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 809270292776797,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 364056379412371
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Keyboard",
-					"sid": 506772747172963,
-					"parameters": {
-						"key": 83
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 843967962218652,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 710504954549034,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 831695233985984
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Keyboard",
-					"sid": 352990453324554,
-					"parameters": {
-						"key": 68
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 278348496491200,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 549754234985998,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 809284915055601
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Keyboard",
-					"sid": 908765506244316,
-					"parameters": {
-						"key": 87
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 230867928066370,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 794590343517095,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 583268171600751
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Keyboard",
-					"sid": 959194912568660,
-					"parameters": {
-						"key": 69
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 135214310131480,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 927058576142393,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 802563428842424
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "mouse-button-is-down",
-					"objectClass": "Mouse",
-					"sid": 103372695145993,
-					"parameters": {
-						"mouse-button": "left"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation-frame",
-					"objectClass": "mouse2",
-					"sid": 803082463872597,
+					"objectClass": "a",
+					"sid": 303608799923930,
 					"parameters": {
 						"frame-number": "1"
 					}
 				}
 			],
-			"sid": 406701209978231
+			"sid": 561881171832105
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "mouse-button-is-down",
-					"objectClass": "Mouse",
-					"sid": 290112287192658,
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 645504982615110,
 					"parameters": {
-						"mouse-button": "left"
-					},
-					"isInverted": true
+						"key": 83
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation-frame",
-					"objectClass": "mouse2",
-					"sid": 754055287048381,
+					"objectClass": "s",
+					"sid": 774149668728552,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 384020698504359
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 522782109848507,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "d",
+					"sid": 532702284935462,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 918808785311194
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 605797932012540,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "w",
+					"sid": 868638185600284,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 279752984202299
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 591873419980426,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "E",
+					"sid": 128804769112932,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 502966554362951
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 863860897573280,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Q",
+					"sid": 198399896454956,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 839345663522912
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 588177658380900,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "shift",
+					"sid": 333763947488047,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 110918927946251
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 550150525165625,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "a",
+					"sid": 146380352193429,
 					"parameters": {
 						"frame-number": "0"
 					}
 				}
 			],
-			"sid": 449854768334176
+			"sid": 386974230520790
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 800405153949400,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "s",
+					"sid": 819790507371409,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 899557389592967
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 350296854885946,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "d",
+					"sid": 503497763157461,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 373332641270665
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 341525471368697,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "w",
+					"sid": 351552821200883,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 991987073357893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 118801803624697,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "E",
+					"sid": 544801500552130,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 261067568920139
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 209425692944469,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Q",
+					"sid": 525968601701008,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 253717470393714
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 957417250919020,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "shift",
+					"sid": 838875402061126,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 327226918692712
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mouse",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 629974803705991,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 387670240926085,
+							"parameters": {
+								"mouse-button": "right"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "mouse2",
+							"sid": 690575022918551,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 533447490619472
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 914340619046778
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 994996755551996,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "mouse2",
+							"sid": 921488288201711,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 616392587051896
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 786008841155642
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 165274453205051,
+							"parameters": {
+								"mouse-button": "right"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "mouse2",
+							"sid": 544709497205118,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 381428667801703
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 226234618080800
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 763650507090472,
+							"parameters": {
+								"mouse-button": "left"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 252046646517427,
+							"parameters": {
+								"mouse-button": "right"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "mouse2",
+							"sid": 988234788421908,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 629513637482104
+				}
+			],
+			"sid": 210340495642230
 		}
 	],
 	"sid": 400220891776537
