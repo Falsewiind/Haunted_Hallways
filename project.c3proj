@@ -156,14 +156,7 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"win",
-			"YOUSURVIVED",
-			"losefade",
-			"loseflash",
-			"lose",
-			"YOUFAILED"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -185,8 +178,7 @@
 					{
 						"items": [
 							"testTrig",
-							"testHud",
-							"introTimer"
+							"testHud"
 						],
 						"subfolders": [],
 						"name": "testMech"
@@ -201,9 +193,7 @@
 					{
 						"items": [
 							"gameTimer",
-							"testProTxt",
 							"testCompleteTxt",
-							"wifiProTxt",
 							"resetedRouterTxt",
 							"eatTxt",
 							"RNG",
@@ -225,9 +215,9 @@
 					},
 					{
 						"items": [
-							"wifiMech",
+							"routerTrig",
 							"routerUI",
-							"resetWifi",
+							"resetRouter",
 							"DOWNLOADING"
 						],
 						"subfolders": [],
@@ -247,7 +237,13 @@
 			},
 			{
 				"items": [
-					"Audio"
+					"Audio",
+					"lose",
+					"losefade",
+					"loseflash",
+					"win",
+					"YOUFAILED",
+					"YOUSURVIVED"
 				],
 				"subfolders": [
 					{
@@ -704,32 +700,7 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [
-				{
-					"name": "soundscrate-conflicting-thoughts.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 323082095895044,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "SoundsCrate-Electric_BLast.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 785344763847979,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "SoundsCrate-Electric_Boogie.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 944397252652035,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": [
 				{
 					"items": [
@@ -777,6 +748,30 @@
 							"name": "deathSWORD.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 398080138117149,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-conflicting-thoughts.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 323082095895044,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "SoundsCrate-Electric_BLast.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 785344763847979,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "SoundsCrate-Electric_Boogie.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 944397252652035,
 							"file-info": {
 								"purpose": "none"
 							}

@@ -1,7 +1,7 @@
 {
-	"name": "bananaSplit",
+	"name": "routerTrig",
 	"plugin-id": "Shape3D",
-	"sid": 211796903320744,
+	"sid": 756150385036212,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7433862,
+						"imageSpriteId": 2167853,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -31,7 +31,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7415367,
+						"imageSpriteId": 5337675,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -44,7 +44,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8666570,
+						"imageSpriteId": 1065882,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -57,7 +57,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3266436,
+						"imageSpriteId": 7142862,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -70,7 +70,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2781445,
+						"imageSpriteId": 7495682,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -83,13 +83,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5628959,
+						"imageSpriteId": 2437106,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 157534373284045,
+				"sid": 575719865796008,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
