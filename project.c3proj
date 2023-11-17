@@ -143,7 +143,7 @@
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
 		"items": [
-			"3DShape6"
+			"Text2"
 		],
 		"subfolders": [
 			{
@@ -157,11 +157,10 @@
 						"items": [
 							"Player",
 							"playerHand",
-							"handSprites",
-							"holdingBanan"
+							"handSprites"
 						],
 						"subfolders": [],
-						"name": "player"
+						"name": "Player"
 					},
 					{
 						"items": [
@@ -181,11 +180,8 @@
 					{
 						"items": [
 							"gameTimerTxt",
-							"testProTxt",
-							"testCompleteTxt",
-							"wifiProTxt",
-							"resetedRouterTxt",
-							"eatTxt"
+							"proCurTxt",
+							"testCompleteTxt"
 						],
 						"subfolders": [],
 						"name": "txt"
@@ -199,24 +195,6 @@
 						],
 						"subfolders": [],
 						"name": "monster"
-					},
-					{
-						"items": [
-							"wifiMech",
-							"routerUI",
-							"resetWifi"
-						],
-						"subfolders": [],
-						"name": "wifiMech"
-					},
-					{
-						"items": [
-							"bananaSplit",
-							"bananaSplitSprite",
-							"bananaSplitSprite2"
-						],
-						"subfolders": [],
-						"name": "bananaMech"
 					}
 				],
 				"name": "Thomas"
@@ -259,15 +237,7 @@
 									"fadeIn2",
 									"bar",
 									"backbar",
-									"lockAni",
-									"backdeath",
-									"backdeath2",
-									"deafMENU",
-									"death",
-									"deathani",
-									"deathfade",
-									"deathsparkle",
-									"RESTART"
+									"lockAni"
 								],
 								"subfolders": [],
 								"name": "INFO"
@@ -294,9 +264,7 @@
 				"name": "Adam"
 			},
 			{
-				"items": [
-					"ExposureLevels"
-				],
+				"items": [],
 				"subfolders": [
 					{
 						"items": [
@@ -332,28 +300,7 @@
 						"items": [
 							"3DShape"
 						],
-						"subfolders": [
-							{
-								"items": [
-									"Ceiling_1",
-									"Ceiling_2",
-									"Ceiling_3",
-									"Ceiling_4",
-									"Ceiling_5",
-									"Ceiling_6",
-									"Ceiling_7",
-									"Ceiling_8",
-									"LightOff_1",
-									"LightOff_2",
-									"LightOff_4",
-									"LightOff_7",
-									"LightOff_8",
-									"LightOn"
-								],
-								"subfolders": [],
-								"name": "Ceiling"
-							}
-						],
+						"subfolders": [],
 						"name": "Lighting"
 					},
 					{
@@ -391,18 +338,6 @@
 						],
 						"subfolders": [],
 						"name": "Floor"
-					},
-					{
-						"items": [
-							"ChairArm",
-							"ChairCusion",
-							"ShelfLegs",
-							"Shelves",
-							"TableLeg",
-							"TableTop"
-						],
-						"subfolders": [],
-						"name": "Furniture"
 					}
 				],
 				"name": "Anthony"
@@ -560,7 +495,8 @@
 									"innerWalls4",
 									"innerWindows",
 									"innerDoor",
-									"innerElevator"
+									"innerElevator",
+									"bathroomStall"
 								],
 								"subfolders": [],
 								"name": "WallsInner"
@@ -598,6 +534,15 @@
 								],
 								"subfolders": [],
 								"name": "Ceiling"
+							},
+							{
+								"items": [
+									"Sink",
+									"Mirror",
+									"Tap"
+								],
+								"subfolders": [],
+								"name": "BathroomStuff"
 							}
 						],
 						"name": "Level Objects"
@@ -679,22 +624,6 @@
 							"name": "soundscrate-switch-click-3-withBoom.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 493084653874538,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "deathBOOM.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 900572642013347,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "deathSWORD.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 398080138117149,
 							"file-info": {
 								"purpose": "none"
 							}
