@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "testBarMax",
+			"name": "testMax",
 			"type": "number",
 			"initialValue": "60",
 			"comment": "",
@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "testBarCur",
+			"name": "testCur",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -23,7 +23,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "gameTimer",
+			"name": "gameCur",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -33,13 +33,53 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "gameLength",
+			"name": "gameMax",
 			"type": "number",
 			"initialValue": "500",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 641309531664920
+		},
+		{
+			"eventType": "variable",
+			"name": "wifiCur",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 610063873173011
+		},
+		{
+			"eventType": "variable",
+			"name": "wifiMax",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 272843785794854
+		},
+		{
+			"eventType": "variable",
+			"name": "eatingCur",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 485569146927403
+		},
+		{
+			"eventType": "variable",
+			"name": "eatingMax",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 185989668817515
 		},
 		{
 			"eventType": "variable",
@@ -101,6 +141,14 @@
 								"cam-y": "Player.Y",
 								"cam-z": "Player.ZElevation + 10",
 								"look-angle": "Player.Angle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "deathsparkle",
+							"sid": 145292067676602,
+							"parameters": {
+								"visibility": "invisible"
 							}
 						}
 					],
@@ -372,195 +420,139 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Test Mechanic",
+			"title": "Player Status",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "enterUI"
+					"text": "death"
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 841759561634176,
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 783140891440009,
 							"parameters": {
-								"key": 69
-							}
-						},
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "playerHand",
-							"sid": 365627589243632,
-							"parameters": {
-								"object": "testTrig"
+								"object": "deathTrig"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 955957490142669,
-							"parameters": {
-								"group-name": "\"Player Movement & Controls\"",
-								"state": "deactivated"
-							}
-						},
-						{
 							"id": "set-visible",
-							"objectClass": "testHud",
-							"sid": 735305494323334,
+							"objectClass": "deathsparkle",
+							"sid": 411709497514311,
 							"parameters": {
 								"visibility": "visible"
 							}
 						},
 						{
-							"id": "set-opacity",
-							"objectClass": "testHud",
-							"sid": 757476335912854,
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 693400717570330,
 							"parameters": {
-								"opacity": "0"
+								"audio-file": "deathSWORD",
+								"loop": "not-looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
-							"id": "tween-one-property",
-							"objectClass": "testHud",
-							"sid": 640852249067906,
-							"behaviorType": "Tween",
+							"id": "start-animation",
+							"objectClass": "deathsparkle",
+							"sid": 827564107669105,
 							"parameters": {
-								"tags": "\"testHud\"",
-								"property": "offsetOpacity",
-								"end-value": "100",
-								"time": "1",
-								"ease": "easeinoutsine",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
+								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "proCurTxt",
-							"sid": 968709286805094,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 829013132129528
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-visible",
-							"objectClass": "testHud",
-							"sid": 513001527729514
-						}
-					],
-					"actions": [],
-					"sid": 237141543601580,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-x-seconds",
-									"objectClass": "System",
-									"sid": 958883049058935,
-									"parameters": {
-										"interval-seconds": "1.0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 151456998073101,
-									"parameters": {
-										"variable": "testBarCur",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 529508231865681
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 684153686460468
-								}
-							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "proCurTxt",
-									"sid": 873150774597517,
-									"parameters": {
-										"text": "testBarCur"
-									}
-								}
-							],
-							"sid": 180918322509010
-						}
-					]
-				},
-				{
-					"eventType": "comment",
-					"text": "exitUI"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 755804637805879,
-							"parameters": {
-								"key": 81
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
+							"id": "wait",
 							"objectClass": "System",
-							"sid": 956617821814509,
+							"sid": 586821184604802,
 							"parameters": {
-								"group-name": "\"Player Movement & Controls\"",
-								"state": "activated"
+								"seconds": "0.3"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "testHud",
-							"sid": 418242880475072,
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 325969818975144,
 							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "proCurTxt",
-							"sid": 495776158754833,
-							"parameters": {
-								"visibility": "invisible"
+								"layout": "death"
 							}
 						}
 					],
-					"sid": 712048608823592
+					"sid": 400699227669967
 				}
 			],
-			"sid": 670857733042149
+			"sid": 308220059401570
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Monster AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 754586289900880,
+							"parameters": {
+								"object": "spawnTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 258107518799123,
+							"parameters": {
+								"object-to-create": "monster",
+								"layer": "0",
+								"x": "monsterSpawnPoint.X",
+								"y": "monsterSpawnPoint.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 718643648542855
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 324001207480774
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "monster",
+							"sid": 537049064862234,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 328464032693791
+				}
+			],
+			"sid": 699740047775612
 		},
 		{
 			"eventType": "group",
@@ -591,7 +583,7 @@
 							"objectClass": "System",
 							"sid": 892705733324440,
 							"parameters": {
-								"variable": "gameTimer",
+								"variable": "gameCur",
 								"value": "1"
 							}
 						}
@@ -613,7 +605,7 @@
 							"objectClass": "gameTimerTxt",
 							"sid": 758641729572210,
 							"parameters": {
-								"text": "gameTimer"
+								"text": "gameCur"
 							}
 						}
 					],
@@ -627,9 +619,9 @@
 							"objectClass": "System",
 							"sid": 620082857695922,
 							"parameters": {
-								"first-value": "gameTimer",
+								"first-value": "gameCur",
 								"comparison": 0,
-								"second-value": "gameLength"
+								"second-value": "gameMax"
 							}
 						}
 					],
@@ -650,79 +642,6 @@
 						}
 					],
 					"sid": 739470072165481
-				},
-				{
-					"eventType": "comment",
-					"text": "test checker"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 622015111742526,
-							"parameters": {
-								"variable": "testBarCur",
-								"comparison": 0,
-								"value": "testBarMax"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 743006748382147,
-							"parameters": {
-								"variable": "testComplete",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 220734857147809
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 712095622849888,
-							"parameters": {
-								"variable": "testComplete"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "proCurTxt",
-							"sid": 916017997592265
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "testCompleteTxt",
-							"sid": 951979539747241,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 147879871437620,
-							"parameters": {
-								"seconds": "2"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "testCompleteTxt",
-							"sid": 486351500973542
-						}
-					],
-					"sid": 826633485178257
 				},
 				{
 					"eventType": "comment",
@@ -803,103 +722,774 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Player Status",
+			"title": "Test Mechanic",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "death"
+					"text": "enterUI"
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player",
-							"sid": 855299176162032,
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 662416130076602,
 							"parameters": {
-								"object": "deathTrig"
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 800135680480065,
+							"parameters": {
+								"object": "testTrig"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "go-to-layout",
+							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 636575505024529,
+							"sid": 657842163730779,
 							"parameters": {
-								"layout": "death"
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 846908111156309,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "testHud",
+							"sid": 878376978669363,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "testHud",
+							"sid": 327517065465779,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"testHud\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "1",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testProTxt",
+							"sid": 147562122412176,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 181061469565897
+					"sid": 347270319173191
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "testHud",
+							"sid": 653383377497456
+						}
+					],
+					"actions": [],
+					"sid": 716490863563075,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 392725783846602,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 159512037064217,
+									"parameters": {
+										"variable": "testCur",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 363858681852686
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 484589084769289
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "testProTxt",
+									"sid": 620090232061327,
+									"parameters": {
+										"text": "testCur"
+									}
+								}
+							],
+							"sid": 964328322588100
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "exitUI"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 730299236984856,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 771707256546257,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 375970041398217,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testProTxt",
+							"sid": 865322092179077,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 853198754887971
+				},
+				{
+					"eventType": "comment",
+					"text": "test checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 672798501092471,
+							"parameters": {
+								"variable": "testCur",
+								"comparison": 0,
+								"value": "testMax"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 541005414216514,
+							"parameters": {
+								"variable": "testComplete",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 916035298664792
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 728755903716913,
+							"parameters": {
+								"variable": "testComplete"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "testProTxt",
+							"sid": 582036365573167
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testCompleteTxt",
+							"sid": 723884781196742,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 441398301170229,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "testCompleteTxt",
+							"sid": 359279573325836
+						}
+					],
+					"sid": 257712971077995
 				}
 			],
-			"sid": 308964808868774
+			"sid": 199898308463523
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Monster AI",
+			"title": "IT Wifi",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "comment",
+					"text": "enterUI"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 825918406206138,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 419460436091075,
+							"parameters": {
+								"object": "wifiMech"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 257252536791208,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "routerUI",
+							"sid": 211095704062980,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "resetWifi",
+							"sid": 802170315978961,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 213665029596516
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 864152008307791,
+							"parameters": {
+								"key": 82
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "routerUI",
+							"sid": 780930888907564
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "wifiProTxt",
+							"sid": 986371759700612,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 432076935060958,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 180663833470984,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 935777553306344,
+									"parameters": {
+										"variable": "wifiCur",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 166738710432052
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 470739547775934
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "wifiProTxt",
+									"sid": 654981193300155,
+									"parameters": {
+										"text": "wifiCur"
+									}
+								}
+							],
+							"sid": 877721010375576
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "exitUI"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 877079867411825,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 491347886985807,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "routerUI",
+							"sid": 264010553238860,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "resetWifi",
+							"sid": 952166604987769,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 281979490166804
+				},
+				{
+					"eventType": "comment",
+					"text": "wifi checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 170064374994929,
+							"parameters": {
+								"first-value": "wifiCur",
+								"comparison": 0,
+								"second-value": "wifiMax"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "gameTimerTxt",
+							"sid": 792023556667331
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "wifiProTxt",
+							"sid": 864213600065360,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "resetedRouterTxt",
+							"sid": 819543188534955,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 617441667866412,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "resetedRouterTxt",
+							"sid": 552425584871223
+						}
+					],
+					"sid": 965089381531017
+				}
+			],
+			"sid": 971478902510263
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "BananaMech",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "picked up"
+				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-							"sid": 224047152578361,
+							"sid": 265732745154803,
 							"parameters": {
-								"object": "spawnTrig"
+								"object": "bananaSplit"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 544547591859235,
+							"id": "set-visible",
+							"objectClass": "handSprites",
+							"sid": 797637536205810,
 							"parameters": {
-								"object-to-create": "monster",
-								"layer": "0",
-								"x": "monsterSpawnPoint.X",
-								"y": "monsterSpawnPoint.Y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
+								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "holdingBanan",
+							"sid": 420607322229876,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "bananaSplit",
+							"sid": 656767917386354
 						}
 					],
-					"sid": 587557030924028
+					"sid": 337838157667570
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 401203210921539
+							"id": "is-visible",
+							"objectClass": "holdingBanan",
+							"sid": 351073844159249
 						}
 					],
 					"actions": [
 						{
-							"id": "move-to-object",
-							"objectClass": "monster",
-							"sid": 753208805199472,
-							"behaviorType": "MoveTo",
+							"id": "destroy",
+							"objectClass": "testTrig",
+							"sid": 601376930217419
+						},
+						{
+							"id": "destroy",
+							"objectClass": "wifiMech",
+							"sid": 202295465133167
+						}
+					],
+					"sid": 162183149614519,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "is eating"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Mouse",
+									"sid": 375821159927121,
+									"parameters": {
+										"mouse-button": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "holdingBanan",
+									"sid": 998022129826304,
+									"parameters": {
+										"animation": "\"Eat\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "eatTxt",
+									"sid": 661078858884100,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 581574074536109,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 710580701345475,
+											"parameters": {
+												"interval-seconds": "1.0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 988524118466988,
+											"parameters": {
+												"variable": "eatingCur",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 939028924536714
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 504235703232951
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "eatTxt",
+											"sid": 430491806354360,
+											"parameters": {
+												"text": "eatingCur"
+											}
+										}
+									],
+									"sid": 963262984243657
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-released",
+									"objectClass": "Mouse",
+									"sid": 562106447603861,
+									"parameters": {
+										"mouse-button": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "holdingBanan",
+									"sid": 659428261259305,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 436546725438943
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "done eating"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 477057000769883,
 							"parameters": {
-								"object": "Player",
-								"image-point": "0",
-								"mode": "direct"
+								"first-value": "eatingCur",
+								"comparison": 0,
+								"second-value": "eatingMax"
 							}
 						}
 					],
-					"sid": 727665551194597
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "handSprites",
+							"sid": 758212786152803,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "holdingBanan",
+							"sid": 483147709754166,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 751253637847360,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 808416490461413
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 558093634620416,
+									"parameters": {
+										"object-to-create": "testTrig",
+										"layer": "0",
+										"x": "1590",
+										"y": "590",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 876287285179471,
+									"parameters": {
+										"object-to-create": "wifiMech",
+										"layer": "0",
+										"x": "1090",
+										"y": "2020",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 872389202280434
+						}
+					]
 				}
 			],
-			"sid": 360876688352287
+			"sid": 753259542609842
 		}
 	],
 	"sid": 995596806820757
