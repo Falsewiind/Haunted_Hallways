@@ -149,7 +149,16 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"deskLeg_M3",
+			"deskLeg_L18",
+			"deskTop12",
+			"deskTop8",
+			"3DShape7",
+			"3DShape8",
+			"computerScreen_3",
+			"Counter2"
+		],
 		"subfolders": [
 			{
 				"items": [
