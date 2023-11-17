@@ -106,8 +106,8 @@
 		},
 		{
 			"type": "effect",
-			"id": "fogexponential",
-			"name": "Fog (exponential)",
+			"id": "exposure",
+			"name": "Exposure",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -115,13 +115,6 @@
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "noise",
-			"name": "Noise",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -141,15 +134,25 @@
 		},
 		{
 			"type": "effect",
-			"id": "vignette",
-			"name": "Vignette",
-			"author": "Brad Larson",
+			"id": "tint",
+			"name": "Tint",
+			"author": "Scirra",
 			"bundled": false
 		}
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"washroomStall_7",
+			"washroomStall_8",
+			"SinkCounter",
+			"Tap",
+			"Sink",
+			"sinkTrig",
+			"TapObj",
+			"Router",
+			"washroomTrig"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -171,7 +174,8 @@
 					{
 						"items": [
 							"testTrig",
-							"testHud"
+							"testHud",
+							"introTimer"
 						],
 						"subfolders": [],
 						"name": "testMech"
@@ -185,12 +189,15 @@
 					},
 					{
 						"items": [
-							"gameTimerTxt",
+							"gameTimer",
 							"testProTxt",
 							"testCompleteTxt",
 							"wifiProTxt",
 							"resetedRouterTxt",
-							"eatTxt"
+							"eatTxt",
+							"RNG",
+							"routerProgress",
+							"testProgress"
 						],
 						"subfolders": [],
 						"name": "txt"
@@ -311,8 +318,7 @@
 			{
 				"items": [
 					"ExposureLevels",
-					"3DShape6",
-					"Router"
+					"3DShape6"
 				],
 				"subfolders": [
 					{
@@ -420,19 +426,6 @@
 						],
 						"subfolders": [],
 						"name": "Furniture"
-					},
-					{
-						"items": [
-							"Sink",
-							"SinkCounter",
-							"sinkTrig",
-							"Tap",
-							"TapObj",
-							"washroomStall_7",
-							"washroomStall_8"
-						],
-						"subfolders": [],
-						"name": "Washroom"
 					}
 				],
 				"name": "Anthony"
