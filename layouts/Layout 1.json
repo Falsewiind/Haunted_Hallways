@@ -57748,27 +57748,41 @@
 	"nonworld-instances": [],
 	"effectTypes": [
 		{
-			"effectId": "exposure",
-			"name": "Exposure",
+			"effectId": "vignette",
+			"name": "Vignette",
 			"instance": {
 				"isEnabled": true,
 				"parameters": {
-					"exposure": 0
+					"start-radius": 0.6,
+					"end-radius": 0.75
 				}
 			}
 		},
 		{
-			"effectId": "tint",
-			"name": "Tint",
+			"effectId": "fogexponential",
+			"name": "Fogexponential",
 			"instance": {
 				"isEnabled": true,
 				"parameters": {
-					"color": [
-						1,
-						1,
-						1,
+					"fog-color": [
+						0.20784313725490197,
+						0.17254901960784313,
+						0.20784313725490197,
 						1
-					]
+					],
+					"fog-density": 0.01,
+					"near-dist": 10
+				}
+			}
+		},
+		{
+			"effectId": "noise",
+			"name": "Noise",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"intensity": 0.05,
+					"color": 0
 				}
 			}
 		}
