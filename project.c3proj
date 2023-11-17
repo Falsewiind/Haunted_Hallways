@@ -106,8 +106,8 @@
 		},
 		{
 			"type": "effect",
-			"id": "exposure",
-			"name": "Exposure",
+			"id": "fogexponential",
+			"name": "Fog (exponential)",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -115,6 +115,13 @@
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "noise",
+			"name": "Noise",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -134,17 +141,15 @@
 		},
 		{
 			"type": "effect",
-			"id": "tint",
-			"name": "Tint",
-			"author": "Scirra",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
 			"bundled": false
 		}
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"3DShape6"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -323,7 +328,9 @@
 							"classDoor_3",
 							"classDoor_7",
 							"classDoor_8",
-							"washroomDoor_3"
+							"washroomDoor_3",
+							"washroomStall_7",
+							"washroomStall_8"
 						],
 						"subfolders": [],
 						"name": "InnerWalls"
@@ -399,10 +406,22 @@
 							"ShelfLegs",
 							"Shelves",
 							"TableLeg",
-							"TableTop"
+							"TableTop",
+							"Router"
 						],
 						"subfolders": [],
 						"name": "Furniture"
+					},
+					{
+						"items": [
+							"Sink",
+							"Tap",
+							"SinkCounter",
+							"TapObj",
+							"sinkTrig"
+						],
+						"subfolders": [],
+						"name": "Washroom"
 					}
 				],
 				"name": "Anthony"

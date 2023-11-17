@@ -1490,6 +1490,98 @@
 				}
 			],
 			"sid": 753259542609842
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Washroom",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 463992280217556,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 548165911587440,
+							"parameters": {
+								"object": "sinkTrig"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Sink",
+							"sid": 714940729361086,
+							"parameters": {
+								"animation": "\"Active\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Sink",
+							"sid": 775578374330000,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Tap",
+							"sid": 899765142875425,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 925080702426107
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 561421610939116
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Sink",
+							"sid": 444928446043459,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Tap",
+							"sid": 315330178121151,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 457595888458695,
+					"disabled": true
+				}
+			],
+			"sid": 315504065648463
 		}
 	],
 	"sid": 995596806820757
