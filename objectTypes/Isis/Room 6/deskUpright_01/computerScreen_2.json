@@ -24,11 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-<<<<<<< Updated upstream
 						"imageSpriteId": 5998849,
-=======
-						"imageSpriteId": 7760718,
->>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -41,11 +37,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-<<<<<<< Updated upstream
 						"imageSpriteId": 4970446,
-=======
-						"imageSpriteId": 2405188,
->>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -58,11 +50,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-<<<<<<< Updated upstream
 						"imageSpriteId": 195206,
-=======
-						"imageSpriteId": 5131522,
->>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -75,11 +63,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-<<<<<<< Updated upstream
 						"imageSpriteId": 5025856,
-=======
-						"imageSpriteId": 981079,
->>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -92,28 +76,20 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-<<<<<<< Updated upstream
 						"imageSpriteId": 7595814,
-=======
-						"imageSpriteId": 3329331,
->>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					},
 					{
-						"width": 100,
-						"height": 100,
+						"width": 120,
+						"height": 120,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-<<<<<<< Updated upstream
 						"imageSpriteId": 6921278,
-=======
-						"imageSpriteId": 1058655,
->>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

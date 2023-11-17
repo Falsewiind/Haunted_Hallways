@@ -3,7 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-<<<<<<< Updated upstream
 			"name": "introTimer",
 			"type": "number",
 			"initialValue": "3",
@@ -15,63 +14,21 @@
 		{
 			"eventType": "variable",
 			"name": "gameTimer",
-=======
-			"name": "testMax",
-			"type": "number",
-			"initialValue": "60",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 582766157572011
-		},
-		{
-			"eventType": "variable",
-			"name": "testCur",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 248237523412118
-		},
-		{
-			"eventType": "variable",
-			"name": "gameCur",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 945910998393971
-		},
-		{
-			"eventType": "variable",
-			"name": "gameMax",
->>>>>>> Stashed changes
 			"type": "number",
 			"initialValue": "63",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-<<<<<<< Updated upstream
 			"sid": 658985838920710
 		},
 		{
 			"eventType": "variable",
 			"name": "testProgress",
-=======
-			"sid": 641309531664920
-		},
-		{
-			"eventType": "variable",
-			"name": "wifiCur",
->>>>>>> Stashed changes
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-<<<<<<< Updated upstream
 			"sid": 776540692436396
 		},
 		{
@@ -83,19 +40,6 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 502207175503126
-=======
-			"sid": 610063873173011
-		},
-		{
-			"eventType": "variable",
-			"name": "wifiMax",
-			"type": "number",
-			"initialValue": "10",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 272843785794854
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "variable",
@@ -105,7 +49,6 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-<<<<<<< Updated upstream
 			"sid": 570316956911772
 		},
 		{
@@ -141,43 +84,12 @@
 		{
 			"eventType": "variable",
 			"name": "sinkON",
-=======
-			"sid": 485569146927403
-		},
-		{
-			"eventType": "variable",
-			"name": "eatingMax",
-			"type": "number",
-			"initialValue": "3",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 185989668817515
-		},
-		{
-			"eventType": "variable",
-			"name": "testComplete",
->>>>>>> Stashed changes
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-<<<<<<< Updated upstream
 			"sid": 326333634635300
-=======
-			"sid": 756248052172861
-		},
-		{
-			"eventType": "variable",
-			"name": "gameComplete",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 796002394641917
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "group",
@@ -194,11 +106,7 @@
 					"comment": "",
 					"isStatic": false,
 					"isConstant": false,
-<<<<<<< Updated upstream
 					"sid": 483249779495076
-=======
-					"sid": 321608885741150
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "comment",
@@ -228,11 +136,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "deathsparkle",
-<<<<<<< Updated upstream
 							"sid": 938360677552998,
-=======
-							"sid": 145292067676602,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -292,22 +196,14 @@
 						{
 							"id": "on-movement",
 							"objectClass": "Mouse",
-<<<<<<< Updated upstream
 							"sid": 689380341145794
-=======
-							"sid": 126278575401529
->>>>>>> Stashed changes
 						}
 					],
 					"actions": [
 						{
 							"id": "rotate-camera",
 							"objectClass": "3DCamera",
-<<<<<<< Updated upstream
 							"sid": 539507662282598,
-=======
-							"sid": 673222226184614,
->>>>>>> Stashed changes
 							"parameters": {
 								"rotate-x": "Mouse.MovementX / mouseSen",
 								"rotate-y": "Mouse.MovementY / mouseSen",
@@ -318,21 +214,13 @@
 						{
 							"id": "set-angle",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 940052865858264,
-=======
-							"sid": 185574352515181,
->>>>>>> Stashed changes
 							"parameters": {
 								"angle": "3DCamera.CameraXRotation"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 834480500531005
-=======
-					"sid": 218457186126648
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "variable",
@@ -342,11 +230,7 @@
 					"comment": "",
 					"isStatic": false,
 					"isConstant": false,
-<<<<<<< Updated upstream
 					"sid": 300570991104779
-=======
-					"sid": 273369148686752
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "comment",
@@ -358,11 +242,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 							"sid": 652886247660113,
-=======
-							"sid": 139319768401111,
->>>>>>> Stashed changes
 							"parameters": {
 								"key": 87
 							}
@@ -372,21 +252,13 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 228557646817246,
-=======
-							"sid": 517820721225948,
->>>>>>> Stashed changes
 							"parameters": {
 								"distance": "550 * dt"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 239514186013967
-=======
-					"sid": 647983791615690
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -394,11 +266,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 							"sid": 978742807958176,
-=======
-							"sid": 682502039683014,
->>>>>>> Stashed changes
 							"parameters": {
 								"key": 65
 							}
@@ -408,22 +276,14 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 550434157871055,
-=======
-							"sid": 188352165124567,
->>>>>>> Stashed changes
 							"parameters": {
 								"angle": "Player.Angle - 90",
 								"distance": "250 * dt"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 576478570113026
-=======
-					"sid": 505423677572491
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -431,11 +291,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 							"sid": 289326743643513,
-=======
-							"sid": 518106722872490,
->>>>>>> Stashed changes
 							"parameters": {
 								"key": 83
 							}
@@ -445,21 +301,13 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 858355477617861,
-=======
-							"sid": 777632288500900,
->>>>>>> Stashed changes
 							"parameters": {
 								"distance": "-450 * dt"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 828999840990599
-=======
-					"sid": 141263006059888
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -467,11 +315,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 							"sid": 909997722833413,
-=======
-							"sid": 922649160360253,
->>>>>>> Stashed changes
 							"parameters": {
 								"key": 68
 							}
@@ -481,22 +325,14 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 938354525770091,
-=======
-							"sid": 705275275712638,
->>>>>>> Stashed changes
 							"parameters": {
 								"angle": "Player.Angle + 90",
 								"distance": "250 * dt"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 705292021742566
-=======
-					"sid": 664784528769819
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "comment",
@@ -518,21 +354,13 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 103534248138186,
-=======
-							"sid": 716909269288302,
->>>>>>> Stashed changes
 							"parameters": {
 								"distance": "350 * dt"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 193640089453525
-=======
-					"sid": 775827592844210
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -596,11 +424,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 140401274966515,
-=======
-							"sid": 783140891440009,
->>>>>>> Stashed changes
 							"parameters": {
 								"object": "deathTrig"
 							}
@@ -610,11 +434,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "deathsparkle",
-<<<<<<< Updated upstream
 							"sid": 329941569089080,
-=======
-							"sid": 411709497514311,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -622,11 +442,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-<<<<<<< Updated upstream
 							"sid": 444035795000680,
-=======
-							"sid": 693400717570330,
->>>>>>> Stashed changes
 							"parameters": {
 								"audio-file": "deathSWORD",
 								"loop": "not-looping",
@@ -638,11 +454,7 @@
 						{
 							"id": "start-animation",
 							"objectClass": "deathsparkle",
-<<<<<<< Updated upstream
 							"sid": 835811021341264,
-=======
-							"sid": 827564107669105,
->>>>>>> Stashed changes
 							"parameters": {
 								"from": "beginning"
 							}
@@ -650,11 +462,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 668536688865979,
-=======
-							"sid": 586821184604802,
->>>>>>> Stashed changes
 							"parameters": {
 								"seconds": "0.3"
 							}
@@ -662,27 +470,16 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 558455984296246,
-=======
-							"sid": 325969818975144,
->>>>>>> Stashed changes
 							"parameters": {
 								"layout": "death"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 971357472751290
 				}
 			],
 			"sid": 534628405952443
-=======
-					"sid": 400699227669967
-				}
-			],
-			"sid": 308220059401570
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "group",
@@ -697,11 +494,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 576364713233003,
-=======
-							"sid": 754586289900880,
->>>>>>> Stashed changes
 							"parameters": {
 								"object": "spawnTrig"
 							}
@@ -711,11 +504,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 480639304514318,
-=======
-							"sid": 258107518799123,
->>>>>>> Stashed changes
 							"parameters": {
 								"object-to-create": "monster",
 								"layer": "0",
@@ -726,11 +515,7 @@
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 604631246229394
-=======
-					"sid": 718643648542855
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -738,22 +523,14 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 706010980514359
-=======
-							"sid": 324001207480774
->>>>>>> Stashed changes
 						}
 					],
 					"actions": [
 						{
 							"id": "move-to-object",
 							"objectClass": "monster",
-<<<<<<< Updated upstream
 							"sid": 287907961020940,
-=======
-							"sid": 537049064862234,
->>>>>>> Stashed changes
 							"behaviorType": "MoveTo",
 							"parameters": {
 								"object": "Player",
@@ -762,17 +539,10 @@
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 970659240159595
 				}
 			],
 			"sid": 692833929565893
-=======
-					"sid": 328464032693791
-				}
-			],
-			"sid": 699740047775612
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "group",
@@ -783,7 +553,6 @@
 			"children": [
 				{
 					"eventType": "comment",
-<<<<<<< Updated upstream
 					"text": "on game start"
 				},
 				{
@@ -895,8 +664,6 @@
 				},
 				{
 					"eventType": "comment",
-=======
->>>>>>> Stashed changes
 					"text": "game timer"
 				},
 				{
@@ -905,11 +672,7 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 251263211777135,
-=======
-							"sid": 333674335323458,
->>>>>>> Stashed changes
 							"parameters": {
 								"interval-seconds": "1.0"
 							}
@@ -917,28 +680,16 @@
 					],
 					"actions": [
 						{
-<<<<<<< Updated upstream
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
 							"sid": 896894803959633,
 							"parameters": {
 								"variable": "gameTimer",
-=======
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 892705733324440,
-							"parameters": {
-								"variable": "gameCur",
->>>>>>> Stashed changes
 								"value": "1"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 615494637355298
-=======
-					"sid": 156271936222899
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -946,17 +697,12 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 939225440071141
-=======
-							"sid": 628445423957380
->>>>>>> Stashed changes
 						}
 					],
 					"actions": [
 						{
 							"id": "set-text",
-<<<<<<< Updated upstream
 							"objectClass": "gameTimer",
 							"sid": 489959584131926,
 							"parameters": {
@@ -965,16 +711,6 @@
 						}
 					],
 					"sid": 171746235850870
-=======
-							"objectClass": "gameTimerTxt",
-							"sid": 758641729572210,
-							"parameters": {
-								"text": "gameCur"
-							}
-						}
-					],
-					"sid": 914826693701579
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -982,25 +718,16 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 533824716203726,
 							"parameters": {
 								"first-value": "gameTimer",
 								"comparison": 0,
 								"second-value": "0"
-=======
-							"sid": 620082857695922,
-							"parameters": {
-								"first-value": "gameCur",
-								"comparison": 0,
-								"second-value": "gameMax"
->>>>>>> Stashed changes
 							}
 						}
 					],
 					"actions": [
 						{
-<<<<<<< Updated upstream
 							"id": "destroy",
 							"objectClass": "gameTimer",
 							"sid": 947232358758779
@@ -1016,23 +743,6 @@
 						}
 					],
 					"sid": 660510685638233
-=======
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 469688424535979,
-							"parameters": {
-								"variable": "gameComplete",
-								"value": "true"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "gameTimerTxt",
-							"sid": 253456780749062
-						}
-					],
-					"sid": 739470072165481
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "comment",
@@ -1044,30 +754,18 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 127938356518560,
 							"parameters": {
 								"variable": "finishedTest"
-=======
-							"sid": 514951465058950,
-							"parameters": {
-								"variable": "testComplete"
->>>>>>> Stashed changes
 							},
 							"isInverted": true
 						},
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 766153371089716,
 							"parameters": {
 								"variable": "finishedGame"
-=======
-							"sid": 339401278905301,
-							"parameters": {
-								"variable": "gameComplete"
->>>>>>> Stashed changes
 							}
 						}
 					],
@@ -1075,21 +773,13 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 987846222274104,
-=======
-							"sid": 493126733713663,
->>>>>>> Stashed changes
 							"parameters": {
 								"layout": "loserLayout_AT"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 222112107304972
-=======
-					"sid": 583160921852655
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "comment",
@@ -1101,29 +791,17 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 596154787903422,
 							"parameters": {
 								"variable": "finishedTest"
-=======
-							"sid": 597823199006383,
-							"parameters": {
-								"variable": "testComplete"
->>>>>>> Stashed changes
 							}
 						},
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 993637191964390,
 							"parameters": {
 								"variable": "finishedGame"
-=======
-							"sid": 122633460858574,
-							"parameters": {
-								"variable": "gameComplete"
->>>>>>> Stashed changes
 							}
 						}
 					],
@@ -1131,27 +809,16 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 826875983081307,
-=======
-							"sid": 636194266171758,
->>>>>>> Stashed changes
 							"parameters": {
 								"layout": "winLayout_AT"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 206113110983917
 				}
 			],
 			"sid": 412835432694860
-=======
-					"sid": 856281603592763
-				}
-			],
-			"sid": 367671898954036
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "group",
@@ -1170,11 +837,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 							"sid": 176978364217603,
-=======
-							"sid": 662416130076602,
->>>>>>> Stashed changes
 							"parameters": {
 								"key": 69
 							}
@@ -1182,11 +845,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "playerHand",
-<<<<<<< Updated upstream
 							"sid": 703758754152353,
-=======
-							"sid": 800135680480065,
->>>>>>> Stashed changes
 							"parameters": {
 								"object": "testTrig"
 							}
@@ -1196,11 +855,7 @@
 						{
 							"id": "set-group-active",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 406364547425527,
-=======
-							"sid": 657842163730779,
->>>>>>> Stashed changes
 							"parameters": {
 								"group-name": "\"Player Movement & Controls\"",
 								"state": "deactivated"
@@ -1209,11 +864,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "testHud",
-<<<<<<< Updated upstream
 							"sid": 101030409807793,
-=======
-							"sid": 846908111156309,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1221,11 +872,7 @@
 						{
 							"id": "set-opacity",
 							"objectClass": "testHud",
-<<<<<<< Updated upstream
 							"sid": 164955202660140,
-=======
-							"sid": 878376978669363,
->>>>>>> Stashed changes
 							"parameters": {
 								"opacity": "0"
 							}
@@ -1233,11 +880,7 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "testHud",
-<<<<<<< Updated upstream
 							"sid": 403845885463072,
-=======
-							"sid": 327517065465779,
->>>>>>> Stashed changes
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"testHud\"",
@@ -1253,7 +896,6 @@
 						},
 						{
 							"id": "set-visible",
-<<<<<<< Updated upstream
 							"objectClass": "testProgress",
 							"sid": 198786119410314,
 							"parameters": {
@@ -1270,76 +912,6 @@
 						}
 					],
 					"sid": 519739517421761
-=======
-							"objectClass": "testProTxt",
-							"sid": 147562122412176,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 347270319173191
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-visible",
-							"objectClass": "testHud",
-							"sid": 653383377497456
-						}
-					],
-					"actions": [],
-					"sid": 716490863563075,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-x-seconds",
-									"objectClass": "System",
-									"sid": 392725783846602,
-									"parameters": {
-										"interval-seconds": "1.0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 159512037064217,
-									"parameters": {
-										"variable": "testCur",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 363858681852686
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 484589084769289
-								}
-							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "testProTxt",
-									"sid": 620090232061327,
-									"parameters": {
-										"text": "testCur"
-									}
-								}
-							],
-							"sid": 964328322588100
-						}
-					]
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "comment",
@@ -1351,11 +923,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 							"sid": 685750822637358,
-=======
-							"sid": 730299236984856,
->>>>>>> Stashed changes
 							"parameters": {
 								"key": 81
 							}
@@ -1365,11 +933,7 @@
 						{
 							"id": "set-group-active",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 579010908826135,
-=======
-							"sid": 771707256546257,
->>>>>>> Stashed changes
 							"parameters": {
 								"group-name": "\"Player Movement & Controls\"",
 								"state": "activated"
@@ -1378,18 +942,13 @@
 						{
 							"id": "set-visible",
 							"objectClass": "testHud",
-<<<<<<< Updated upstream
 							"sid": 922112010149696,
-=======
-							"sid": 375970041398217,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-visible",
-<<<<<<< Updated upstream
 							"objectClass": "testProgress",
 							"sid": 268611040195801,
 							"parameters": {
@@ -1596,16 +1155,11 @@
 							"id": "set-visible",
 							"objectClass": "handSprites",
 							"sid": 317043355947998,
-=======
-							"objectClass": "testProTxt",
-							"sid": 865322092179077,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "invisible"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 483843113450281
 				},
 				{
@@ -1688,19 +1242,11 @@
 				{
 					"eventType": "comment",
 					"text": "exitUI"
-=======
-					"sid": 853198754887971
-				},
-				{
-					"eventType": "comment",
-					"text": "test checker"
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-<<<<<<< Updated upstream
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
 							"sid": 327461211819589,
@@ -1761,21 +1307,11 @@
 								"first-value": "routerProgress",
 								"comparison": 0,
 								"second-value": "3"
-=======
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 672798501092471,
-							"parameters": {
-								"variable": "testCur",
-								"comparison": 0,
-								"value": "testMax"
->>>>>>> Stashed changes
 							}
 						}
 					],
 					"actions": [
 						{
-<<<<<<< Updated upstream
 							"id": "set-visible",
 							"objectClass": "routerProgress",
 							"sid": 970917523676603,
@@ -1787,41 +1323,6 @@
 							"id": "set-visible",
 							"objectClass": "resetedRouterTxt",
 							"sid": 184503632211072,
-=======
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 541005414216514,
-							"parameters": {
-								"variable": "testComplete",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 916035298664792
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 728755903716913,
-							"parameters": {
-								"variable": "testComplete"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "testProTxt",
-							"sid": 582036365573167
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "testCompleteTxt",
-							"sid": 723884781196742,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1829,18 +1330,13 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 680654376386375,
-=======
-							"sid": 441398301170229,
->>>>>>> Stashed changes
 							"parameters": {
 								"seconds": "2"
 							}
 						},
 						{
 							"id": "destroy",
-<<<<<<< Updated upstream
 							"objectClass": "resetedRouterTxt",
 							"sid": 275215794811750
 						},
@@ -1854,257 +1350,6 @@
 				}
 			],
 			"sid": 922831940535872
-=======
-							"objectClass": "testCompleteTxt",
-							"sid": 359279573325836
-						}
-					],
-					"sid": 257712971077995
-				}
-			],
-			"sid": 199898308463523
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "IT Wifi",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "comment",
-					"text": "enterUI"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 825918406206138,
-							"parameters": {
-								"key": 69
-							}
-						},
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "playerHand",
-							"sid": 419460436091075,
-							"parameters": {
-								"object": "wifiMech"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 257252536791208,
-							"parameters": {
-								"group-name": "\"Player Movement & Controls\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "routerUI",
-							"sid": 211095704062980,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "resetWifi",
-							"sid": 802170315978961,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 213665029596516
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 864152008307791,
-							"parameters": {
-								"key": 82
-							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "routerUI",
-							"sid": 780930888907564
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "wifiProTxt",
-							"sid": 986371759700612,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 432076935060958,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-x-seconds",
-									"objectClass": "System",
-									"sid": 180663833470984,
-									"parameters": {
-										"interval-seconds": "1.0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 935777553306344,
-									"parameters": {
-										"variable": "wifiCur",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 166738710432052
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 470739547775934
-								}
-							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "wifiProTxt",
-									"sid": 654981193300155,
-									"parameters": {
-										"text": "wifiCur"
-									}
-								}
-							],
-							"sid": 877721010375576
-						}
-					]
-				},
-				{
-					"eventType": "comment",
-					"text": "exitUI"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 877079867411825,
-							"parameters": {
-								"key": 81
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 491347886985807,
-							"parameters": {
-								"group-name": "\"Player Movement & Controls\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "routerUI",
-							"sid": 264010553238860,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "resetWifi",
-							"sid": 952166604987769,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 281979490166804
-				},
-				{
-					"eventType": "comment",
-					"text": "wifi checker"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 170064374994929,
-							"parameters": {
-								"first-value": "wifiCur",
-								"comparison": 0,
-								"second-value": "wifiMax"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "gameTimerTxt",
-							"sid": 792023556667331
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "wifiProTxt",
-							"sid": 864213600065360,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "resetedRouterTxt",
-							"sid": 819543188534955,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 617441667866412,
-							"parameters": {
-								"seconds": "2"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "resetedRouterTxt",
-							"sid": 552425584871223
-						}
-					],
-					"sid": 965089381531017
-				}
-			],
-			"sid": 971478902510263
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "group",
@@ -2123,11 +1368,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-<<<<<<< Updated upstream
 							"sid": 159478559450793,
-=======
-							"sid": 265732745154803,
->>>>>>> Stashed changes
 							"parameters": {
 								"object": "bananaSplit"
 							}
@@ -2137,11 +1378,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "handSprites",
-<<<<<<< Updated upstream
 							"sid": 381001008553688,
-=======
-							"sid": 797637536205810,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -2149,11 +1386,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "holdingBanan",
-<<<<<<< Updated upstream
 							"sid": 343779279963980,
-=======
-							"sid": 420607322229876,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2161,17 +1394,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "bananaSplit",
-<<<<<<< Updated upstream
 							"sid": 731859383353875
 						}
 					],
 					"sid": 991888916982559
-=======
-							"sid": 656767917386354
-						}
-					],
-					"sid": 337838157667570
->>>>>>> Stashed changes
 				},
 				{
 					"eventType": "block",
@@ -2179,33 +1405,17 @@
 						{
 							"id": "is-visible",
 							"objectClass": "holdingBanan",
-<<<<<<< Updated upstream
 							"sid": 766635479513891
-=======
-							"sid": 351073844159249
->>>>>>> Stashed changes
 						}
 					],
 					"actions": [
 						{
 							"id": "destroy",
 							"objectClass": "testTrig",
-<<<<<<< Updated upstream
 							"sid": 817971578801753
 						}
 					],
 					"sid": 759109017349520,
-=======
-							"sid": 601376930217419
-						},
-						{
-							"id": "destroy",
-							"objectClass": "wifiMech",
-							"sid": 202295465133167
-						}
-					],
-					"sid": 162183149614519,
->>>>>>> Stashed changes
 					"children": [
 						{
 							"eventType": "comment",
@@ -2217,11 +1427,7 @@
 								{
 									"id": "mouse-button-is-down",
 									"objectClass": "Mouse",
-<<<<<<< Updated upstream
 									"sid": 972337035702831,
-=======
-									"sid": 375821159927121,
->>>>>>> Stashed changes
 									"parameters": {
 										"mouse-button": "right"
 									}
@@ -2231,11 +1437,7 @@
 								{
 									"id": "set-animation",
 									"objectClass": "holdingBanan",
-<<<<<<< Updated upstream
 									"sid": 645132612194229,
-=======
-									"sid": 998022129826304,
->>>>>>> Stashed changes
 									"parameters": {
 										"animation": "\"Eat\"",
 										"from": "beginning"
@@ -2244,21 +1446,13 @@
 								{
 									"id": "set-visible",
 									"objectClass": "eatTxt",
-<<<<<<< Updated upstream
 									"sid": 719099688642906,
-=======
-									"sid": 661078858884100,
->>>>>>> Stashed changes
 									"parameters": {
 										"visibility": "visible"
 									}
 								}
 							],
-<<<<<<< Updated upstream
 							"sid": 868372522446054,
-=======
-							"sid": 581574074536109,
->>>>>>> Stashed changes
 							"children": [
 								{
 									"eventType": "block",
@@ -2266,11 +1460,7 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-<<<<<<< Updated upstream
 											"sid": 189940165450104,
-=======
-											"sid": 710580701345475,
->>>>>>> Stashed changes
 											"parameters": {
 												"interval-seconds": "1.0"
 											}
@@ -2280,22 +1470,14 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-<<<<<<< Updated upstream
 											"sid": 669619411350190,
-=======
-											"sid": 988524118466988,
->>>>>>> Stashed changes
 											"parameters": {
 												"variable": "eatingCur",
 												"value": "1"
 											}
 										}
 									],
-<<<<<<< Updated upstream
 									"sid": 420219482259450
-=======
-									"sid": 939028924536714
->>>>>>> Stashed changes
 								},
 								{
 									"eventType": "block",
@@ -2303,32 +1485,20 @@
 										{
 											"id": "every-tick",
 											"objectClass": "System",
-<<<<<<< Updated upstream
 											"sid": 490184479181164
-=======
-											"sid": 504235703232951
->>>>>>> Stashed changes
 										}
 									],
 									"actions": [
 										{
 											"id": "set-text",
 											"objectClass": "eatTxt",
-<<<<<<< Updated upstream
 											"sid": 637336412083456,
-=======
-											"sid": 430491806354360,
->>>>>>> Stashed changes
 											"parameters": {
 												"text": "eatingCur"
 											}
 										}
 									],
-<<<<<<< Updated upstream
 									"sid": 844231865666703
-=======
-									"sid": 963262984243657
->>>>>>> Stashed changes
 								}
 							]
 						},
@@ -2338,11 +1508,7 @@
 								{
 									"id": "on-button-released",
 									"objectClass": "Mouse",
-<<<<<<< Updated upstream
 									"sid": 228216664713721,
-=======
-									"sid": 562106447603861,
->>>>>>> Stashed changes
 									"parameters": {
 										"mouse-button": "right"
 									}
@@ -2352,22 +1518,14 @@
 								{
 									"id": "set-animation",
 									"objectClass": "holdingBanan",
-<<<<<<< Updated upstream
 									"sid": 235995804599469,
-=======
-									"sid": 659428261259305,
->>>>>>> Stashed changes
 									"parameters": {
 										"animation": "\"Idle\"",
 										"from": "beginning"
 									}
 								}
 							],
-<<<<<<< Updated upstream
 							"sid": 327478065407793
-=======
-							"sid": 436546725438943
->>>>>>> Stashed changes
 						}
 					]
 				},
@@ -2381,19 +1539,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-<<<<<<< Updated upstream
 							"sid": 634085886316104,
 							"parameters": {
 								"first-value": "eatingCur",
 								"comparison": 0,
 								"second-value": "3"
-=======
-							"sid": 477057000769883,
-							"parameters": {
-								"first-value": "eatingCur",
-								"comparison": 0,
-								"second-value": "eatingMax"
->>>>>>> Stashed changes
 							}
 						}
 					],
@@ -2401,11 +1551,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "handSprites",
-<<<<<<< Updated upstream
 							"sid": 906923204390824,
-=======
-							"sid": 758212786152803,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2413,21 +1559,13 @@
 						{
 							"id": "set-visible",
 							"objectClass": "holdingBanan",
-<<<<<<< Updated upstream
 							"sid": 514686184184508,
-=======
-							"sid": 483147709754166,
->>>>>>> Stashed changes
 							"parameters": {
 								"visibility": "invisible"
 							}
 						}
 					],
-<<<<<<< Updated upstream
 					"sid": 219585683386708,
-=======
-					"sid": 751253637847360,
->>>>>>> Stashed changes
 					"children": [
 						{
 							"eventType": "block",
@@ -2435,22 +1573,14 @@
 								{
 									"id": "trigger-once-while-true",
 									"objectClass": "System",
-<<<<<<< Updated upstream
 									"sid": 747154320210004
-=======
-									"sid": 808416490461413
->>>>>>> Stashed changes
 								}
 							],
 							"actions": [
 								{
 									"id": "create-object",
 									"objectClass": "System",
-<<<<<<< Updated upstream
 									"sid": 147861267348115,
-=======
-									"sid": 558093634620416,
->>>>>>> Stashed changes
 									"parameters": {
 										"object-to-create": "testTrig",
 										"layer": "0",
@@ -2459,7 +1589,6 @@
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
-<<<<<<< Updated upstream
 								}
 							],
 							"sid": 471680519758483
@@ -2738,16 +1867,6 @@
 									"parameters": {
 										"object-to-create": "wifiMech",
 										"layer": "2",
-=======
-								},
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 876287285179471,
-									"parameters": {
-										"object-to-create": "wifiMech",
-										"layer": "0",
->>>>>>> Stashed changes
 										"x": "1090",
 										"y": "2020",
 										"create-hierarchy": false,
@@ -2755,7 +1874,6 @@
 									}
 								}
 							],
-<<<<<<< Updated upstream
 							"sid": 740585209098758
 						}
 					]
@@ -2971,14 +2089,6 @@
 				}
 			],
 			"sid": 885445693441402
-=======
-							"sid": 872389202280434
-						}
-					]
-				}
-			],
-			"sid": 753259542609842
->>>>>>> Stashed changes
 		}
 	],
 	"sid": 995596806820757

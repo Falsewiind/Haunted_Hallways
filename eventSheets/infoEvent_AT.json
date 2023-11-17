@@ -7,114 +7,14 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-<<<<<<< Updated upstream
 					"sid": 986619460370918
-=======
-					"sid": 335600950325211
->>>>>>> Stashed changes
 				}
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-cursor-style",
 					"objectClass": "Mouse",
 					"sid": 694396677662798,
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 709588800821500,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 434042745021268,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 736375356227522,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 274278494142694,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 672647755632793,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 223299929119252,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 358041445093698,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 432040649484701,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 895359540460800,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 294279503638357,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-cursor-style",
-					"objectClass": "Mouse",
-					"sid": 575579959805846,
->>>>>>> Stashed changes
 					"parameters": {
 						"cursor-style": "none"
 					}
@@ -122,11 +22,7 @@
 				{
 					"id": "set-position",
 					"objectClass": "fadeIn2",
-<<<<<<< Updated upstream
 					"sid": 248945920157871,
-=======
-					"sid": 334265104842024,
->>>>>>> Stashed changes
 					"parameters": {
 						"x": "966",
 						"y": "540"
@@ -135,11 +31,7 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "fadeIn2",
-<<<<<<< Updated upstream
 					"sid": 922212389454694,
-=======
-					"sid": 409661649057834,
->>>>>>> Stashed changes
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fadeIn2\"",
@@ -154,7 +46,6 @@
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 942725700380963
 		},
 		{
@@ -209,9 +100,6 @@
 				}
 			],
 			"sid": 247196244958353
-=======
-			"sid": 248184610120405
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -219,33 +107,21 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-<<<<<<< Updated upstream
 					"sid": 727839436563894
-=======
-					"sid": 397810240877636
->>>>>>> Stashed changes
 				}
 			],
 			"actions": [
 				{
 					"id": "set-position",
 					"objectClass": "pointer",
-<<<<<<< Updated upstream
 					"sid": 643505065559176,
-=======
-					"sid": 888526715750966,
->>>>>>> Stashed changes
 					"parameters": {
 						"x": "Mouse.X",
 						"y": "Mouse.Y"
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 767082353897224
-=======
-			"sid": 571599430917509
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -253,11 +129,7 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-<<<<<<< Updated upstream
 					"sid": 594390919689202,
-=======
-					"sid": 202356653759739,
->>>>>>> Stashed changes
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked"
@@ -268,21 +140,13 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "pointer",
-<<<<<<< Updated upstream
 					"sid": 282704879050105,
-=======
-					"sid": 163186159091056,
->>>>>>> Stashed changes
 					"parameters": {
 						"frame-number": "1"
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 459838938236432
-=======
-			"sid": 392216607168866
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -290,11 +154,7 @@
 				{
 					"id": "on-button-released",
 					"objectClass": "Mouse",
-<<<<<<< Updated upstream
 					"sid": 223804185875903,
-=======
-					"sid": 688985773179344,
->>>>>>> Stashed changes
 					"parameters": {
 						"mouse-button": "left"
 					}
@@ -304,21 +164,13 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "pointer",
-<<<<<<< Updated upstream
 					"sid": 528310670895322,
-=======
-					"sid": 230611604612862,
->>>>>>> Stashed changes
 					"parameters": {
 						"frame-number": "0"
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 568774602303151
-=======
-			"sid": 880911390329154
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -326,11 +178,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-<<<<<<< Updated upstream
 					"sid": 360205655171204,
-=======
-					"sid": 560420704239166,
->>>>>>> Stashed changes
 					"parameters": {
 						"object": "back"
 					},
@@ -341,22 +189,14 @@
 				{
 					"id": "set-effect-enabled",
 					"objectClass": "back",
-<<<<<<< Updated upstream
 					"sid": 507868658140900,
-=======
-					"sid": 335977761765928,
->>>>>>> Stashed changes
 					"parameters": {
 						"mode": "disable",
 						"effect": "\"GlowHorizontal\""
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 706455218553559
-=======
-			"sid": 929870837308121
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -364,11 +204,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-<<<<<<< Updated upstream
 					"sid": 389395877610809,
-=======
-					"sid": 139575354404031,
->>>>>>> Stashed changes
 					"parameters": {
 						"object": "back"
 					}
@@ -378,22 +214,14 @@
 				{
 					"id": "set-effect-enabled",
 					"objectClass": "back",
-<<<<<<< Updated upstream
 					"sid": 549310095369243,
-=======
-					"sid": 560627831745548,
->>>>>>> Stashed changes
 					"parameters": {
 						"mode": "enable",
 						"effect": "\"GlowHorizontal\""
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 456076182688253
-=======
-			"sid": 537919716740989
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -401,11 +229,7 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-<<<<<<< Updated upstream
 					"sid": 614747199512804,
-=======
-					"sid": 144996179217939,
->>>>>>> Stashed changes
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked"
@@ -414,11 +238,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-<<<<<<< Updated upstream
 					"sid": 219253859335570,
-=======
-					"sid": 477774545959974,
->>>>>>> Stashed changes
 					"parameters": {
 						"object": "back"
 					}
@@ -428,11 +248,7 @@
 				{
 					"id": "set-effect-enabled",
 					"objectClass": "back",
-<<<<<<< Updated upstream
 					"sid": 283725522980052,
-=======
-					"sid": 951040327571179,
->>>>>>> Stashed changes
 					"parameters": {
 						"mode": "enable",
 						"effect": "\"GlowHorizontal\""
@@ -441,11 +257,7 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "fadeIn2",
-<<<<<<< Updated upstream
 					"sid": 479261857299235,
-=======
-					"sid": 520318762230759,
->>>>>>> Stashed changes
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"fadeIn2\"",
@@ -462,11 +274,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-<<<<<<< Updated upstream
 					"sid": 527123924875884,
-=======
-					"sid": 623247649726424,
->>>>>>> Stashed changes
 					"parameters": {
 						"seconds": "0.6"
 					}
@@ -474,21 +282,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-<<<<<<< Updated upstream
 					"sid": 562000832086732,
-=======
-					"sid": 771993878635887,
->>>>>>> Stashed changes
 					"parameters": {
 						"layout": "mainLayout_AT"
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 215100155565550
-=======
-			"sid": 364952509658760
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -496,11 +296,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 119634864694585,
-=======
-					"sid": 180980525841951,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 65
 					}
@@ -508,7 +304,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "a",
 					"sid": 303608799923930,
@@ -518,27 +313,6 @@
 				}
 			],
 			"sid": 561881171832105
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 118772805185327,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 638611038473316,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 171500216989021
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -546,11 +320,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 645504982615110,
-=======
-					"sid": 349850659900933,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 83
 					}
@@ -558,7 +328,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "s",
 					"sid": 774149668728552,
@@ -568,27 +337,6 @@
 				}
 			],
 			"sid": 384020698504359
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 190712620515136,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 284117827377745,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 452651832429143
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -596,11 +344,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 522782109848507,
-=======
-					"sid": 474636662309621,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 68
 					}
@@ -608,7 +352,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "d",
 					"sid": 532702284935462,
@@ -618,27 +361,6 @@
 				}
 			],
 			"sid": 918808785311194
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 830403532008250,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 951954698606304,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 973266464814892
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -646,11 +368,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 605797932012540,
-=======
-					"sid": 467491293919366,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 87
 					}
@@ -658,7 +376,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "w",
 					"sid": 868638185600284,
@@ -668,27 +385,6 @@
 				}
 			],
 			"sid": 279752984202299
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 690992184093968,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 359601692215485,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 658105795351201
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -696,11 +392,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 591873419980426,
-=======
-					"sid": 315809412622537,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 69
 					}
@@ -708,7 +400,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "E",
 					"sid": 128804769112932,
@@ -766,27 +457,6 @@
 				}
 			],
 			"sid": 110918927946251
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 440135612084054,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 848000164875201,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 816689349893161
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -794,11 +464,7 @@
 				{
 					"id": "on-key-released",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 550150525165625,
-=======
-					"sid": 163835943235979,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 65
 					}
@@ -806,7 +472,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "a",
 					"sid": 146380352193429,
@@ -816,27 +481,6 @@
 				}
 			],
 			"sid": 386974230520790
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 213362170955225,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "a",
-					"sid": 809270292776797,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 364056379412371
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -844,11 +488,7 @@
 				{
 					"id": "on-key-released",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 800405153949400,
-=======
-					"sid": 506772747172963,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 83
 					}
@@ -856,7 +496,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "s",
 					"sid": 819790507371409,
@@ -866,27 +505,6 @@
 				}
 			],
 			"sid": 899557389592967
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 843967962218652,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "s",
-					"sid": 710504954549034,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 831695233985984
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -894,11 +512,7 @@
 				{
 					"id": "on-key-released",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 350296854885946,
-=======
-					"sid": 352990453324554,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 68
 					}
@@ -906,7 +520,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "d",
 					"sid": 503497763157461,
@@ -916,27 +529,6 @@
 				}
 			],
 			"sid": 373332641270665
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 278348496491200,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "d",
-					"sid": 549754234985998,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 809284915055601
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -944,11 +536,7 @@
 				{
 					"id": "on-key-released",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 341525471368697,
-=======
-					"sid": 908765506244316,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 87
 					}
@@ -956,7 +544,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "w",
 					"sid": 351552821200883,
@@ -966,27 +553,6 @@
 				}
 			],
 			"sid": 991987073357893
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 230867928066370,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "w",
-					"sid": 794590343517095,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 583268171600751
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
@@ -994,11 +560,7 @@
 				{
 					"id": "on-key-released",
 					"objectClass": "Keyboard",
-<<<<<<< Updated upstream
 					"sid": 118801803624697,
-=======
-					"sid": 959194912568660,
->>>>>>> Stashed changes
 					"parameters": {
 						"key": 69
 					}
@@ -1006,7 +568,6 @@
 			],
 			"actions": [
 				{
-<<<<<<< Updated upstream
 					"id": "set-animation-frame",
 					"objectClass": "E",
 					"sid": 544801500552130,
@@ -1016,52 +577,22 @@
 				}
 			],
 			"sid": 261067568920139
-=======
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 135214310131480,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"ScanLines\""
-					}
-				},
-				{
-					"id": "set-effect-enabled",
-					"objectClass": "E",
-					"sid": 927058576142393,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				}
-			],
-			"sid": 802563428842424
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-<<<<<<< Updated upstream
 					"id": "on-key-released",
 					"objectClass": "Keyboard",
 					"sid": 209425692944469,
 					"parameters": {
 						"key": 81
-=======
-					"id": "mouse-button-is-down",
-					"objectClass": "Mouse",
-					"sid": 103372695145993,
-					"parameters": {
-						"mouse-button": "left"
->>>>>>> Stashed changes
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation-frame",
-<<<<<<< Updated upstream
 					"objectClass": "Q",
 					"sid": 525968601701008,
 					"parameters": {
@@ -1070,55 +601,29 @@
 				}
 			],
 			"sid": 253717470393714
-=======
-					"objectClass": "mouse2",
-					"sid": 803082463872597,
-					"parameters": {
-						"frame-number": "1"
-					}
-				}
-			],
-			"sid": 406701209978231
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-<<<<<<< Updated upstream
 					"id": "on-key-released",
 					"objectClass": "Keyboard",
 					"sid": 957417250919020,
 					"parameters": {
 						"key": 16
 					}
-=======
-					"id": "mouse-button-is-down",
-					"objectClass": "Mouse",
-					"sid": 290112287192658,
-					"parameters": {
-						"mouse-button": "left"
-					},
-					"isInverted": true
->>>>>>> Stashed changes
 				}
 			],
 			"actions": [
 				{
 					"id": "set-animation-frame",
-<<<<<<< Updated upstream
 					"objectClass": "shift",
 					"sid": 838875402061126,
-=======
-					"objectClass": "mouse2",
-					"sid": 754055287048381,
->>>>>>> Stashed changes
 					"parameters": {
 						"frame-number": "0"
 					}
 				}
 			],
-<<<<<<< Updated upstream
 			"sid": 327226918692712
 		},
 		{
@@ -1259,9 +764,6 @@
 				}
 			],
 			"sid": 210340495642230
-=======
-			"sid": 449854768334176
->>>>>>> Stashed changes
 		}
 	],
 	"sid": 400220891776537

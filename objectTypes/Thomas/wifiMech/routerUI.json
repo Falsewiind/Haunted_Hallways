@@ -5,34 +5,24 @@
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-<<<<<<< Updated upstream
 	"effectTypes": [
 		{
 			"effectId": "pixellate",
 			"name": "Pixellate"
 		}
 	],
-=======
-	"effectTypes": [],
->>>>>>> Stashed changes
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-<<<<<<< Updated upstream
 						"width": 423,
 						"height": 887,
-=======
-						"width": 250,
-						"height": 250,
->>>>>>> Stashed changes
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-<<<<<<< Updated upstream
 						"imageSpriteId": 222666,
 						"collisionPoly": {
 							"points": [
@@ -46,9 +36,6 @@
 								0.9853438556933484
 							]
 						},
-=======
-						"imageSpriteId": 5155194,
->>>>>>> Stashed changes
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
