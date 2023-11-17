@@ -106,6 +106,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "blurhorizontal",
+			"name": "Blur horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "fogexponential",
 			"name": "Fog (exponential)",
 			"author": "Scirra",
@@ -149,7 +156,14 @@
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"win",
+			"YOUSURVIVED",
+			"losefade",
+			"loseflash",
+			"lose",
+			"YOUFAILED"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -690,7 +704,32 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "soundscrate-conflicting-thoughts.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 323082095895044,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "SoundsCrate-Electric_BLast.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 785344763847979,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "SoundsCrate-Electric_Boogie.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 944397252652035,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": [
 				{
 					"items": [

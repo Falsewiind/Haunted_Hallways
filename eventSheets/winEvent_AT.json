@@ -1,5 +1,410 @@
 {
 	"name": "winEvent_AT",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 529645526433909
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 665015066722473,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "losefade",
+					"sid": 505363088756672,
+					"parameters": {
+						"x": "962",
+						"y": "530"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "loseflash",
+					"sid": 959478470583945,
+					"parameters": {
+						"x": "962",
+						"y": "530"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "YOUSURVIVED",
+					"sid": 109254998580610,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "backdeath2",
+					"sid": 454259877125245,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 588446161748265,
+					"parameters": {
+						"audio-file": "SoundsCrate-Electric_BLast",
+						"loop": "not-looping",
+						"volume": "-9",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 612258639002726,
+					"parameters": {
+						"audio-file": "SoundsCrate-Electric_Boogie",
+						"loop": "looping",
+						"volume": "-18",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "YOUSURVIVED",
+					"sid": 447298657563742,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"YOUSURVIVED\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "losefade",
+					"sid": 292740621928296,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"losefade\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": ".1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "loseflash",
+					"sid": 360991491596445,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"loseflash\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "1",
+						"ease": "easeoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pointer",
+					"sid": 258753972999825,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 745233758406598,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "pointer",
+					"sid": 568060669111974,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"pointer\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "YOUSURVIVED",
+					"sid": 364570355964856,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"YOUSURVIVED\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".6",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 873091235810480
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-pointer-lock",
+					"objectClass": "Mouse",
+					"sid": 245455561691201
+				}
+			],
+			"actions": [
+				{
+					"id": "release-pointer-lock",
+					"objectClass": "Mouse",
+					"sid": 657401180397491
+				}
+			],
+			"sid": 714933868519775
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 969805088126466
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "pointer",
+					"sid": 641740236357603,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 866583278994971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 631555402386413,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 159127609562089,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 862114438067821
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 944340390116934,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 736651343555227,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 396065444704761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 259285542666668,
+					"parameters": {
+						"object": "back"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "back",
+					"sid": 226945464302590,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 198987929916822
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 300076560270861,
+					"parameters": {
+						"object": "back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "back",
+					"sid": 929080232976376,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 471842875807238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 563908407447338,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 407791181860180,
+					"parameters": {
+						"object": "back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "back",
+					"sid": 994110034305789,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 388015673110619,
+					"parameters": {
+						"audio-file": "soundscrate-switch-click-3-withBoom",
+						"loop": "not-looping",
+						"volume": "-19",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "losefade",
+					"sid": 793818788206922,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"losefade\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 805545226603288,
+					"parameters": {
+						"seconds": "0.6"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 342229513210273
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 792302915563456,
+					"parameters": {
+						"layout": "mainLayout_AT"
+					}
+				}
+			],
+			"sid": 250076106852622
+		}
+	],
 	"sid": 179206339870522
 }

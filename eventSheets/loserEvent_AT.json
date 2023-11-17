@@ -1,5 +1,681 @@
 {
 	"name": "loserEvent_AT",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 500853029504533
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "backdeath",
+					"sid": 524345398951495,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "backdeath2",
+					"sid": 213710933607097,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "YOUFAILED",
+					"sid": 200638978604266,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pointer",
+					"sid": 705037819082048,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "backdeath2",
+					"sid": 552810981887549,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "backdeath2",
+					"sid": 652374571450801,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "losefade",
+					"sid": 227356632225539,
+					"parameters": {
+						"x": "962",
+						"y": "530"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "RESTART",
+					"sid": 693145523701063,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "deafMENU",
+					"sid": 597685267661748,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "loseflash",
+					"sid": 784035539094659,
+					"parameters": {
+						"x": "962",
+						"y": "530"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 721758204542853,
+					"parameters": {
+						"audio-file": "SoundsCrate-Electric_BLast",
+						"loop": "not-looping",
+						"volume": "-9",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 537601347074601,
+					"parameters": {
+						"audio-file": "soundscrate-conflicting-thoughts",
+						"loop": "looping",
+						"volume": "-18",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "YOUFAILED",
+					"sid": 692752764003587,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"YOUFAILED\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".6",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "losefade",
+					"sid": 291776927614073,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"losefade\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": ".1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "loseflash",
+					"sid": 371848314899659,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"loseflash\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "1",
+						"ease": "easeoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 793979521296669,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "backdeath",
+					"sid": 412205653322575,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"backdeath\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "backdeath2",
+					"sid": 576229868797376,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"backdeath2\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 344628118127648,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "pointer",
+					"sid": 409450327771380,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"pointer\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "deafMENU",
+					"sid": 709705298408466,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"deafMenu\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "RESTART",
+					"sid": 816932539444220,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"RESTART\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 127820311447286
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-pointer-lock",
+					"objectClass": "Mouse",
+					"sid": 810261054581808
+				}
+			],
+			"actions": [
+				{
+					"id": "release-pointer-lock",
+					"objectClass": "Mouse",
+					"sid": 356884325801081
+				}
+			],
+			"sid": 931746887161165
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 714330261646301
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "pointer",
+					"sid": 715418948680051,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 293816550134721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 725675094034930,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 611040294679349,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 989339167005000
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 960836022768171,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pointer",
+					"sid": 720289694712475,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 464218810967135
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 677751416966405,
+					"parameters": {
+						"object": "deafMENU"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "backdeath2",
+					"sid": 327321179409404,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "deafMENU",
+					"sid": 678558213760402,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 696557333297582
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 409479165161390,
+					"parameters": {
+						"object": "deafMENU"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "backdeath2",
+					"sid": 455317333678494,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "deafMENU",
+					"sid": 873257481154800,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 580198870281269
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 524931948040208,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 471339531579481,
+					"parameters": {
+						"object": "RESTART"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 676865844161390,
+					"parameters": {
+						"audio-file": "soundscrate-switch-click-3-withBoom",
+						"loop": "not-looping",
+						"volume": "-19",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "YOUFAILED",
+					"sid": 376852469380743,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"YOUFAILED\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": ".4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "losefade",
+					"sid": 517645933170526,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"losefade\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 861370605466033,
+					"parameters": {
+						"seconds": ".6"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 958431177524800
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 119033866463442
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 287192406196431,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 781005521055392
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 871445511209355,
+					"parameters": {
+						"object": "RESTART"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "backdeath",
+					"sid": 645311222877877,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "RESTART",
+					"sid": 265324765576476,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 480660903827385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 669006914024469,
+					"parameters": {
+						"object": "RESTART"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "backdeath",
+					"sid": 985861937152258,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "RESTART",
+					"sid": 461481434690401,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				}
+			],
+			"sid": 212950283004223
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 192050836620607,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 663662150566535,
+					"parameters": {
+						"object": "deafMENU"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "deafMENU",
+					"sid": 275588842927519,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 166858954440486,
+					"parameters": {
+						"audio-file": "soundscrate-switch-click-3-withBoom",
+						"loop": "not-looping",
+						"volume": "-19",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "losefade",
+					"sid": 684842966772758,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"losefade\"",
+						"property": "offsetOpacity",
+						"end-value": "99",
+						"time": ".5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 449113724381337,
+					"parameters": {
+						"seconds": ".6"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 301295559291190
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 366153977772996,
+					"parameters": {
+						"layout": "mainLayout_AT"
+					}
+				}
+			],
+			"sid": 780105664034354
+		}
+	],
 	"sid": 621876316779125
 }
