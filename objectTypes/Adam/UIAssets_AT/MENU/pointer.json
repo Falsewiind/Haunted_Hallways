@@ -1,0 +1,86 @@
+{
+	"name": "pointer",
+	"plugin-id": "Sprite",
+	"sid": 473098856448928,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 592347502936128
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 421,
+						"height": 718,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7337789,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 421,
+						"height": 718,
+						"originX": 0.5,
+						"originY": 0.4533426183844011,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5803289,
+						"collisionPoly": {
+							"points": [
+								0.9667458432304038,
+								0.38579387186629527,
+								1,
+								0.7200557103064067,
+								0.8741092636579573,
+								0.8690807799442897,
+								0.6413301662707839,
+								0.9066852367688022,
+								0.37292161520190026,
+								0.8927576601671309,
+								0.14014251781472686,
+								0.8036211699164345,
+								0.0071258907363420665,
+								0.6323119777158774,
+								0.0071258907363420665,
+								0.46518105849582175,
+								0.2921615201900237,
+								0.025069637883008356,
+								0.39429928741092635,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 881108209537334,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

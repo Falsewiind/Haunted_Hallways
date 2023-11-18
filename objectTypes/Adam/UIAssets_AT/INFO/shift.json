@@ -1,0 +1,94 @@
+{
+	"name": "shift",
+	"plugin-id": "Sprite",
+	"sid": 150017080054016,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 694218023689147
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 175,
+						"height": 94,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9827305,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 175,
+						"height": 94,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3654351,
+						"collisionPoly": {
+							"points": [
+								0.15428571428571428,
+								0,
+								0.8857142857142857,
+								0.010638297872340425,
+								0.9542857142857143,
+								0.07446808510638298,
+								0.9885714285714285,
+								0.13829787234042554,
+								1,
+								0.19148936170212766,
+								1,
+								0.851063829787234,
+								0.92,
+								1,
+								0.02857142857142857,
+								0.9468085106382979,
+								0.011428571428571429,
+								0.9042553191489362,
+								0,
+								0.851063829787234,
+								0,
+								0.19148936170212766,
+								0.011428571428571429,
+								0.13829787234042554,
+								0.045714285714285714,
+								0.07446808510638298,
+								0.11428571428571428,
+								0.010638297872340425
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 748213335346042,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

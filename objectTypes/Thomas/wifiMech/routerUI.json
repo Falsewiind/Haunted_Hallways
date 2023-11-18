@@ -1,0 +1,55 @@
+{
+	"name": "routerUI",
+	"plugin-id": "Sprite",
+	"sid": 382050245890965,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "pixellate",
+			"name": "Pixellate"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 423,
+						"height": 887,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 222666,
+						"collisionPoly": {
+							"points": [
+								0.030732860520094562,
+								0,
+								1,
+								0.014656144306651634,
+								0.9692671394799054,
+								1,
+								0,
+								0.9853438556933484
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 583020671369606,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

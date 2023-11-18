@@ -1,0 +1,18 @@
+{
+	"name": "CONTROLTEXT",
+	"plugin-id": "Text",
+	"sid": 100859982665109,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		},
+		{
+			"effectId": "pixellate",
+			"name": "Pixellate"
+		}
+	]
+}

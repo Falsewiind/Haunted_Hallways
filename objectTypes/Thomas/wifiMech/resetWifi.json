@@ -1,0 +1,59 @@
+{
+	"name": "resetWifi",
+	"plugin-id": "Sprite",
+	"sid": 483341955659625,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 118,
+						"height": 118,
+						"originX": 0.5042372881355932,
+						"originY": 0.5042372881355932,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1604587,
+						"collisionPoly": {
+							"points": [
+								0.423728813559322,
+								0.00847457627118644,
+								0.576271186440678,
+								0.00847457627118644,
+								0.8813559322033898,
+								0.8220338983050842,
+								0.576271186440678,
+								0.991525423728814,
+								0.423728813559322,
+								0.991525423728814,
+								0.11864406779661017,
+								0.17796610169491525
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 194886288711251,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"name": "subtitle",
+	"plugin-id": "Text",
+	"sid": 687351462838092,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	]
+}

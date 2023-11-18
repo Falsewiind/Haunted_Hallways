@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Camera3D",
 			"name": "3D camera",
 			"author": "Scirra",
@@ -42,9 +49,51 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Car",
 			"name": "Car",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -54,69 +103,568 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blurhorizontal",
+			"name": "Blur horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "fogexponential",
+			"name": "Fog (exponential)",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "noise",
+			"name": "Noise",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pixellate",
+			"name": "Pixellate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "scanlines",
+			"name": "Scan lines",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
+			"bundled": false
 		}
 	],
 	"uniqueId": "dk9ncleesic",
 	"objectTypes": {
-		"items": [
-			"3DCamera",
-			"Keyboard",
-			"3DShape"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
-					"3DWall2",
-					"edgeWalls"
+					"3DCamera",
+					"Keyboard",
+					"Mouse",
+					"Sprite"
 				],
 				"subfolders": [
 					{
 						"items": [
-							"innerWalls2",
-							"innerWalls1",
-							"innerWalls3",
-							"innerWalls4"
+							"Player",
+							"playerHand",
+							"handSprites",
+							"holdingBanan"
 						],
 						"subfolders": [],
-						"name": "WallsInner"
+						"name": "player"
 					},
 					{
 						"items": [
-							"tiles",
-							"floorWood"
+							"testTrig",
+							"testHud"
 						],
 						"subfolders": [],
-						"name": "Flooring"
+						"name": "testMech"
 					},
 					{
 						"items": [
-							"outterWallswindow",
-							"outterWallsred",
-							"outterWalls2",
-							"outterWalls3",
-							"outterWalls4"
+							"deathTrig"
 						],
 						"subfolders": [],
-						"name": "WallsOuter"
+						"name": "deathTrig"
 					},
 					{
 						"items": [
-							"Counter",
-							"tableCounter"
+							"gameTimer",
+							"testCompleteTxt",
+							"resetedRouterTxt",
+							"eatTxt",
+							"routerProgress",
+							"testProgress",
+							"routerStatus",
+							"washroomStatus",
+							"snackStatus",
+							"intro"
 						],
 						"subfolders": [],
-						"name": "Furnitcher"
+						"name": "txt"
+					},
+					{
+						"items": [
+							"monster",
+							"monsterSprite",
+							"spawnTrig",
+							"monsterSpawnPoint"
+						],
+						"subfolders": [],
+						"name": "monster"
+					},
+					{
+						"items": [
+							"routerTrig",
+							"routerUI",
+							"resetRouter",
+							"DOWNLOADING"
+						],
+						"subfolders": [],
+						"name": "wifiMech"
+					},
+					{
+						"items": [
+							"bananaSplit",
+							"bananaSplitSprite",
+							"bananaSplitSprite2",
+							"newBanana"
+						],
+						"subfolders": [],
+						"name": "bananaMech"
 					}
 				],
-				"name": "Level Objects"
+				"name": "Thomas"
 			},
 			{
 				"items": [
-					"Player",
-					"Mouse"
+					"Audio",
+					"lose",
+					"losefade",
+					"loseflash",
+					"win",
+					"YOUFAILED",
+					"YOUSURVIVED",
+					"bg",
+					"bg2",
+					"bg3",
+					"Text2"
 				],
-				"subfolders": [],
-				"name": "Player"
+				"subfolders": [
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"HALLWAYS",
+									"HAUNTED",
+									"infoMenuButton",
+									"PLAYbg",
+									"playMenuButton",
+									"teamMenuButton",
+									"pointer",
+									"fadeIn",
+									"Anthomis"
+								],
+								"subfolders": [],
+								"name": "MENU"
+							},
+							{
+								"items": [
+									"CONTROLS",
+									"back",
+									"a",
+									"d",
+									"E",
+									"s",
+									"w",
+									"mouse2",
+									"CONTROLTEXT",
+									"fadeIn2",
+									"bar",
+									"backbar",
+									"lockAni",
+									"backdeath",
+									"backdeath2",
+									"deafMENU",
+									"death",
+									"deathani",
+									"deathfade",
+									"deathsparkle",
+									"RESTART",
+									"Q",
+									"shift",
+									"terminaloverlay"
+								],
+								"subfolders": [
+									{
+										"items": [],
+										"subfolders": [],
+										"name": "wifi"
+									}
+								],
+								"name": "INFO"
+							},
+							{
+								"items": [
+									"teamtitle",
+									"names",
+									"fadeIn3",
+									"anthony",
+									"subtitle",
+									"adam",
+									"tay",
+									"thomas",
+									"isis"
+								],
+								"subfolders": [],
+								"name": "TEAM"
+							}
+						],
+						"name": "UIAssets_AT"
+					}
+				],
+				"name": "Adam"
+			},
+			{
+				"items": [
+					"ExposureLevels",
+					"3DShape6",
+					"Router"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"innerWalls1_1",
+							"innerWalls1_2",
+							"innerWalls1_3",
+							"innerWalls1_4",
+							"innerWalls1_5",
+							"innerWalls1_6",
+							"innerWalls1_7",
+							"innerWalls1_8",
+							"innerWalls2_1",
+							"innerWalls2_2",
+							"innerWalls2_3",
+							"innerWalls2_4",
+							"innerWalls2_5",
+							"innerWalls2_6",
+							"innerWalls2_7",
+							"innerWalls2_8",
+							"innerDoor_8",
+							"innerWindows_8",
+							"innerElevator_8",
+							"classDoor",
+							"classDoor_3",
+							"classDoor_7",
+							"classDoor_8",
+							"washroomDoor_3"
+						],
+						"subfolders": [],
+						"name": "InnerWalls"
+					},
+					{
+						"items": [
+							"3DShape"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Ceiling_1",
+									"Ceiling_2",
+									"Ceiling_3",
+									"Ceiling_4",
+									"Ceiling_5",
+									"Ceiling_6",
+									"Ceiling_7",
+									"Ceiling_8",
+									"LightOff_1",
+									"LightOff_2",
+									"LightOff_4",
+									"LightOff_7",
+									"LightOff_8",
+									"LightOn"
+								],
+								"subfolders": [],
+								"name": "Ceiling"
+							}
+						],
+						"name": "Lighting"
+					},
+					{
+						"items": [
+							"outterWallswindow_1",
+							"outterWallswindow_2",
+							"outterWallswindow_3",
+							"outterWallswindow_4",
+							"outterWallswindow_5",
+							"outterWallswindow_6",
+							"outterWallswindow_7",
+							"outterWallswindow_8"
+						],
+						"subfolders": [],
+						"name": "OuterWalls"
+					},
+					{
+						"items": [
+							"floorWood_1",
+							"tiles_1",
+							"floorWood_2",
+							"floorWood_3",
+							"floorWood_4",
+							"floorWood_5",
+							"floorWood_6",
+							"floorWood_7",
+							"floorWood_8",
+							"tiles_2",
+							"tiles_3",
+							"tiles_4",
+							"tiles_5",
+							"tiles_6",
+							"tiles_7",
+							"tiles_8"
+						],
+						"subfolders": [],
+						"name": "Floor"
+					},
+					{
+						"items": [
+							"ChairArm",
+							"ChairCusion",
+							"ShelfLegs",
+							"Shelves",
+							"TableLeg",
+							"TableTop"
+						],
+						"subfolders": [],
+						"name": "Furniture"
+					},
+					{
+						"items": [
+							"Sink",
+							"SinkCounter",
+							"sinkTrig",
+							"Tap",
+							"TapObj",
+							"washroomStall_7",
+							"washroomStall_8",
+							"washroomTrig"
+						],
+						"subfolders": [],
+						"name": "Washroom"
+					}
+				],
+				"name": "Anthony"
+			},
+			{
+				"items": [
+					"whiteBoard",
+					"projextor",
+					"whiteBoard2",
+					"3DShape3",
+					"3DShape4",
+					"3DShape5",
+					"Text",
+					"3DShape7",
+					"3DShape8",
+					"computerScreen_3",
+					"Counter2",
+					"deskLeg_L18",
+					"deskLeg_M3",
+					"deskTop12",
+					"deskTop8"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"deskTop9"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"deskTop11",
+									"deskLeg_M_02",
+									"deskLeg_R_02",
+									"deskLeg_L_02"
+								],
+								"subfolders": [],
+								"name": "deskTipped_02"
+							},
+							{
+								"items": [
+									"deskLeg_M_01",
+									"deskLeg_L_01",
+									"deskLeg_R_01",
+									"deskTop7"
+								],
+								"subfolders": [],
+								"name": "Desk tipped 1"
+							},
+							{
+								"items": [
+									"computerScreen_tipped_01",
+									"computerScreen_tipped_02",
+									"computerScreen_floor_01",
+									"computerScreen_tipped_03"
+								],
+								"subfolders": [],
+								"name": "computerScreens"
+							},
+							{
+								"items": [
+									"computerScreen_01",
+									"deskLeg_L15",
+									"deskLeg_L16",
+									"deskLeg_L17",
+									"computerScreen_2"
+								],
+								"subfolders": [],
+								"name": "deskUpright_01"
+							}
+						],
+						"name": "Room 6"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"deskLeg_L6",
+									"deskLeg_M7",
+									"deskLeg_L8",
+									"deskTop4"
+								],
+								"subfolders": [],
+								"name": "Desk_10_01"
+							},
+							{
+								"items": [
+									"deskLeg_L13",
+									"deskLeg_L14",
+									"deskTop6",
+									"deskLeg_L12"
+								],
+								"subfolders": [],
+								"name": "desk_10_02"
+							},
+							{
+								"items": [
+									"deskLeg_L10",
+									"deskLeg_L9",
+									"deskTop5",
+									"deskLeg_L11"
+								],
+								"subfolders": [],
+								"name": "Desk_10_03"
+							}
+						],
+						"name": "Room 10"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"deskLeg_M2",
+									"deskLeg_R2",
+									"deskTop2",
+									"deskLeg_L4",
+									"deskLeg_L5",
+									"deskLeg_L2"
+								],
+								"subfolders": [],
+								"name": "Desk short"
+							},
+							{
+								"items": [
+									"deskLeg_R",
+									"deskLeg_L",
+									"deskLeg_M",
+									"deskTop"
+								],
+								"subfolders": [],
+								"name": "Desk_13_01"
+							},
+							{
+								"items": [
+									"deskTop3",
+									"deskLeg_L3"
+								],
+								"subfolders": [],
+								"name": "Desk_13_02"
+							}
+						],
+						"name": "Room 13"
+					}
+				],
+				"name": "Isis"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"3DWall2",
+							"edgeWalls",
+							"3DShape2"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"innerWalls2",
+									"innerWalls1",
+									"innerWalls3",
+									"innerWalls4",
+									"innerWindows",
+									"innerDoor",
+									"innerElevator"
+								],
+								"subfolders": [],
+								"name": "WallsInner"
+							},
+							{
+								"items": [
+									"tiles",
+									"floorWood"
+								],
+								"subfolders": [],
+								"name": "Flooring"
+							},
+							{
+								"items": [
+									"outterWallswindow",
+									"outterWallsred",
+									"outterWalls2",
+									"outterWalls3",
+									"outterWalls4"
+								],
+								"subfolders": [],
+								"name": "WallsOuter"
+							},
+							{
+								"items": [
+									"Counter",
+									"tableCounter"
+								],
+								"subfolders": [],
+								"name": "Furnitcher"
+							},
+							{
+								"items": [
+									"Ceiling"
+								],
+								"subfolders": [],
+								"name": "Ceiling"
+							}
+						],
+						"name": "Level Objects"
+					}
+				],
+				"name": "Taylor"
 			}
 		]
 	},
@@ -128,13 +676,27 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Intro",
+			"Layout 1",
+			"death",
+			"mainLayout_AT",
+			"infoLayout_AT",
+			"teamLayout_AT",
+			"winLayout_AT",
+			"loserLayout_AT"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"mainEvent_AT",
+			"infoEvent_AT",
+			"teamEvent_AT",
+			"winEvent_AT",
+			"loserEvent_AT",
+			"deathEvent_TL",
+			"introEvnet"
 		],
 		"subfolders": []
 	},
@@ -149,7 +711,196 @@
 		},
 		"music": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "soundscrate-lurking.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 818618572034625,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-switch-click-3.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 853623558207178,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-switch-click-3-withBoom2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 493084653874538,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-switch-click-3-withBoom.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 493084653874538,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "deathBOOM.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 900572642013347,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "deathSWORD.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 398080138117149,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-conflicting-thoughts.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 323082095895044,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "SoundsCrate-Electric_BLast.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 785344763847979,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "SoundsCrate-Electric_Boogie.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 944397252652035,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-dark-places.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 660664838426905,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Adam"
+				},
+				{
+					"items": [
+						{
+							"name": "soundscrate-invisible-waves.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 413149819048074,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-void.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 896813587299823,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-chew-1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 145720993152682,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-chew-2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 104825306296150,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "SoundsCrate-Stylized_Bubble_Pop_6.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 866408410717878,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "wifibeepF1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 762734020487991,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "wifibeepF2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 264289303593011,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "wifibeepF3.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 332715521059738,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "wifibeepF4.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 518025654534549,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "wificlick.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 789214557714838,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-running-indoors.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 371845093872041,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "soundscrate-walking-indoors-1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 364951598891940,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Thomas"
+				}
+			]
 		},
 		"video": {
 			"items": [],
@@ -247,8 +998,8 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "low",
+		"fullscreenMode": "scale-inner",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -292,5 +1043,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": null
+	"firstLayout": "mainLayout_AT"
 }

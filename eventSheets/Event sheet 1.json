@@ -3,33 +3,158 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "mouseSen",
+			"name": "gameTimer",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "300",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 270209469667610
+			"sid": 658985838920710
 		},
 		{
 			"eventType": "variable",
-			"name": "moveSpeed",
+			"name": "testProgress",
 			"type": "number",
-			"initialValue": "500",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": true,
-			"sid": 880019221108082
-		},
-		{
-			"eventType": "variable",
-			"name": "isRunning",
-			"type": "number",
-			"initialValue": "550",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 351357095606312
+			"sid": 776540692436396
+		},
+		{
+			"eventType": "variable",
+			"name": "routerProgress",
+			"type": "number",
+			"initialValue": "7",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 502207175503126
+		},
+		{
+			"eventType": "variable",
+			"name": "eatingProgress",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570316956911772
+		},
+		{
+			"eventType": "variable",
+			"name": "sinkON",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 839142544790865
+		},
+		{
+			"eventType": "variable",
+			"name": "finishedTest",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 987742624788161
+		},
+		{
+			"eventType": "variable",
+			"name": "finishedGame",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 441326926620010
+		},
+		{
+			"eventType": "variable",
+			"name": "RNG",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 764291768095574
+		},
+		{
+			"eventType": "variable",
+			"name": "rHaz",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 477232575076042
+		},
+		{
+			"eventType": "variable",
+			"name": "wHaz",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 475321667302873
+		},
+		{
+			"eventType": "variable",
+			"name": "bHaz",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 996606296179378
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 291849406386830
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 261200549815107,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "intro",
+					"sid": 739426026551455,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 914468919712560,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "intro",
+					"sid": 642445385577815,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 745671184332898
 		},
 		{
 			"eventType": "group",
@@ -39,8 +164,18 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "variable",
+					"name": "mouseSen",
+					"type": "number",
+					"initialValue": "18",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 483249779495076
+				},
+				{
 					"eventType": "comment",
-					"text": "Camera"
+					"text": "camera"
 				},
 				{
 					"eventType": "block",
@@ -48,23 +183,31 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 393488505426536
+							"sid": 822501466973013
 						}
 					],
 					"actions": [
 						{
 							"id": "look-parallel-to-layout",
 							"objectClass": "3DCamera",
-							"sid": 909166485416723,
+							"sid": 988801386288247,
 							"parameters": {
 								"cam-x": "Player.X",
 								"cam-y": "Player.Y",
 								"cam-z": "Player.ZElevation + 10",
 								"look-angle": "Player.Angle"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "deathsparkle",
+							"sid": 938360677552998,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
-					"sid": 115467198406376
+					"sid": 268185757535513
 				},
 				{
 					"eventType": "block",
@@ -72,14 +215,14 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 604265076272579
+							"sid": 553746989907960
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
 							"objectClass": "3DCamera",
-							"sid": 697744915975722,
+							"sid": 127669576882411,
 							"parameters": {
 								"x": "Player.X",
 								"y": "Player.Y",
@@ -88,7 +231,7 @@
 							}
 						}
 					],
-					"sid": 538696991541777
+					"sid": 537033803103176
 				},
 				{
 					"eventType": "block",
@@ -96,7 +239,7 @@
 						{
 							"id": "on-click",
 							"objectClass": "Mouse",
-							"sid": 170557940173437,
+							"sid": 479193212370359,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked"
@@ -107,10 +250,10 @@
 						{
 							"id": "request-pointer-lock",
 							"objectClass": "Mouse",
-							"sid": 501636602584138
+							"sid": 820696401558381
 						}
 					],
-					"sid": 982669298418818
+					"sid": 421724623621281
 				},
 				{
 					"eventType": "block",
@@ -118,35 +261,45 @@
 						{
 							"id": "on-movement",
 							"objectClass": "Mouse",
-							"sid": 112594457255695
+							"sid": 689380341145794
 						}
 					],
 					"actions": [
 						{
 							"id": "rotate-camera",
 							"objectClass": "3DCamera",
-							"sid": 317581448119105,
+							"sid": 539507662282598,
 							"parameters": {
-								"rotate-x": "Mouse.MovementX / (11 - mouseSen)",
-								"rotate-y": "Mouse.MovementY / (11 - mouseSen)",
-								"min-polar-angle": "0",
-								"max-polar-angle": "180"
+								"rotate-x": "Mouse.MovementX / mouseSen",
+								"rotate-y": "Mouse.MovementY / mouseSen",
+								"min-polar-angle": "20",
+								"max-polar-angle": "160"
 							}
 						},
 						{
 							"id": "set-angle",
 							"objectClass": "Player",
-							"sid": 233653222027266,
+							"sid": 940052865858264,
 							"parameters": {
 								"angle": "3DCamera.CameraXRotation"
 							}
 						}
 					],
-					"sid": 861802486454624
+					"sid": 834480500531005
+				},
+				{
+					"eventType": "variable",
+					"name": "moveSpeed",
+					"type": "number",
+					"initialValue": "500",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 300570991104779
 				},
 				{
 					"eventType": "comment",
-					"text": "Controls"
+					"text": "player controls"
 				},
 				{
 					"eventType": "block",
@@ -154,7 +307,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 467615074755495,
+							"sid": 652886247660113,
 							"parameters": {
 								"key": 87
 							}
@@ -164,13 +317,13 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 309660583063636,
+							"sid": 228557646817246,
 							"parameters": {
-								"distance": "moveSpeed * dt"
+								"distance": "550 * dt"
 							}
 						}
 					],
-					"sid": 410131608571797
+					"sid": 239514186013967
 				},
 				{
 					"eventType": "block",
@@ -178,31 +331,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 655708584264698,
-							"parameters": {
-								"key": 83
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "move-forward",
-							"objectClass": "Player",
-							"sid": 732914795834871,
-							"parameters": {
-								"distance": "-moveSpeed * dt"
-							}
-						}
-					],
-					"sid": 487235210162626
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 508581431257626,
+							"sid": 978742807958176,
 							"parameters": {
 								"key": 65
 							}
@@ -212,14 +341,14 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 685041693781154,
+							"sid": 550434157871055,
 							"parameters": {
 								"angle": "Player.Angle - 90",
-								"distance": "moveSpeed / 2  * dt"
+								"distance": "250 * dt"
 							}
 						}
 					],
-					"sid": 761549878169354
+					"sid": 576478570113026
 				},
 				{
 					"eventType": "block",
@@ -227,7 +356,31 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 887131542688056,
+							"sid": 289326743643513,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-forward",
+							"objectClass": "Player",
+							"sid": 858355477617861,
+							"parameters": {
+								"distance": "-450 * dt"
+							}
+						}
+					],
+					"sid": 828999840990599
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 909997722833413,
 							"parameters": {
 								"key": 68
 							}
@@ -237,18 +390,18 @@
 						{
 							"id": "move-at-angle",
 							"objectClass": "Player",
-							"sid": 641297899077080,
+							"sid": 938354525770091,
 							"parameters": {
 								"angle": "Player.Angle + 90",
-								"distance": "moveSpeed / 2  * dt"
+								"distance": "250 * dt"
 							}
 						}
 					],
-					"sid": 311135600513352
+					"sid": 705292021742566
 				},
 				{
 					"eventType": "comment",
-					"text": "Running"
+					"text": "running"
 				},
 				{
 					"eventType": "block",
@@ -256,7 +409,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 117680896026410,
+							"sid": 999307202811440,
 							"parameters": {
 								"key": 16
 							}
@@ -266,13 +419,13 @@
 						{
 							"id": "move-forward",
 							"objectClass": "Player",
-							"sid": 446162885254803,
+							"sid": 103534248138186,
 							"parameters": {
-								"distance": "isRunning * dt"
+								"distance": "350 * dt"
 							}
 						}
 					],
-					"sid": 775827592844210
+					"sid": 193640089453525
 				},
 				{
 					"eventType": "block",
@@ -280,7 +433,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 475002660871420,
+							"sid": 113432687362730,
 							"parameters": {
 								"key": 16
 							},
@@ -288,10 +441,2554 @@
 						}
 					],
 					"actions": [],
-					"sid": 244285051252561
+					"sid": 741741514181245
+				},
+				{
+					"eventType": "comment",
+					"text": "player hand"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 571337542775965
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "playerHand",
+							"sid": 259142961308085,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "1"
+							}
+						}
+					],
+					"sid": 949250072688313
 				}
 			],
-			"sid": 451630600385537
+			"sid": 668327040246215
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Status",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "death"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 288428737969367,
+							"parameters": {
+								"object": "monster"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "deathsparkle",
+							"sid": 329941569089080,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 444035795000680,
+							"parameters": {
+								"audio-file": "deathSWORD",
+								"loop": "not-looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "deathsparkle",
+							"sid": 835811021341264,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 668536688865979,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 558455984296246,
+							"parameters": {
+								"layout": "death"
+							}
+						}
+					],
+					"sid": 971357472751290
+				}
+			],
+			"sid": 534628405952443
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Monster AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 706010980514359
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "monster",
+							"sid": 287907961020940,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 970659240159595
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "monster",
+							"sid": 266185672760434,
+							"parameters": {
+								"object": "deathTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "monster",
+							"sid": 194345500426663
+						}
+					],
+					"sid": 110629006562984
+				}
+			],
+			"sid": 692833929565893
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game Status",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "on game start"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 524538796054235
+						}
+					],
+					"actions": [
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 320882085858473
+						}
+					],
+					"sid": 281743253009258
+				},
+				{
+					"eventType": "comment",
+					"text": "game timer"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 991063672053255,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 412173790895805,
+							"parameters": {
+								"variable": "gameTimer",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 243044782267186
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 268949555698960
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "gameTimer",
+							"sid": 289607257600166,
+							"parameters": {
+								"text": "gameTimer"
+							}
+						}
+					],
+					"sid": 632953991276995
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 973424620050874,
+							"parameters": {
+								"first-value": "gameTimer",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "gameTimer",
+							"sid": 216242048274883
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 369562374478515,
+							"parameters": {
+								"variable": "finishedGame",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 384313681108173
+				},
+				{
+					"eventType": "comment",
+					"text": "lost checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 127938356518560,
+							"parameters": {
+								"variable": "finishedTest"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 766153371089716,
+							"parameters": {
+								"variable": "finishedGame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 987846222274104,
+							"parameters": {
+								"layout": "loserLayout_AT"
+							}
+						}
+					],
+					"sid": 222112107304972
+				},
+				{
+					"eventType": "comment",
+					"text": "win checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 596154787903422,
+							"parameters": {
+								"variable": "finishedTest"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 826875983081307,
+							"parameters": {
+								"layout": "winLayout_AT"
+							}
+						}
+					],
+					"sid": 206113110983917
+				}
+			],
+			"sid": 412835432694860
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Test Mechanic",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "setting terminal animation and BG music"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 571780948327022
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "terminaloverlay",
+							"sid": 431722075892977,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "terminaloverlay",
+							"sid": 462625736464570,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bar",
+							"sid": 989927623047703,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 180677601623756,
+							"parameters": {
+								"audio-file": "soundscrate-dark-places",
+								"loop": "not-looping",
+								"volume": "-35",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 833315994156642
+				},
+				{
+					"eventType": "comment",
+					"text": "enterUI"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 176978364217603,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 703758754152353,
+							"parameters": {
+								"object": "testTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 406364547425527,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "handSprites",
+							"sid": 465569552021188,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 101030409807793,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bar",
+							"sid": 644265341298724,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "terminaloverlay",
+							"sid": 529032941682075,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "testHud",
+							"sid": 164955202660140,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "bar",
+							"sid": 803820086702187,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"bar\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "0.1",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "testHud",
+							"sid": 387045133121972,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"testHud\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "0.1",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testProgress",
+							"sid": 198786119410314,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 519739517421761
+				},
+				{
+					"eventType": "comment",
+					"text": "exitUI"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 685750822637358,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 579010908826135,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "handSprites",
+							"sid": 891106602179319,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bar",
+							"sid": 394866801690335,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "terminaloverlay",
+							"sid": 983278784173856,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testHud",
+							"sid": 922112010149696,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testProgress",
+							"sid": 268611040195801,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 952352862986445
+				},
+				{
+					"eventType": "comment",
+					"text": "test checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "testHud",
+							"sid": 469689348045881
+						}
+					],
+					"actions": [],
+					"sid": 515996102585163,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 136859528873995,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 509369256734724,
+									"parameters": {
+										"variable": "testProgress",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 328161388880518
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 210312553221041
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "testProgress",
+									"sid": 575432544831195,
+									"parameters": {
+										"text": "testProgress"
+									}
+								}
+							],
+							"sid": 548920153802041
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 650511842487740,
+							"parameters": {
+								"variable": "testProgress",
+								"comparison": 0,
+								"value": "60"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 709496688587227,
+							"parameters": {
+								"variable": "finishedTest",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testProgress",
+							"sid": 597658441958101,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "testCompleteTxt",
+							"sid": 978298619097088,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 454751224438281,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "testCompleteTxt",
+							"sid": 837565034368215
+						},
+						{
+							"id": "destroy",
+							"objectClass": "testTrig",
+							"sid": 568720008206044
+						}
+					],
+					"sid": 109429281054230
+				}
+			],
+			"sid": 602147805011192
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "RNG",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 485801738519168,
+							"parameters": {
+								"variable": "testProgress",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 198669644692240,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 466053514302392
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 540785235788952,
+									"parameters": {
+										"variable": "RNG",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 176168064243259
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 220317190328376,
+							"parameters": {
+								"variable": "testProgress",
+								"comparison": 0,
+								"value": "14"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 462604992021800,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 642312933989586
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 940734887651207,
+									"parameters": {
+										"variable": "RNG",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 616830556253381
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 478147890902850,
+							"parameters": {
+								"variable": "testProgress",
+								"comparison": 0,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 680432323981784,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 514135039042208
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 580590886318150,
+									"parameters": {
+										"variable": "RNG",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 370342127159075
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 336898464165046,
+							"parameters": {
+								"variable": "testProgress",
+								"comparison": 0,
+								"value": "28"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 599693479006870,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 308904581763488
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 236905682696275,
+									"parameters": {
+										"variable": "RNG",
+										"value": "4"
+									}
+								}
+							],
+							"sid": 372415103092213
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 492473897233364,
+							"parameters": {
+								"variable": "testProgress",
+								"comparison": 0,
+								"value": "45"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 938257585890113,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 453177112563706
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 194857006949022,
+									"parameters": {
+										"variable": "RNG",
+										"value": "5"
+									}
+								}
+							],
+							"sid": 112419330782623
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 763064243486256,
+							"parameters": {
+								"variable": "testProgress",
+								"comparison": 0,
+								"value": "50"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 332764692467826,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 677875320626795
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 661679956696106,
+									"parameters": {
+										"variable": "RNG",
+										"value": "6"
+									}
+								}
+							],
+							"sid": 184173729714677
+						}
+					]
+				}
+			],
+			"sid": 686894313311756
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Random Hazard",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "routerEvent",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "on spawn router haz"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "routerTrig",
+									"sid": 420663754776828
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 366311027252658,
+									"parameters": {
+										"variable": "routerProgress",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 616373666303799,
+									"parameters": {
+										"variable": "rHaz",
+										"value": "30"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 278801547046310,
+									"parameters": {
+										"object-to-create": "routerProgress",
+										"layer": "3",
+										"x": "785",
+										"y": "503.171",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 867728204992428,
+									"parameters": {
+										"object-to-create": "routerStatus",
+										"layer": "3",
+										"x": "50",
+										"y": "120",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 951412177509405
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "routerTrig",
+									"sid": 681716379615074
+								}
+							],
+							"actions": [],
+							"sid": 607911251057832,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 693561565291830,
+											"parameters": {
+												"interval-seconds": "1.0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 817613318429857,
+											"parameters": {
+												"variable": "rHaz",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 289385486008399
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 205816715994119
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "routerStatus",
+											"sid": 344583023678269,
+											"parameters": {
+												"text": "\"Reset Router: \" & rHaz"
+											}
+										}
+									],
+									"sid": 837990078026794
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 418952286593206,
+									"parameters": {
+										"first-value": "rHaz",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "routerTrig",
+									"sid": 358158618714461
+								},
+								{
+									"id": "set-text",
+									"objectClass": "routerStatus",
+									"sid": 497144027059899,
+									"parameters": {
+										"text": "\"Failed Task\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 285304478617276,
+									"parameters": {
+										"seconds": "1"
+									}
+								}
+							],
+							"sid": 872144477926924,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 610838374468987
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 476079764838601,
+											"parameters": {
+												"variable": "gameTimer",
+												"value": "20"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "routerStatus",
+											"sid": 803608096118977
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 933130486265157,
+											"parameters": {
+												"variable": "rHaz",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 118914811433567
+								},
+								{
+									"eventType": "comment",
+									"text": "on spawn washroom haz"
+								}
+							]
+						}
+					],
+					"sid": 559484638551724
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 331424351541336,
+							"parameters": {
+								"first-value": "RNG",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 464546135530815,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 664012352086693
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 659914356687425,
+									"parameters": {
+										"object-to-create": "routerTrig",
+										"layer": "1",
+										"x": "1210",
+										"y": "2000",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 332893986058811,
+									"parameters": {
+										"object-to-create": "monster",
+										"layer": "0",
+										"x": "monsterSpawnPoint.X",
+										"y": "monsterSpawnPoint.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 354126110380070
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 429870750400141,
+							"parameters": {
+								"first-value": "RNG",
+								"comparison": 0,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 931009553125700,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 382231115761999
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 694437308879834,
+									"parameters": {
+										"object-to-create": "washroomTrig",
+										"layer": "2",
+										"x": "1600",
+										"y": "1090",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 172648521617791
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 444843181701868,
+							"parameters": {
+								"first-value": "RNG",
+								"comparison": 0,
+								"second-value": "3"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 390951296936913,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 371216905055128
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 139140394494555,
+									"parameters": {
+										"object-to-create": "newBanana",
+										"layer": "1",
+										"x": "2280",
+										"y": "1540",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 346252634971316,
+									"parameters": {
+										"object-to-create": "monster",
+										"layer": "0",
+										"x": "monsterSpawnPoint.X",
+										"y": "monsterSpawnPoint.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 207547622418972
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 573485225009608,
+							"parameters": {
+								"first-value": "RNG",
+								"comparison": 0,
+								"second-value": "4"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 464953368734197,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 910616429870539
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 753773898140452,
+									"parameters": {
+										"object-to-create": "routerTrig",
+										"layer": "1",
+										"x": "1210",
+										"y": "2000",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 419160942698130,
+									"parameters": {
+										"object-to-create": "washroomTrig",
+										"layer": "2",
+										"x": "1630",
+										"y": "1090",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 135992091787225
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 329028586487821,
+							"parameters": {
+								"first-value": "RNG",
+								"comparison": 0,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 548889271054356,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 575661411779902
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 397545826196354,
+									"parameters": {
+										"object-to-create": "washroomTrig",
+										"layer": "2",
+										"x": "1630",
+										"y": "1090",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 757195932750075,
+									"parameters": {
+										"object-to-create": "newBanana",
+										"layer": "1",
+										"x": "2280",
+										"y": "1540",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 381212425474932
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 283107510021167,
+							"parameters": {
+								"first-value": "RNG",
+								"comparison": 0,
+								"second-value": "6"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 671401348687527,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 258701599279208
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 618284467181346,
+									"parameters": {
+										"object-to-create": "routerTrig",
+										"layer": "1",
+										"x": "1210",
+										"y": "2000",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 985711327217007,
+									"parameters": {
+										"object-to-create": "washroomTrig",
+										"layer": "2",
+										"x": "1630",
+										"y": "1090",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 373863711420084,
+									"parameters": {
+										"object-to-create": "newBanana",
+										"layer": "1",
+										"x": "2280",
+										"y": "1540",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 568749333469873
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "washroomEvent",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "washroomTrig",
+									"sid": 432157106333686
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 790547481383631,
+									"parameters": {
+										"variable": "sinkON",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 884605816733176,
+									"parameters": {
+										"variable": "wHaz",
+										"value": "30"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 489370136127464,
+									"parameters": {
+										"object-to-create": "washroomStatus",
+										"layer": "3",
+										"x": "50",
+										"y": "220",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 458410602779556
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "washroomTrig",
+									"sid": 107980475294946
+								}
+							],
+							"actions": [],
+							"sid": 721668562635899,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 409768339197644,
+											"parameters": {
+												"interval-seconds": "1.0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 505744354722616,
+											"parameters": {
+												"variable": "wHaz",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 146153473763408
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 861201359338529
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "washroomStatus",
+											"sid": 252558134434019,
+											"parameters": {
+												"text": "\"Running Water: \" & wHaz"
+											}
+										}
+									],
+									"sid": 900601739314770
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 637703130263009,
+									"parameters": {
+										"first-value": "wHaz",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "washroomStatus",
+									"sid": 846697048800554,
+									"parameters": {
+										"text": "\"Failed Task\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 172161254888463,
+									"parameters": {
+										"seconds": "1"
+									}
+								}
+							],
+							"sid": 466455030055693,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 818517688110428
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 687888754134987,
+											"parameters": {
+												"variable": "gameTimer",
+												"value": "15"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "washroomStatus",
+											"sid": 466197931416068
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 286447966726947,
+											"parameters": {
+												"variable": "wHaz",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 277852644704055,
+											"parameters": {
+												"variable": "sinkON",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 884439581192823
+								}
+							]
+						}
+					],
+					"sid": 110341484795947
+				}
+			],
+			"sid": 541755098406489
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "IT Wifi",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "enterUI"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 771020095399961,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 849664737312336,
+							"parameters": {
+								"object": "routerTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 984581102716190,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "routerUI",
+							"sid": 533890370822976,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "resetRouter",
+							"sid": 719350963365691,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DOWNLOADING",
+							"sid": 551285225211991,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "resetRouter",
+							"sid": 229511811586657,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "handSprites",
+							"sid": 792329133432897,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 872020459647033
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 637788572485711,
+							"parameters": {
+								"key": 82
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "routerUI",
+							"sid": 907793097859386
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "routerProgress",
+							"sid": 597387532932282,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "resetRouter",
+							"sid": 952521565187159,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "DOWNLOADING",
+							"sid": 201433704652653,
+							"disabled": true,
+							"parameters": {
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 913337719931301,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 261495704582103,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 641793505488120,
+									"parameters": {
+										"variable": "routerProgress",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 814930889818061
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 313209394832818
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "routerProgress",
+									"sid": 865899644281737,
+									"parameters": {
+										"text": "routerProgress"
+									}
+								}
+							],
+							"sid": 833686548980723
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "exitUI"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 594178299110983,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 533616654735354,
+							"parameters": {
+								"group-name": "\"Player Movement & Controls\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "DOWNLOADING",
+							"sid": 238065569688382,
+							"disabled": true
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "routerUI",
+							"sid": 481398380133699,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DOWNLOADING",
+							"sid": 689605620010627,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "resetRouter",
+							"sid": 920326893880152,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "resetRouter",
+							"sid": 478694520557666,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "handSprites",
+							"sid": 348260392422346,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 245244909910552
+				},
+				{
+					"eventType": "comment",
+					"text": "router checker"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 369901722933001,
+							"parameters": {
+								"first-value": "routerProgress",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "routerTrig",
+							"sid": 807771031796800
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "DOWNLOADING",
+							"sid": 627799725076317,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "DOWNLOADING",
+							"sid": 115540873322977
+						},
+						{
+							"id": "destroy",
+							"objectClass": "routerProgress",
+							"sid": 766715908626453
+						},
+						{
+							"id": "set-text",
+							"objectClass": "routerStatus",
+							"sid": 464991330559173,
+							"parameters": {
+								"text": "\"Task Complete\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 987150805547342,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						}
+					],
+					"sid": 462162124551888,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 552663617263233
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "routerStatus",
+									"sid": 328681495496069
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 949729621651170,
+									"parameters": {
+										"variable": "rHaz",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 295415881612107
+						}
+					]
+				}
+			],
+			"sid": 372094579426526
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "washroomMech",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 319764980151851,
+							"parameters": {
+								"variable": "sinkON"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Tap",
+							"sid": 331552585503019,
+							"parameters": {
+								"animation": "\"Active\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sink",
+							"sid": 157165753341805,
+							"parameters": {
+								"animation": "\"Active\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 844655400092625
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 572389456646373,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "playerHand",
+							"sid": 968097397885212,
+							"parameters": {
+								"object": "washroomTrig"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "washroomStatus",
+							"sid": 656860613138183,
+							"parameters": {
+								"text": "\"Task Complete\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 384064925733142,
+							"parameters": {
+								"seconds": "1"
+							}
+						}
+					],
+					"sid": 720000673870892,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 146612226390858
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "washroomTrig",
+									"sid": 532348763328750
+								},
+								{
+									"id": "destroy",
+									"objectClass": "washroomStatus",
+									"sid": 530085376962072
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 743080958260520,
+									"parameters": {
+										"variable": "wHaz",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 743995163329936,
+									"parameters": {
+										"variable": "sinkON",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 973193227550211
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 301985439666555,
+							"parameters": {
+								"variable": "sinkON"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Tap",
+							"sid": 334664213333072,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sink",
+							"sid": 223872385888613,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 755955801663278
+				}
+			],
+			"sid": 429520412013263
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "BananaMech",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "snackEvent",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "newBanana",
+									"sid": 857060393407544
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "newBanana",
+									"sid": 625393486090996,
+									"parameters": {
+										"object": "Sprite"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "newBanana",
+									"sid": 267081212662010,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 446947275122309,
+									"parameters": {
+										"variable": "eatingProgress",
+										"value": "3"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 180828965058819,
+									"parameters": {
+										"object-to-create": "snackStatus",
+										"layer": "3",
+										"x": "530",
+										"y": "80",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "snackStatus",
+									"sid": 472739339532300,
+									"parameters": {
+										"text": "\"What was that noise?!\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 987886774940198,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "snackStatus",
+									"sid": 851192250004067,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 985759565452430
+						},
+						{
+							"eventType": "comment",
+							"text": "picked up"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 195297669806529,
+									"parameters": {
+										"object": "newBanana"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "handSprites",
+									"sid": 110203682149844,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "holdingBanan",
+									"sid": 110045827142605,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "newBanana",
+									"sid": 543822355811543
+								}
+							],
+							"sid": 283116614466335
+						},
+						{
+							"eventType": "comment",
+							"text": "done eating"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "holdingBanan",
+									"sid": 610135451021197
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "testTrig",
+									"sid": 689352505510654
+								}
+							],
+							"sid": 750469008658766,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "mouse-button-is-down",
+											"objectClass": "Mouse",
+											"sid": 197562764110776,
+											"parameters": {
+												"mouse-button": "right"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "holdingBanan",
+											"sid": 770798522694546,
+											"parameters": {
+												"animation": "\"Eat\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 947097957392097,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-x-seconds",
+													"objectClass": "System",
+													"sid": 975620250686229,
+													"parameters": {
+														"interval-seconds": "1.0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 718555744310024,
+													"parameters": {
+														"variable": "eatingProgress",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 919847538212988
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Mouse",
+									"sid": 804681072302953,
+									"parameters": {
+										"mouse-button": "right"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "holdingBanan",
+									"sid": 234016205691848,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 468886802763099
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 195983192234759,
+									"parameters": {
+										"first-value": "eatingProgress",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "holdingBanan",
+									"sid": 938242327687194,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "handSprites",
+									"sid": 558059629974373,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 830529555732630,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 323431244221135
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 878247057076042,
+											"parameters": {
+												"object-to-create": "testTrig",
+												"layer": "1",
+												"x": "1590",
+												"y": "590",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 849863989354542
+								}
+							]
+						}
+					],
+					"sid": 569381380591934
+				}
+			],
+			"sid": 482494521622020
 		}
 	],
 	"sid": 995596806820757
