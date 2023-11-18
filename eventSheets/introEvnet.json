@@ -1,0 +1,107 @@
+{
+	"name": "introEvnet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 872459498360468
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 640775203928665,
+					"parameters": {
+						"audio-file": "soundscrate-lurking",
+						"loop": "not-looping",
+						"volume": "-15",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Anthomis",
+					"sid": 897311316293143,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Anthomis",
+					"sid": 557546137003441,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Anthomis\"",
+						"property": "offsetOpacity",
+						"end-value": "85",
+						"time": "1",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "fadeIn",
+					"sid": 581488469299617,
+					"parameters": {
+						"x": "960",
+						"y": "541"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 334270711516756,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Anthomis",
+					"sid": 160709501030773,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Anthomis\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "2",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "fadeIn",
+					"sid": 475213439704909,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"fadeIn\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 362175397450391
+		}
+	],
+	"sid": 605637472395075
+}
